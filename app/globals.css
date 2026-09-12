@@ -225,6 +225,52 @@ main section {
 }
 
 /* 比較ページ：商品カード */
+/* 県ジャンプ・並び替え・絞り込みをまとめた固定バー */
+.sticky-bar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 2px 10px rgba(43, 124, 190, .1);
+}
+.sticky-bar-inner {
+  padding: 10px 20px;
+}
+.sticky-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sticky-bar .pref-nav {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  padding-bottom: 2px;
+}
+.sticky-bar .pref-nav a {
+  flex: 0 0 auto;
+}
+.controls-toggle {
+  flex: 0 0 auto;
+  background: var(--pale);
+  border: 1px solid var(--line);
+  color: var(--blue-deep);
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 7px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.controls-toggle:hover {
+  background: var(--pale2);
+}
+
 /* 並び替え・絞り込み */
 .controls {
   display: flex;
@@ -235,7 +281,7 @@ main section {
   border: 1px solid var(--line);
   border-radius: var(--r);
   padding: 14px 18px;
-  margin-bottom: 22px;
+  margin: 12px 0 0;
 }
 .control-group {
   display: flex;
@@ -278,6 +324,17 @@ main section {
 @media (max-width: 640px) {
   .controls {
     gap: 12px 20px;
+    padding: 12px 14px;
+  }
+  .sticky-bar-inner {
+    padding: 8px 14px;
+  }
+  .sticky-row {
+    gap: 8px;
+  }
+  .controls-toggle {
+    font-size: 12px;
+    padding: 6px 10px;
   }
 }
 

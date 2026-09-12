@@ -103,6 +103,7 @@ export default function AreaComparePage({
   const [sortMode, setSortMode] = useState("none");
   const [accountFreeOnly, setAccountFreeOnly] = useState(false);
   const [nationwideOnly, setNationwideOnly] = useState(false);
+  const [controlsOpen, setControlsOpen] = useState(true);
 
   const grouped = loans.some((loan) => loan.pref);
 
@@ -157,49 +158,13 @@ export default function AreaComparePage({
             <p className="eyebrow">Compare</p>
             <h2 className="head">カードローンをくらべる</h2>
             <p className="lead">{leadText}</p>
+          </div>
+        </section>
 
-            <div className="controls">
-              <div className="control-group">
-                <label htmlFor="sort-select" className="control-label">
-                  並び替え
-                </label>
-                <select
-                  id="sort-select"
-                  value={sortMode}
-                  onChange={(e) => setSortMode(e.target.value)}
-                >
-                  <option value="none">おすすめ順（掲載順）</option>
-                  <option value="rateAsc">金利が低い順</option>
-                  <option value="rateDesc">金利が高い順</option>
-                  <option value="limitDesc">限度額が大きい順</option>
-                </select>
-              </div>
-
-              <div className="control-group filters">
-                <span className="control-label">絞り込み</span>
-                <label className="filter-toggle">
-                  <input
-                    type="checkbox"
-                    checked={accountFreeOnly}
-                    onChange={(e) => setAccountFreeOnly(e.target.checked)}
-                  />
-                  口座不要のみ
-                </label>
-                <label className="filter-toggle">
-                  <input
-                    type="checkbox"
-                    checked={nationwideOnly}
-                    onChange={(e) => setNationwideOnly(e.target.checked)}
-                  />
-                  全国対応のみ
-                </label>
-              </div>
-            </div>
-
-            {noResults ? (
-              <p className="lead">条件に合う商品が見つかりませんでした。絞り込みを変えてお試しください。</p>
-            ) : grouped ? (
-              <>
+        <div className="sticky-bar">
+          <div className="wrap sticky-bar-inner">
+            <div className="sticky-row">
+              {grouped && !noResults && (
                 <div className="pref-nav">
                   {groups
                     .filter((group) => group.items.length > 0)
@@ -209,7 +174,65 @@ export default function AreaComparePage({
                       </a>
                     ))}
                 </div>
+              )}
+              <button
+                type="button"
+                className="controls-toggle"
+                aria-expanded={controlsOpen}
+                onClick={() => setControlsOpen((open) => !open)}
+              >
+                並び替え・絞り込み {controlsOpen ? "▲" : "▼"}
+              </button>
+            </div>
 
+            {controlsOpen && (
+              <div className="controls">
+                <div className="control-group">
+                  <label htmlFor="sort-select" className="control-label">
+                    並び替え
+                  </label>
+                  <select
+                    id="sort-select"
+                    value={sortMode}
+                    onChange={(e) => setSortMode(e.target.value)}
+                  >
+                    <option value="none">おすすめ順（掲載順）</option>
+                    <option value="rateAsc">金利が低い順</option>
+                    <option value="rateDesc">金利が高い順</option>
+                    <option value="limitDesc">限度額が大きい順</option>
+                  </select>
+                </div>
+
+                <div className="control-group filters">
+                  <span className="control-label">絞り込み</span>
+                  <label className="filter-toggle">
+                    <input
+                      type="checkbox"
+                      checked={accountFreeOnly}
+                      onChange={(e) => setAccountFreeOnly(e.target.checked)}
+                    />
+                    口座不要のみ
+                  </label>
+                  <label className="filter-toggle">
+                    <input
+                      type="checkbox"
+                      checked={nationwideOnly}
+                      onChange={(e) => setNationwideOnly(e.target.checked)}
+                    />
+                    全国対応のみ
+                  </label>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <section>
+          <div className="wrap">
+            {noResults ? (
+              <p className="lead">条件に合う商品が見つかりませんでした。絞り込みを変えてお試しください。</p>
+            ) : grouped ? (
+              <>
                 {groups
                   .filter((group) => group.items.length > 0)
                   .map((group) => (
