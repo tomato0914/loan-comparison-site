@@ -573,6 +573,11 @@ main section {
   font-size: 14px;
   flex: 1;
 }
+.citem .body .d a {
+  margin-left: 6px;
+  font-weight: 700;
+  white-space: nowrap;
+}
 
 /* 青の帯 */
 .blueband {

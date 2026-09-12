@@ -30,7 +30,50 @@ export default function TopPage() {
       </header>
 
       <main>
-        <section>
+        <section className="band-pale">
+          <div className="wrap">
+            <p className="eyebrow">How to choose</p>
+            <h2 className="head">
+              はじめての方へ：<span className="mark">選び方</span>の目安
+            </h2>
+            <p className="lead">「どこから見ればいい？」という方は、こちらを参考にしてください。最終判断はご自身で。</p>
+
+            <div className="checklist">
+              <div className="citem">
+                <div className="chk">✓</div>
+                <div className="body">
+                  <span className="t">お住まいのエリアから探す</span>
+                  <span className="d">
+                    まずは下のエリア一覧から、お住まいの地域を選んでください。地方銀行は営業エリアが決まっていることが多いため、まずは地元の銀行から探すのが基本です。
+                    <Link href="#areas">エリア一覧を見る →</Link>
+                  </span>
+                </div>
+              </div>
+              <div className="citem">
+                <div className="chk">✓</div>
+                <div className="body">
+                  <span className="t">急いでいる方は</span>
+                  <span className="d">
+                    口座を持っていなくても申し込める「口座不要」の商品を中心に探すと絞り込みやすくなります。各エリアの比較ページで「絞り込み」から「口座不要のみ」を選んでみてください。
+                    <Link href="#areas">エリア一覧を見る →</Link>
+                  </span>
+                </div>
+              </div>
+              <div className="citem">
+                <div className="chk">✓</div>
+                <div className="body">
+                  <span className="t">とにかく低金利で選びたい方は</span>
+                  <span className="d">
+                    気になるエリアの比較ページを開いたら、「並び替え」で金利が低い順に並べ替えられます。表示されている金利は目安で、実際に適用される金利は審査で決まります。
+                    <Link href="#areas">エリア一覧を見る →</Link>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="areas">
           <div className="wrap">
             <p className="eyebrow">Areas</p>
             <h2 className="head">エリアを選ぶ</h2>
