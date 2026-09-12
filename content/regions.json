@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "kansai",
+    "name": "関西",
+    "pref": "滋賀・京都・大阪・兵庫・奈良・和歌山",
+    "count": "地方銀行8行・10商品を掲載",
+    "status": "live"
+  },
+  {
+    "slug": "tokai",
+    "name": "東海",
+    "pref": "静岡・岐阜・愛知・三重",
+    "count": "地方銀行10行・13商品",
+    "status": "soon"
+  },
+  {
+    "slug": "tohoku",
+    "name": "東北",
+    "pref": "青森・岩手・宮城・秋田・山形・福島",
+    "count": "地方銀行12行",
+    "status": "soon"
+  },
+  {
+    "slug": "kanto",
+    "name": "関東",
+    "pref": "群馬・栃木・茨城・埼玉・千葉・東京・神奈川",
+    "count": "地方銀行16行",
+    "status": "soon"
+  },
+  {
+    "slug": "hokuriku",
+    "name": "北陸",
+    "pref": "富山・石川・福井",
+    "count": "地方銀行4行",
+    "status": "soon"
+  },
+  {
+    "slug": "hokkaido",
+    "name": "北海道",
+    "pref": "北海道",
+    "count": "地方銀行2行",
+    "status": "soon"
+  },
+  {
+    "slug": "kyushu",
+    "name": "九州",
+    "pref": "福岡・佐賀・長崎・熊本・大分・宮崎・鹿児島・沖縄",
+    "count": "地方銀行19行",
+    "status": "soon"
+  },
+  {
+    "slug": "shikoku",
+    "name": "四国",
+    "pref": "徳島・香川・愛媛・高知",
+    "count": "地方銀行8行",
+    "status": "soon"
+  },
+  {
+    "slug": "chugoku",
+    "name": "中国",
+    "pref": "鳥取・島根・岡山・広島・山口",
+    "count": "地方銀行8行",
+    "status": "soon"
+  }
+]
