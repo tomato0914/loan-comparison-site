@@ -72,7 +72,12 @@ function LoanCard({ loan }) {
         ))}
       </div>
       <a className="btn" href={loan.officialUrl} target="_blank" rel="noopener">
-        {loan.linkLabel || "公式ページを見る"}
+        <span>
+          {loan.linkLabel || "公式ページを見る"}
+          <span className="ext-icon" aria-hidden="true">
+            ↗
+          </span>
+        </span>
       </a>
       {loan.note && <div className="note-inline">{loan.note}</div>}
     </div>
@@ -132,10 +137,12 @@ export default function AreaComparePage({
 
   return (
     <>
-      <div className="breadcrumb">
-        <div className="wrap">
-          <Link href="/">← トップページ</Link>
-        </div>
+      <div className="wrap">
+        <p className="crumb">
+          <Link href="/">トップ</Link>
+          <span>›</span>
+          {regionName}
+        </p>
       </div>
 
       <header className="hero">

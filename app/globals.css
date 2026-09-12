@@ -76,20 +76,22 @@ h2.head {
   font-size: 14.5px;
 }
 
-/* パンくず（トップページへ戻る） */
-.breadcrumb {
-  background: #fff;
-  border-bottom: 1px solid var(--line);
-  padding: 10px 0;
+/* パンくず */
+.crumb {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  padding: 16px 0;
+  margin: 0;
 }
-.breadcrumb a {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--blue-deep);
+.crumb a {
+  color: var(--ink-soft);
   text-decoration: none;
 }
-.breadcrumb a:hover {
-  text-decoration: underline;
+.crumb a:hover {
+  color: var(--blue-deep);
+}
+.crumb span {
+  margin: 0 6px;
 }
 
 /* ヒーロー */
@@ -521,6 +523,11 @@ main section {
   content: "›";
   font-size: 20px;
   line-height: 1;
+}
+.ext-icon {
+  margin-left: 6px;
+  font-size: 12px;
+  opacity: .85;
 }
 .btn:hover {
   background: var(--blue-deep);
