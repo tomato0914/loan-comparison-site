@@ -1,0 +1,186 @@
+[
+  {
+    "pref": "青森県",
+    "bank": "青森みちのく銀行",
+    "product": "青森みちのくカードローン",
+    "rate": "2.4%〜14.5%",
+    "rateNote": "固定・限度額で決まる",
+    "specs": [
+      { "k": "限度額", "v": "10万〜1,000万円" },
+      { "k": "Web完結の場合", "v": "500万円まで" },
+      { "k": "契約期間", "v": "3年自動更新" },
+      { "k": "口座", "v": "Web完結は必要" }
+    ],
+    "note": "2025年1月に青森銀行とみちのく銀行が合併し、旧2行の商品が統合されました。",
+    "tags": [{ "type": "warn", "label": "2025年合併行" }],
+    "officialUrl": "https://www.am-bk.co.jp/kojin/loan/cardloan/"
+  },
+  {
+    "pref": "岩手県",
+    "bank": "岩手銀行",
+    "product": "エルパス",
+    "rate": "1.8%〜14.6%",
+    "rateNote": "固定・審査で決定",
+    "specs": [
+      { "k": "限度額", "v": "10万〜1,000万円" },
+      { "k": "申込年齢", "v": "満20〜69歳" },
+      { "k": "保証会社", "v": "アコム" },
+      { "k": "Web完結", "v": "できる" }
+    ],
+    "tags": [{ "type": "free", "label": "勤続年数指定なし" }],
+    "officialUrl": "https://www.iwatebank.co.jp/personal/loan/lpass/"
+  },
+  {
+    "pref": "岩手県",
+    "bank": "東北銀行",
+    "product": "カードローン すいっち",
+    "rate": "3.9%〜13.5%",
+    "rateNote": "Web申込みは店頭より▲0.5%",
+    "specs": [
+      { "k": "限度額", "v": "10万〜1,000万円" },
+      { "k": "申込年齢", "v": "満20〜66歳" },
+      { "k": "申込エリア", "v": "当行営業区域内" },
+      { "k": "保証会社", "v": "オリエントコーポレーション" }
+    ],
+    "tags": [{ "type": "save", "label": "Web優遇▲0.5%" }],
+    "officialUrl": "https://www.tohoku-bank.co.jp/personal/loan/card/"
+  },
+  {
+    "pref": "宮城県",
+    "bank": "七十七銀行",
+    "product": "77カードローン／77スマートネクスト",
+    "rate": "4.9%〜14.8%",
+    "rateNote": "スマートネクスト・限度額20段階",
+    "specs": [
+      { "k": "77カードローン", "v": "Web契約7.9%固定・10万〜300万" },
+      { "k": "スマートネクスト限度額", "v": "10万〜500万円" },
+      { "k": "申込年齢", "v": "満20〜69歳" },
+      { "k": "保証会社", "v": "エム・ユー信用保証 他" }
+    ],
+    "note": "2商品は同時契約不可。小口なら77カードローン、大口ならスマートネクストが目安。",
+    "tags": [{ "type": "area", "label": "小口向け" }],
+    "officialUrl": "https://www.77bank.co.jp/personal/loan/card/77card/"
+  },
+  {
+    "pref": "宮城県",
+    "bank": "仙台銀行",
+    "product": "カードローンNEO",
+    "rate": "3.50%〜14.50%",
+    "rateNote": "固定・公式確認済",
+    "specs": [
+      { "k": "申込可能エリア", "v": "ネット契約は宮城県在住限定" },
+      { "k": "口座", "v": "不要" },
+      { "k": "審査", "v": "通らない場合フリーローンで再審査あり" },
+      { "k": "Web完結", "v": "できる" }
+    ],
+    "tags": [{ "type": "warn", "label": "宮城県在住限定" }],
+    "officialUrl": "https://www.sendaibank.co.jp/individual/loan/personal/card/"
+  },
+  {
+    "pref": "秋田県",
+    "bank": "秋田銀行",
+    "product": "スマートネクスト",
+    "rate": "1.8%〜14.8%",
+    "rateNote": "固定・限度額で決まる",
+    "specs": [
+      { "k": "限度額", "v": "10万〜800万円" },
+      { "k": "契約方法", "v": "WEB完結／郵送／店頭" },
+      { "k": "Web完結", "v": "できる" }
+    ],
+    "note": "低金利の「プライムカード」（年収の半分まで、来店必要）もあります。",
+    "tags": [{ "type": "free", "label": "限度額800万円" }],
+    "officialUrl": "https://www.akita-bank.co.jp/personal/borrow/smartnext/card/"
+  },
+  {
+    "pref": "秋田県",
+    "bank": "北都銀行",
+    "product": "スーパーアシスト／カードローン1000",
+    "rate": "3.5%〜14.6%",
+    "rateNote": "来店型・審査で決定",
+    "specs": [
+      { "k": "スーパーアシストWeb完結型", "v": "14.6%一律" },
+      { "k": "カードローン1000限度額", "v": "最大1,000万円" },
+      { "k": "申込エリア", "v": "秋田・宮城・東京" },
+      { "k": "口座", "v": "必要" }
+    ],
+    "tags": [{ "type": "area", "label": "秋田・宮城・東京" }],
+    "officialUrl": "https://www.hokutobank.co.jp/individual/loan/card/"
+  },
+  {
+    "pref": "山形県",
+    "bank": "山形銀行",
+    "product": "カードローン（口座あり型／口座レス型NEO）",
+    "rate": "1.8%〜14.6%",
+    "rateNote": "両型共通",
+    "specs": [
+      { "k": "限度額", "v": "最高1,000万円" },
+      { "k": "申込年齢", "v": "満20歳〜最終返済75歳未満" },
+      { "k": "申込エリア", "v": "口座レス型は山形・宮城限定" },
+      { "k": "保証会社", "v": "アコム" }
+    ],
+    "tags": [{ "type": "free", "label": "口座なしでも申込可" }],
+    "officialUrl": "https://www.yamagatabank.co.jp/individual/kariru/cardloan/"
+  },
+  {
+    "pref": "山形県",
+    "bank": "荘内銀行",
+    "product": "カードローン1000",
+    "rate": "3.5%〜13.5%",
+    "rateNote": "固定・14段階",
+    "specs": [
+      { "k": "限度額", "v": "10万〜1,000万円" },
+      { "k": "申込年齢", "v": "満20歳〜完済70歳未満" },
+      { "k": "口座", "v": "口座なしでも申込可（正式契約は来店）" },
+      { "k": "保証会社", "v": "ドコモ・ファイナンス" }
+    ],
+    "note": "WEB完結型の「ドリームコンシェル」もあります。",
+    "tags": [{ "type": "area", "label": "営業区域内" }],
+    "officialUrl": "https://www.shonai.co.jp/cardloan1000/"
+  },
+  {
+    "pref": "山形県",
+    "bank": "きらやか銀行",
+    "product": "きらやかぷらす",
+    "rate": "4.5%〜14.6%",
+    "rateNote": "固定・限度額で決まる",
+    "specs": [
+      { "k": "限度額", "v": "10万〜500万円" },
+      { "k": "申込年齢", "v": "満20〜64歳" },
+      { "k": "保証会社", "v": "新生フィナンシャル" },
+      { "k": "Web完結", "v": "できる" }
+    ],
+    "note": "来店型の「カードローンMAX500」もあります。",
+    "tags": [{ "type": "save", "label": "住宅ローン利用者▲0.5%" }],
+    "officialUrl": "https://www.kirayaka.co.jp/lp/plus/index.html"
+  },
+  {
+    "pref": "福島県",
+    "bank": "東邦銀行",
+    "product": "TOHOスマートネクスト",
+    "rate": "1.4%〜14.6%",
+    "rateNote": "固定・最新版（要最終確認）",
+    "specs": [
+      { "k": "限度額", "v": "最高800万円" },
+      { "k": "申込年齢", "v": "満20〜69歳" },
+      { "k": "申込エリア", "v": "全国対応" },
+      { "k": "保証会社", "v": "エム・ユー信用保証" }
+    ],
+    "tags": [{ "type": "save", "label": "限度額800万円" }],
+    "officialUrl": "https://www.tohobank.co.jp/kinri/loan.html"
+  },
+  {
+    "pref": "福島県",
+    "bank": "大東銀行",
+    "product": "だいとうカードローン",
+    "rate": "4.5%〜14.0%",
+    "rateNote": "固定",
+    "specs": [
+      { "k": "限度額", "v": "最大500万円" },
+      { "k": "口座", "v": "不要" },
+      { "k": "返済方法", "v": "毎月返済型／随時返済型" },
+      { "k": "Web完結", "v": "できる" }
+    ],
+    "tags": [{ "type": "free", "label": "返済方法を選択可" }],
+    "officialUrl": "https://www.daitobank.co.jp/personal/loan/daitocard/"
+  }
+]

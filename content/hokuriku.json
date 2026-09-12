@@ -1,0 +1,65 @@
+[
+  {
+    "pref": "富山県",
+    "bank": "北陸銀行",
+    "product": "ほくぎんカードローン",
+    "rate": "0.9%〜14.95%",
+    "rateNote": "変動・限度額で決まる",
+    "specs": [
+      { "k": "限度額", "v": "最高1,000万円" },
+      { "k": "契約期間", "v": "1年更新（満76歳で停止）" },
+      { "k": "口座", "v": "不要" },
+      { "k": "保証会社", "v": "アコム" }
+    ],
+    "note": "口座あり型の「スーパーNOW」（給与振込で優遇）もあります。",
+    "tags": [{ "type": "free", "label": "口座不要" }],
+    "officialUrl": "https://www.hokugin.co.jp/loan/hokugincardloan/"
+  },
+  {
+    "pref": "富山県",
+    "bank": "富山銀行",
+    "product": "スピード王MAX",
+    "rate": "4.5%〜14.6%",
+    "rateNote": "変動",
+    "specs": [
+      { "k": "申込エリア", "v": "富山県・石川県" },
+      { "k": "住宅ローン利用者", "v": "上限8.0%に優遇" },
+      { "k": "保証会社", "v": "新生フィナンシャル" },
+      { "k": "融資スピード", "v": "申込から1週間ほど" }
+    ],
+    "note": "旧「富山カードローン」は募集終了しています。",
+    "tags": [{ "type": "area", "label": "富山・石川限定" }],
+    "officialUrl": "https://www.toyamabank.co.jp/pages/kojin/kariru/free/speed.htm"
+  },
+  {
+    "pref": "石川県",
+    "bank": "北國銀行",
+    "product": "北國カードローン DAY SMART",
+    "rate": "5.0%〜9.5%",
+    "rateNote": "固定・公式確認済",
+    "specs": [
+      { "k": "限度額", "v": "最大300万円" },
+      { "k": "口座", "v": "口座があればWeb完結可" },
+      { "k": "保証", "v": "北國銀行自身が保証" }
+    ],
+    "note": "限度額は北陸4行の中で最も小さめです。",
+    "tags": [{ "type": "warn", "label": "銀行自身が保証" }],
+    "officialUrl": "https://www.hokkokubank.co.jp/customer/loan/daysmart/index.html"
+  },
+  {
+    "pref": "福井県",
+    "bank": "福井銀行",
+    "product": "カードローン",
+    "rate": "2.8%〜14.6%",
+    "rateNote": "変動",
+    "specs": [
+      { "k": "限度額", "v": "10万〜1,000万円" },
+      { "k": "口座", "v": "不要（他行口座にも即日振込可）" },
+      { "k": "保証会社", "v": "SMBCコンシューマーファイナンス" },
+      { "k": "Web完結", "v": "できる" }
+    ],
+    "note": "2026年5月に福邦銀行と合併し、現在は「福井銀行」に統一されています。",
+    "tags": [{ "type": "warn", "label": "2026年5月合併行" }],
+    "officialUrl": "https://www.fukuibank.co.jp/lp/cardloan3/"
+  }
+]

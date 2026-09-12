@@ -1,0 +1,32 @@
+[
+  {
+    "bank": "北海道銀行",
+    "product": "ラピッド",
+    "rate": "1.9%〜14.95%",
+    "rateNote": "限度額で決まる",
+    "specs": [
+      { "k": "限度額", "v": "1万〜800万円" },
+      { "k": "口座", "v": "不要" },
+      { "k": "融資スピード", "v": "最短15分審査、当日振込も可" },
+      { "k": "ATM手数料", "v": "借入・返済とも無料" }
+    ],
+    "tags": [{ "type": "free", "label": "口座・来店不要" }],
+    "linkLabel": "詳細を見る",
+    "officialUrl": "https://manekai.ameba.jp/cardloan/hokkaidobank/"
+  },
+  {
+    "bank": "北洋銀行",
+    "product": "スーパーアルカ",
+    "rate": "1.9%〜14.7%",
+    "rateNote": "限度額で決まる",
+    "specs": [
+      { "k": "限度額", "v": "最大1,000万円" },
+      { "k": "申込年齢", "v": "満20〜69歳" },
+      { "k": "申込エリア", "v": "北海道内の居住・勤務が必須" },
+      { "k": "住宅ローン利用者", "v": "▲0.5%優遇" }
+    ],
+    "note": "年金収入のみの方は利用不可ですが、専業主婦は対象です。",
+    "tags": [{ "type": "area", "label": "道内限定" }],
+    "officialUrl": "https://www.hokuyobank.co.jp/superarca/point/"
+  }
+]

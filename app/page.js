@@ -10,6 +10,7 @@ export const metadata = {
 
 export default function TopPage() {
   const liveCount = regions.filter((r) => r.status === "live").length;
+  const allLive = liveCount === regions.length;
 
   return (
     <>
@@ -34,7 +35,9 @@ export default function TopPage() {
             <p className="eyebrow">Areas</p>
             <h2 className="head">エリアを選ぶ</h2>
             <p className="lead">
-              現在{liveCount}エリアが公開中です。他のエリアは準備中です。公開までしばらくお待ちください。
+              {allLive
+                ? `全${regions.length}エリアが公開中です。お住まいのエリアを選んでください。`
+                : `現在${liveCount}エリアが公開中です。他のエリアは準備中です。公開までしばらくお待ちください。`}
             </p>
 
             <div className="region-grid">

@@ -1,0 +1,122 @@
+[
+  {
+    "pref": "鳥取県",
+    "bank": "鳥取銀行",
+    "product": "鳥取銀行カードローン",
+    "rate": "1.8%〜14.5%",
+    "rateNote": "固定・限度額で決まる",
+    "specs": [
+      { "k": "限度額", "v": "10万〜800万円" },
+      { "k": "申込エリア", "v": "鳥取・島根・岡山" },
+      { "k": "Web完結", "v": "できる" }
+    ],
+    "note": "一体型・専用カード型・返済口座不要型の3タイプ、条件は共通です。",
+    "tags": [{ "type": "free", "label": "3タイプから選択" }],
+    "officialUrl": "https://www.tottoribank.co.jp/retail/loan/personal/"
+  },
+  {
+    "pref": "島根県",
+    "bank": "山陰合同銀行",
+    "product": "DanDanカードローン",
+    "rate": "1.75%〜14.5%",
+    "rateNote": "固定・限度額で決まる",
+    "specs": [
+      { "k": "限度額", "v": "10万〜1,000万円" },
+      { "k": "申込エリア", "v": "指定なし（全国可）" },
+      { "k": "口座", "v": "必要（審査後アプリで開設可）" }
+    ],
+    "note": "エリア限定の旧商品「キャッシュバンクネオ」も現役です。",
+    "tags": [{ "type": "free", "label": "全国対応" }],
+    "officialUrl": "https://www.gogin.co.jp/lp/dandan-cardloan/"
+  },
+  {
+    "pref": "岡山県",
+    "bank": "中国銀行",
+    "product": "カードローン コ・レ・カ",
+    "rate": "5.5%〜14.5%",
+    "rateNote": "住宅ローン利用者1.9%〜8.0%",
+    "specs": [
+      { "k": "限度額", "v": "10万〜500万円" },
+      { "k": "申込年齢", "v": "満20〜65歳" },
+      { "k": "申込エリア", "v": "指定なし（全国可）" }
+    ],
+    "note": "他に3種類の商品があります（合計4種類）。",
+    "tags": [{ "type": "free", "label": "全国対応" }],
+    "officialUrl": "https://www.chugin.co.jp/personal/service/cardloan/coreca/"
+  },
+  {
+    "pref": "岡山県",
+    "bank": "トマト銀行",
+    "product": "Q-Li（キューリ）",
+    "rate": "1.5%〜14.5%",
+    "rateNote": "限度額で決まる",
+    "specs": [
+      { "k": "限度額", "v": "10万〜1,000万円" },
+      { "k": "申込年齢", "v": "満20〜68歳" },
+      { "k": "Web完結", "v": "できる" }
+    ],
+    "note": "他に4種類の商品があります（MAX・スピード王など）。",
+    "tags": [{ "type": "free", "label": "口座不要" }],
+    "officialUrl": "https://www.tomatobank.co.jp/personal/loan/card/"
+  },
+  {
+    "pref": "広島県",
+    "bank": "広島銀行",
+    "product": "マイライフプラス（カード型）",
+    "rate": "2.625%〜13.625%",
+    "rateNote": "変動・限度額で決まる",
+    "specs": [
+      { "k": "限度額", "v": "10万〜500万円" },
+      { "k": "申込年齢", "v": "満20〜65歳" },
+      { "k": "口座", "v": "広島銀行の口座が必要" }
+    ],
+    "note": "口座不要版や公務員限定の低金利版など多数の派生商品があります。",
+    "tags": [{ "type": "free", "label": "全国対応" }],
+    "officialUrl": "https://www.hirogin.co.jp/lp/loan/card-loan/"
+  },
+  {
+    "pref": "広島県",
+    "bank": "もみじ銀行",
+    "product": "マイカードもみじ君",
+    "rate": "4.5%〜14.5%",
+    "rateNote": "固定・公式確認済",
+    "specs": [
+      { "k": "限度額", "v": "10万〜500万円" },
+      { "k": "申込年齢", "v": "満20〜68歳" },
+      { "k": "口座", "v": "必要" }
+    ],
+    "note": "ひろぎんホールディングス傘下の銀行です。",
+    "tags": [{ "type": "area", "label": "東京・岡山・広島・山口・福岡" }],
+    "officialUrl": "https://www.momijibank.co.jp/personal/borrow/mycardweb/pclp/"
+  },
+  {
+    "pref": "山口県",
+    "bank": "山口銀行",
+    "product": "マイカードやまぐち君",
+    "rate": "4.5%〜14.5%",
+    "rateNote": "固定・公式確認済",
+    "specs": [
+      { "k": "限度額", "v": "10万〜500万円" },
+      { "k": "申込年齢", "v": "満20〜68歳" },
+      { "k": "口座", "v": "必要" }
+    ],
+    "note": "YMFGグループ。もみじ銀行と条件がよく似ています。",
+    "tags": [{ "type": "area", "label": "もみじ銀行と同グループ" }],
+    "officialUrl": "https://www.yamaguchibank.co.jp/personal/borrow/lp_card/"
+  },
+  {
+    "pref": "山口県",
+    "bank": "西京銀行",
+    "product": "チョットポケット",
+    "rate": "9.8%〜14.78%",
+    "rateNote": "保証会社の審査で決定",
+    "specs": [
+      { "k": "限度額", "v": "最大200万円" },
+      { "k": "保証会社", "v": "中国総合信用" },
+      { "k": "申込エリア", "v": "営業区域内" }
+    ],
+    "tags": [{ "type": "warn", "label": "審査で金利決定" }],
+    "linkLabel": "詳細を見る",
+    "officialUrl": "https://manekai.ameba.jp/cardloan/saikyobank/"
+  }
+]
