@@ -11,8 +11,8 @@
       { "k": "口座", "v": "必要" }
     ],
     "tags": [
-      { "type": "save", "label": "低金利スタート" },
-      { "type": "free", "label": "エリア指定なし" }
+      { "type": "area", "label": "全国対応" },
+      { "type": "save", "label": "低金利スタート" }
     ],
     "officialUrl": "https://www.nantobank.co.jp/kojin/kariru/nantobankcardloan/"
   },
@@ -28,8 +28,8 @@
       { "k": "口座", "v": "不要" }
     ],
     "tags": [
-      { "type": "free", "label": "口座不要" },
-      { "type": "save", "label": "即日融資も可" }
+      { "type": "area", "label": "全国対応" },
+      { "type": "free", "label": "口座不要" }
     ],
     "officialUrl": "https://www.nantobank.co.jp/kojin/kariru/nantobankcardloan/"
   },
@@ -73,8 +73,8 @@
       { "k": "条件", "v": "勤続2年以上・年収400万円以上" }
     ],
     "tags": [
-      { "type": "save", "label": "低金利" },
-      { "type": "warn", "label": "条件あり" }
+      { "type": "area", "label": "2府4県限定" },
+      { "type": "save", "label": "低金利" }
     ],
     "officialUrl": "https://www.sihd-bk.jp/personal/loan/card/max5/"
   },
@@ -104,7 +104,7 @@
       { "k": "口座", "v": "必要" }
     ],
     "note": "融資まで3営業日程度かかります。",
-    "tags": [{ "type": "warn", "label": "変動金利" }],
+    "tags": [{ "type": "area", "label": "営業地域内" }],
     "officialUrl": "https://www.kiyobank.co.jp/lp/cardloan/"
   },
   {
@@ -119,10 +119,7 @@
       { "k": "口座", "v": "必要" }
     ],
     "note": "金利は公式ページ上でJavaScriptにより表示される仕組みのため、申込前に必ず公式サイトで最新の数字を確認してください。",
-    "tags": [
-      { "type": "save", "label": "低金利スタート" },
-      { "type": "warn", "label": "変動金利" }
-    ],
+    "tags": [{ "type": "save", "label": "低金利スタート" }],
     "officialUrl": "https://www.kansaimiraibank.co.jp/kojin/loan_kinri.html"
   },
   {
@@ -151,8 +148,8 @@
       { "k": "口座", "v": "あり・なしを選択可" }
     ],
     "tags": [
-      { "type": "free", "label": "口座なしも選択可" },
-      { "type": "warn", "label": "変動金利" }
+      { "type": "area", "label": "兵庫・大阪・京都" },
+      { "type": "free", "label": "口座不要" }
     ],
     "officialUrl": "https://www.tajimabank.co.jp/sp/kinri.html"
   }

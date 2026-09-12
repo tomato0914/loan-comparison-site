@@ -25,8 +25,8 @@
       { "k": "申込年齢", "v": "満20〜65歳" },
       { "k": "Web完結", "v": "できる" }
     ],
-    "note": "口座に貸越をセットする「カードローンパートナー」もあります。",
-    "tags": [{ "type": "area", "label": "四国総合信用保証" }],
+    "note": "香川銀行・高知銀行と同じ保証会社（四国総合信用）を使っています。口座に貸越をセットする「カードローンパートナー」もあります。",
+    "tags": [],
     "officialUrl": "https://www.tokugin.co.jp/manual/pdf/0410.pdf"
   },
   {
@@ -55,8 +55,8 @@
       { "k": "申込年齢", "v": "満20〜65歳未満" },
       { "k": "Web完結", "v": "できる" }
     ],
-    "note": "住宅ローン利用者向けの「PaPaっとCard〔プレミアム〕」「家っとカード」もあります。",
-    "tags": [{ "type": "area", "label": "四国総合信用保証" }],
+    "note": "徳島大正銀行・高知銀行と同じ保証会社（四国総合信用）を使っています。住宅ローン利用者向けの「PaPaっとCard〔プレミアム〕」「家っとカード」もあります。",
+    "tags": [],
     "officialUrl": "https://www.kagawabank.co.jp/kojin/loan/papacard/papacard_papa.html"
   },
   {
@@ -71,7 +71,10 @@
       { "k": "口座", "v": "不要" }
     ],
     "note": "低金利の「カードローン・サポート」（上限12.5%）と「アプリローン」もあります。",
-    "tags": [{ "type": "save", "label": "30日間無利息" }],
+    "tags": [
+      { "type": "free", "label": "口座不要" },
+      { "type": "save", "label": "30日間無利息" }
+    ],
     "officialUrl": "https://www.himegin.co.jp/personal/loan/card/support/"
   },
   {
@@ -85,7 +88,10 @@
       { "k": "申込年齢", "v": "満74歳まで申込可" },
       { "k": "口座", "v": "不要" }
     ],
-    "tags": [{ "type": "area", "label": "13都道府県対応" }],
+    "tags": [
+      { "type": "area", "label": "13都道府県対応" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.iyobank.co.jp/kariru/safety.html"
   },
   {
@@ -99,7 +105,7 @@
       { "k": "申込年齢", "v": "満20〜72歳以下" },
       { "k": "申込エリア", "v": "高知・愛媛・香川・徳島・東京・大阪・岡山" }
     ],
-    "note": "「こうぎんセレクトローンZEYO」（満69歳以下）もあります。",
+    "note": "徳島大正銀行・香川銀行と同じ保証会社（四国総合信用）を使っています。「こうぎんセレクトローンZEYO」（満69歳以下）もあります。",
     "tags": [{ "type": "area", "label": "四国+東京・大阪・岡山" }],
     "officialUrl": "https://www.kochi-bank.co.jp/loan/webloan/card.html"
   }

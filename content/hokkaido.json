@@ -10,7 +10,7 @@
       { "k": "融資スピード", "v": "最短15分審査、当日振込も可" },
       { "k": "ATM手数料", "v": "借入・返済とも無料" }
     ],
-    "tags": [{ "type": "free", "label": "口座・来店不要" }],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "linkLabel": "詳細を見る",
     "officialUrl": "https://manekai.ameba.jp/cardloan/hokkaidobank/"
   },

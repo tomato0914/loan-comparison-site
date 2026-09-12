@@ -11,7 +11,7 @@
       { "k": "Web完結", "v": "できる" }
     ],
     "note": "一体型・専用カード型・返済口座不要型の3タイプ、条件は共通です。",
-    "tags": [{ "type": "free", "label": "3タイプから選択" }],
+    "tags": [{ "type": "area", "label": "鳥取・島根・岡山" }],
     "officialUrl": "https://www.tottoribank.co.jp/retail/loan/personal/"
   },
   {
@@ -26,7 +26,7 @@
       { "k": "口座", "v": "必要（審査後アプリで開設可）" }
     ],
     "note": "エリア限定の旧商品「キャッシュバンクネオ」も現役です。",
-    "tags": [{ "type": "free", "label": "全国対応" }],
+    "tags": [{ "type": "area", "label": "全国対応" }],
     "officialUrl": "https://www.gogin.co.jp/lp/dandan-cardloan/"
   },
   {
@@ -41,7 +41,7 @@
       { "k": "申込エリア", "v": "指定なし（全国可）" }
     ],
     "note": "他に3種類の商品があります（合計4種類）。",
-    "tags": [{ "type": "free", "label": "全国対応" }],
+    "tags": [{ "type": "area", "label": "全国対応" }],
     "officialUrl": "https://www.chugin.co.jp/personal/service/cardloan/coreca/"
   },
   {
@@ -71,7 +71,7 @@
       { "k": "口座", "v": "広島銀行の口座が必要" }
     ],
     "note": "口座不要版や公務員限定の低金利版など多数の派生商品があります。",
-    "tags": [{ "type": "free", "label": "全国対応" }],
+    "tags": [{ "type": "area", "label": "全国対応" }],
     "officialUrl": "https://www.hirogin.co.jp/lp/loan/card-loan/"
   },
   {
@@ -101,7 +101,7 @@
       { "k": "口座", "v": "必要" }
     ],
     "note": "YMFGグループ。もみじ銀行と条件がよく似ています。",
-    "tags": [{ "type": "area", "label": "もみじ銀行と同グループ" }],
+    "tags": [],
     "officialUrl": "https://www.yamaguchibank.co.jp/personal/borrow/lp_card/"
   },
   {
@@ -115,7 +115,7 @@
       { "k": "保証会社", "v": "中国総合信用" },
       { "k": "申込エリア", "v": "営業区域内" }
     ],
-    "tags": [{ "type": "warn", "label": "審査で金利決定" }],
+    "tags": [{ "type": "area", "label": "営業区域内" }],
     "linkLabel": "詳細を見る",
     "officialUrl": "https://manekai.ameba.jp/cardloan/saikyobank/"
   }

@@ -12,7 +12,7 @@
       { "k": "口座", "v": "Web完結は必要" }
     ],
     "note": "2025年1月に青森銀行とみちのく銀行が合併し、旧2行の商品が統合されました。",
-    "tags": [{ "type": "warn", "label": "2025年合併行" }],
+    "tags": [],
     "officialUrl": "https://www.am-bk.co.jp/kojin/loan/cardloan/"
   },
   {
@@ -27,7 +27,8 @@
       { "k": "保証会社", "v": "アコム" },
       { "k": "Web完結", "v": "できる" }
     ],
-    "tags": [{ "type": "free", "label": "勤続年数指定なし" }],
+    "note": "勤続年数の指定はありません。",
+    "tags": [],
     "officialUrl": "https://www.iwatebank.co.jp/personal/loan/lpass/"
   },
   {
@@ -42,7 +43,10 @@
       { "k": "申込エリア", "v": "当行営業区域内" },
       { "k": "保証会社", "v": "オリエントコーポレーション" }
     ],
-    "tags": [{ "type": "save", "label": "Web優遇▲0.5%" }],
+    "tags": [
+      { "type": "area", "label": "営業区域内" },
+      { "type": "save", "label": "Web優遇▲0.5%" }
+    ],
     "officialUrl": "https://www.tohoku-bank.co.jp/personal/loan/card/"
   },
   {
@@ -58,7 +62,7 @@
       { "k": "保証会社", "v": "エム・ユー信用保証 他" }
     ],
     "note": "2商品は同時契約不可。小口なら77カードローン、大口ならスマートネクストが目安。",
-    "tags": [{ "type": "area", "label": "小口向け" }],
+    "tags": [],
     "officialUrl": "https://www.77bank.co.jp/personal/loan/card/77card/"
   },
   {
@@ -73,7 +77,10 @@
       { "k": "審査", "v": "通らない場合フリーローンで再審査あり" },
       { "k": "Web完結", "v": "できる" }
     ],
-    "tags": [{ "type": "warn", "label": "宮城県在住限定" }],
+    "tags": [
+      { "type": "area", "label": "宮城県限定" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.sendaibank.co.jp/individual/loan/personal/card/"
   },
   {
@@ -88,7 +95,7 @@
       { "k": "Web完結", "v": "できる" }
     ],
     "note": "低金利の「プライムカード」（年収の半分まで、来店必要）もあります。",
-    "tags": [{ "type": "free", "label": "限度額800万円" }],
+    "tags": [],
     "officialUrl": "https://www.akita-bank.co.jp/personal/borrow/smartnext/card/"
   },
   {
@@ -118,7 +125,7 @@
       { "k": "申込エリア", "v": "口座レス型は山形・宮城限定" },
       { "k": "保証会社", "v": "アコム" }
     ],
-    "tags": [{ "type": "free", "label": "口座なしでも申込可" }],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.yamagatabank.co.jp/individual/kariru/cardloan/"
   },
   {
@@ -134,7 +141,10 @@
       { "k": "保証会社", "v": "ドコモ・ファイナンス" }
     ],
     "note": "WEB完結型の「ドリームコンシェル」もあります。",
-    "tags": [{ "type": "area", "label": "営業区域内" }],
+    "tags": [
+      { "type": "area", "label": "営業区域内" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.shonai.co.jp/cardloan1000/"
   },
   {
@@ -165,7 +175,7 @@
       { "k": "申込エリア", "v": "全国対応" },
       { "k": "保証会社", "v": "エム・ユー信用保証" }
     ],
-    "tags": [{ "type": "save", "label": "限度額800万円" }],
+    "tags": [{ "type": "area", "label": "全国対応" }],
     "officialUrl": "https://www.tohobank.co.jp/kinri/loan.html"
   },
   {
@@ -180,7 +190,7 @@
       { "k": "返済方法", "v": "毎月返済型／随時返済型" },
       { "k": "Web完結", "v": "できる" }
     ],
-    "tags": [{ "type": "free", "label": "返済方法を選択可" }],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.daitobank.co.jp/personal/loan/daitocard/"
   }
 ]

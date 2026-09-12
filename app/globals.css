@@ -76,6 +76,22 @@ h2.head {
   font-size: 14.5px;
 }
 
+/* パンくず（トップページへ戻る） */
+.breadcrumb {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  padding: 10px 0;
+}
+.breadcrumb a {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue-deep);
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
 /* ヒーロー */
 header.hero {
   background: linear-gradient(180deg, var(--pale) 0%, #fff 100%);

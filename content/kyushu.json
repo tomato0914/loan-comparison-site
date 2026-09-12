@@ -11,7 +11,8 @@
       { "k": "口座", "v": "不要" },
       { "k": "ATM", "v": "福岡・熊本・十八親和で共通利用可" }
     ],
-    "tags": [{ "type": "area", "label": "FFGグループ" }],
+    "note": "十八親和銀行・熊本銀行と同じFFGグループで、条件が完全に一致しています。",
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.fukuokabank.co.jp/personal/service/mokuteki/cardloan/"
   },
   {
@@ -25,8 +26,8 @@
       { "k": "口座", "v": "あればWeb完結可" },
       { "k": "融資スピード", "v": "最短7日" }
     ],
-    "note": "他に3種類の商品があります（合計4種類）。",
-    "tags": [{ "type": "free", "label": "自動融資機能" }],
+    "note": "自動融資機能があります。他に3種類の商品があります（合計4種類）。",
+    "tags": [],
     "officialUrl": "https://www.ncbank.co.jp/loan/card/ncbankcardloan/"
   },
   {
@@ -55,7 +56,8 @@
       { "k": "申込エリア", "v": "営業エリア内(スマート支店は全国)" },
       { "k": "口座", "v": "必要" }
     ],
-    "tags": [{ "type": "warn", "label": "専業主婦・年金のみ不可" }],
+    "note": "専業主婦・年金収入のみの方は利用できません。",
+    "tags": [{ "type": "area", "label": "全国対応" }],
     "officialUrl": "https://www.kitakyushubank.co.jp/personal/borrow/lp/card/"
   },
   {
@@ -84,7 +86,10 @@
       { "k": "口座", "v": "ATM返済方式なら不要" },
       { "k": "Web完結", "v": "できる" }
     ],
-    "tags": [{ "type": "save", "label": "九州9行ATM無料網" }],
+    "tags": [
+      { "type": "free", "label": "口座不要" },
+      { "type": "save", "label": "九州9行ATM無料網" }
+    ],
     "officialUrl": "https://www.sagabank.co.jp/kojin/loan/sagin-card-loan.html"
   },
   {
@@ -112,7 +117,8 @@
       { "k": "口座", "v": "不要" },
       { "k": "保証会社", "v": "SMBCコンシューマーファイナンス" }
     ],
-    "tags": [{ "type": "free", "label": "満75歳未満" }],
+    "note": "福岡銀行・熊本銀行と同じFFGグループで、条件が完全に一致しています。",
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.18shinwabank.co.jp/personal/service/mokuteki/ffg_cardloan/"
   },
   {
@@ -126,7 +132,8 @@
       { "k": "申込年齢", "v": "満20〜75歳未満" },
       { "k": "申込エリア", "v": "九州内(沖縄除く)" }
     ],
-    "tags": [{ "type": "free", "label": "未取引でも申込可" }],
+    "note": "未取引でも申込可能です。",
+    "tags": [{ "type": "area", "label": "九州内(沖縄除く)" }],
     "officialUrl": "https://www.nagasakibank.co.jp/lp/premium/pc/"
   },
   {
@@ -140,7 +147,8 @@
       { "k": "申込年齢", "v": "満20〜69歳" },
       { "k": "口座", "v": "不要" }
     ],
-    "tags": [{ "type": "area", "label": "FFGグループ" }],
+    "note": "福岡銀行・十八親和銀行と同じFFGグループで、条件が完全に一致しています。",
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.kumamotobank.co.jp/personal/service/mokuteki/cardloan/"
   },
   {
@@ -155,7 +163,7 @@
       { "k": "口座", "v": "必要" }
     ],
     "note": "他に「Back Up」「BEST ASSIST」もあります。",
-    "tags": [{ "type": "warn", "label": "満64歳以下" }],
+    "tags": [{ "type": "area", "label": "九州+東京・大阪" }],
     "officialUrl": "https://www.higobank.co.jp/individual/loan/card/webcard_new/"
   },
   {
@@ -169,7 +177,10 @@
       { "k": "申込年齢", "v": "満20〜70歳未満(学生不可)" },
       { "k": "口座", "v": "返済口座不要タイプあり" }
     ],
-    "tags": [{ "type": "area", "label": "福岡・熊本・大分・宮崎" }],
+    "tags": [
+      { "type": "area", "label": "福岡・熊本・大分・宮崎" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.oitabank.co.jp/interestrate-fee/kinri/loan.html"
   },
   {
@@ -198,7 +209,10 @@
       { "k": "申込エリア", "v": "宮崎銀行営業エリア(東京・大阪除く)" },
       { "k": "口座", "v": "口座レスも選択可" }
     ],
-    "tags": [{ "type": "free", "label": "満75歳未満" }],
+    "tags": [
+      { "type": "area", "label": "営業エリア内(東京・大阪除く)" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.miyagin.co.jp/lp/loan/omakase/"
   },
   {
@@ -212,7 +226,7 @@
       { "k": "申込エリア", "v": "福岡・大分・宮崎・鹿児島" },
       { "k": "Web完結", "v": "50万円まで可" }
     ],
-    "tags": [{ "type": "warn", "label": "限度額100万円まで" }],
+    "tags": [{ "type": "area", "label": "福岡・大分・宮崎・鹿児島" }],
     "officialUrl": "https://www.taiyobank.co.jp/individual/loan/card/basic/"
   },
   {
@@ -239,7 +253,7 @@
       { "k": "申込年齢", "v": "満20〜70歳未満" },
       { "k": "Web完結", "v": "できる" }
     ],
-    "tags": [{ "type": "free", "label": "雇用形態問わず" }],
+    "tags": [{ "type": "save", "label": "雇用形態問わず" }],
     "linkLabel": "詳細を見る",
     "officialUrl": "https://manekai.ameba.jp/cardloan/nangin/"
   },
@@ -251,9 +265,10 @@
     "rateNote": "変動・公式確認済",
     "specs": [
       { "k": "限度額", "v": "最大500万円" },
+      { "k": "申込年齢", "v": "満20〜65歳" },
       { "k": "Web完結", "v": "口座・カードあれば可" }
     ],
-    "tags": [{ "type": "area", "label": "満20〜65歳" }],
+    "tags": [],
     "officialUrl": "https://www.ryugin.co.jp/kariru/card_loan/shiawase_cardloan/"
   },
   {
@@ -266,7 +281,10 @@
       { "k": "限度額", "v": "最高300万円" },
       { "k": "申込エリア", "v": "沖縄県内在住" }
     ],
-    "tags": [{ "type": "save", "label": "ポイント優遇▲2.0%" }],
+    "tags": [
+      { "type": "area", "label": "沖縄県内限定" },
+      { "type": "save", "label": "ポイント優遇▲2.0%" }
+    ],
     "officialUrl": "https://www.okinawa-bank.co.jp/kojin/kariru/cattleya.html"
   },
   {

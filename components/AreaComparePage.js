@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
 import Disclaimer from "@/components/Disclaimer";
 import { DATA_AS_OF } from "@/lib/site";
@@ -64,6 +65,12 @@ export default function AreaComparePage({
 
   return (
     <>
+      <div className="breadcrumb">
+        <div className="wrap">
+          <Link href="/">← トップページ</Link>
+        </div>
+      </div>
+
       <header className="hero">
         <div className="wrap">
           <span className="badge">{regionName}の地方銀行カードローン</span>

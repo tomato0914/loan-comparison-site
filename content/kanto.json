@@ -12,7 +12,7 @@
       { "k": "Web完結", "v": "できる" }
     ],
     "note": "低金利の「すまいるパートナー」（満60歳未満限定）もあります。",
-    "tags": [{ "type": "free", "label": "満75歳まで" }],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.gunmabank.co.jp/kojin/kariru/nicesup/lp/"
   },
   {
@@ -27,7 +27,10 @@
       { "k": "口座", "v": "不要（50万円まで）" },
       { "k": "保証会社", "v": "SMBCコンシューマーファイナンス" }
     ],
-    "tags": [{ "type": "area", "label": "6県対応" }],
+    "tags": [
+      { "type": "area", "label": "6県対応" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.towabank.co.jp/easy/easyloan.html"
   },
   {
@@ -42,7 +45,10 @@
       { "k": "口座", "v": "不要" },
       { "k": "保証会社", "v": "アコム" }
     ],
-    "tags": [{ "type": "free", "label": "口座不要" }],
+    "tags": [
+      { "type": "area", "label": "5県対応" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.eloan.co.jp/card/lender/0129/"
   },
   {
@@ -57,7 +63,10 @@
       { "k": "口座", "v": "口座なしでも申込可" },
       { "k": "Web完結", "v": "できる" }
     ],
-    "tags": [{ "type": "free", "label": "口座なしでも申込可" }],
+    "tags": [
+      { "type": "area", "label": "営業区域内" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.tochigibank.co.jp/individual/service/loan/card-smile/"
   },
   {
@@ -87,7 +96,7 @@
       { "k": "Web完結", "v": "できる" }
     ],
     "note": "口座あり型の「つくばカードローン」もあります。",
-    "tags": [{ "type": "free", "label": "口座開設不要" }],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.tsukubabank.co.jp/individual/loan/usjoy/"
   },
   {
@@ -102,7 +111,8 @@
       { "k": "申込エリア", "v": "営業エリア内・東京都内" },
       { "k": "条件", "v": "年金収入のみは不可" }
     ],
-    "tags": [{ "type": "warn", "label": "来店契約が必要" }],
+    "note": "契約には来店が必要です。",
+    "tags": [{ "type": "area", "label": "営業エリア内・東京都内" }],
     "officialUrl": "https://www2.musashinobank.co.jp/lp/card/index.html"
   },
   {
@@ -133,7 +143,10 @@
       { "k": "Web完結", "v": "できる" }
     ],
     "note": "審査で金利が決まる「プレミアクラス」もあります。",
-    "tags": [{ "type": "save", "label": "上限14.0%" }],
+    "tags": [
+      { "type": "free", "label": "口座不要" },
+      { "type": "save", "label": "上限14.0%" }
+    ],
     "officialUrl": "https://www.chibabank.co.jp/kojin/services/loan/cardloan/cardloan_detail/qp_detail"
   },
   {
@@ -163,7 +176,7 @@
       { "k": "口座", "v": "必要" }
     ],
     "note": "店頭のみの「京葉銀行カードローン」は上限金利が1.0%低くなります。",
-    "tags": [{ "type": "free", "label": "口座不要" }],
+    "tags": [],
     "officialUrl": "https://www.keiyobank.co.jp/individual/loan/card/sokketsu/"
   },
   {
@@ -178,7 +191,10 @@
       { "k": "口座", "v": "不要" },
       { "k": "保証会社", "v": "アイフル" }
     ],
-    "tags": [{ "type": "area", "label": "1都3県" }],
+    "tags": [
+      { "type": "area", "label": "1都3県" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "linkLabel": "詳細を見る",
     "officialUrl": "https://finance.yahoo.co.jp/card-loan/item/1490"
   },
@@ -224,7 +240,10 @@
       { "k": "口座", "v": "不要" }
     ],
     "note": "住宅ローン利用者専用の優遇版もあります。",
-    "tags": [{ "type": "area", "label": "神奈川・東京全域" }],
+    "tags": [
+      { "type": "area", "label": "神奈川・東京全域" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.boy.co.jp/kojin/card-loan/gaiyou.html"
   },
   {
@@ -238,7 +257,10 @@
       { "k": "申込年齢", "v": "満18〜75歳(完済時)" },
       { "k": "口座", "v": "口座なしでも新規開設で利用可" }
     ],
-    "tags": [{ "type": "save", "label": "上限11.30%" }],
+    "tags": [
+      { "type": "free", "label": "口座不要" },
+      { "type": "save", "label": "上限11.30%" }
+    ],
     "officialUrl": "https://www.kanagawabank.co.jp/kojin/loan/card/"
   }
 ]

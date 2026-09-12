@@ -11,9 +11,10 @@
       { "k": "申込エリア", "v": "指定なし（全国可）" },
       { "k": "口座", "v": "不要" }
     ],
+    "note": "60日間利息0円の特典もあります。",
     "tags": [
-      { "type": "save", "label": "60日間利息0円" },
-      { "type": "free", "label": "全国対応" }
+      { "type": "area", "label": "全国対応" },
+      { "type": "free", "label": "口座不要" }
     ],
     "officialUrl": "https://www.shizuokabank.co.jp/seleca/index.html"
   },
@@ -29,7 +30,7 @@
       { "k": "条件", "v": "当行キャッシュカード保有者" },
       { "k": "口座", "v": "必要" }
     ],
-    "tags": [{ "type": "warn", "label": "既存口座者向け" }],
+    "tags": [],
     "officialUrl": "https://www.shizuokabank.co.jp/personal/loan/card_loan/meplus/index.html"
   },
   {
@@ -44,9 +45,10 @@
       { "k": "申込エリア", "v": "指定なし（全国可）" },
       { "k": "口座", "v": "不要" }
     ],
+    "note": "ガン保障特約が無料で付帯します。",
     "tags": [
-      { "type": "free", "label": "全国対応" },
-      { "type": "save", "label": "ガン保障特約無料" }
+      { "type": "area", "label": "全国対応" },
+      { "type": "free", "label": "口座不要" }
     ],
     "officialUrl": "https://www.surugabank.co.jp/surugabank/kojin/service/card_loan/"
   },
@@ -94,9 +96,10 @@
       { "k": "申込エリア", "v": "指定なし（近隣考慮あり）" },
       { "k": "口座", "v": "不要" }
     ],
+    "note": "学生も申込可です。",
     "tags": [
-      { "type": "free", "label": "口座不要" },
-      { "type": "save", "label": "学生も可" }
+      { "type": "area", "label": "全国対応" },
+      { "type": "free", "label": "口座不要" }
     ],
     "officialUrl": "https://www.juroku.co.jp/loan/q-loan/"
   },
@@ -113,7 +116,7 @@
       { "k": "Web完結", "v": "できる" }
     ],
     "note": "「マキシマム・ミニ」は募集終了と判断しています。",
-    "tags": [{ "type": "warn", "label": "変動金利" }],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.okb.co.jp/cgi-bin/kinri_rate/kinri_rate.php"
   },
   {
@@ -129,7 +132,10 @@
       { "k": "口座", "v": "カード返済型なら不要" }
     ],
     "note": "住宅ローン利用者専用の「NEO」は対象外です。ポケットローン「ユー」（基準金利は非公開）もありますが、詳しくは公式サイトでご確認ください。",
-    "tags": [{ "type": "warn", "label": "7段階の固定金利" }],
+    "tags": [
+      { "type": "area", "label": "営業区域内" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.aichibank.co.jp/loan/card/"
   },
   {
@@ -145,7 +151,7 @@
       { "k": "口座", "v": "必要な場合あり" }
     ],
     "note": "「愛」より小口向けのコースです。",
-    "tags": [{ "type": "warn", "label": "変動金利" }],
+    "tags": [{ "type": "area", "label": "営業区域内" }],
     "officialUrl": "https://www.aichibank.co.jp/loan/card/"
   },
   {
@@ -161,7 +167,10 @@
       { "k": "口座", "v": "不要" }
     ],
     "note": "2025年1月に愛知銀行と中京銀行が合併し「あいち銀行」になりました。旧中京銀行のサイトで現在も案内されています。「ハイステージ」は注記のみです。",
-    "tags": [{ "type": "area", "label": "旧中京銀行の商品" }],
+    "tags": [
+      { "type": "area", "label": "営業区域内" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.chukyo-bank.co.jp/kojin/c-style_sp_lp/"
   },
   {
@@ -177,7 +186,10 @@
       { "k": "Web完結", "v": "できる" }
     ],
     "note": "「新ミニマム」（上限200万円）もあります。「御用達くん」は募集終了と判断しています。",
-    "tags": [{ "type": "warn", "label": "6段階・審査で決定" }],
+    "tags": [
+      { "type": "area", "label": "愛知・岐阜" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.meigin.com/kojin/loan/index.html"
   },
   {
@@ -193,7 +205,10 @@
       { "k": "口座", "v": "口座レス型なら不要" }
     ],
     "note": "契約期間は3年、満75歳で契約満了となります。",
-    "tags": [{ "type": "free", "label": "口座レス型あり" }],
+    "tags": [
+      { "type": "area", "label": "営業区域内" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.33bank.co.jp/kojin/loan/free/card.html"
   },
   {
@@ -208,8 +223,11 @@
       { "k": "申込エリア", "v": "三重・愛知全域、岐阜・和歌山の一部" },
       { "k": "口座", "v": "不要" }
     ],
-    "note": "年金収入のみの方は利用できません。",
-    "tags": [{ "type": "save", "label": "初回2ヶ月半額" }],
+    "note": "年金収入のみの方は利用できません。新規契約は最初の2ヶ月間、金利が半額になります。",
+    "tags": [
+      { "type": "area", "label": "三重・愛知中心" },
+      { "type": "free", "label": "口座不要" }
+    ],
     "officialUrl": "https://www.hyakugo.co.jp/kariru/dream/"
   }
 ]

@@ -42,8 +42,8 @@
       { "k": "口座", "v": "口座があればWeb完結可" },
       { "k": "保証", "v": "北國銀行自身が保証" }
     ],
-    "note": "限度額は北陸4行の中で最も小さめです。",
-    "tags": [{ "type": "warn", "label": "銀行自身が保証" }],
+    "note": "限度額は北陸4行の中で最も小さめです。外部の保証会社を使わず、北國銀行自身が保証しています。",
+    "tags": [],
     "officialUrl": "https://www.hokkokubank.co.jp/customer/loan/daysmart/index.html"
   },
   {
@@ -59,7 +59,7 @@
       { "k": "Web完結", "v": "できる" }
     ],
     "note": "2026年5月に福邦銀行と合併し、現在は「福井銀行」に統一されています。",
-    "tags": [{ "type": "warn", "label": "2026年5月合併行" }],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.fukuibank.co.jp/lp/cardloan3/"
   }
 ]
