@@ -1,8 +1,48 @@
+"use client";
+
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
 import Disclaimer from "@/components/Disclaimer";
 import { DATA_AS_OF } from "@/lib/site";
 import { prefSlug } from "@/lib/prefectures";
+
+function hasTagLabel(loan, label) {
+  return loan.tags?.some((tag) => tag.label === label) ?? false;
+}
+
+function parseRateMin(rateStr) {
+  const matches = [...String(rateStr).matchAll(/(\d+(?:\.\d+)?)%/g)].map((m) =>
+    parseFloat(m[1])
+  );
+  return matches.length > 0 ? Math.min(...matches) : null;
+}
+
+function parseLimitMax(loan) {
+  const spec = loan.specs?.find((s) => s.k.includes("限度額"));
+  if (!spec) return null;
+  const matches = [...spec.v.matchAll(/([\d,]+(?:\.\d+)?)万/g)].map((m) =>
+    parseFloat(m[1].replace(/,/g, ""))
+  );
+  return matches.length > 0 ? Math.max(...matches) : null;
+}
+
+function sortLoans(loans, sortMode) {
+  if (sortMode === "none") return loans;
+
+  const keyFn =
+    sortMode === "limitDesc" ? parseLimitMax : (loan) => parseRateMin(loan.rate);
+
+  return [...loans]
+    .map((loan, index) => ({ loan, index, key: keyFn(loan) }))
+    .sort((a, b) => {
+      if (a.key === null && b.key === null) return a.index - b.index;
+      if (a.key === null) return 1;
+      if (b.key === null) return -1;
+      return sortMode === "rateAsc" ? a.key - b.key : b.key - a.key;
+    })
+    .map((entry) => entry.loan);
+}
 
 function LoanCard({ loan }) {
   return (
@@ -60,8 +100,34 @@ export default function AreaComparePage({
   disclaimerNote,
   checklist,
 }) {
+  const [sortMode, setSortMode] = useState("none");
+  const [accountFreeOnly, setAccountFreeOnly] = useState(false);
+  const [nationwideOnly, setNationwideOnly] = useState(false);
+
   const grouped = loans.some((loan) => loan.pref);
-  const groups = grouped ? groupByPref(loans) : null;
+
+  const filteredLoans = useMemo(() => {
+    return loans.filter((loan) => {
+      if (accountFreeOnly && !hasTagLabel(loan, "口座不要")) return false;
+      if (nationwideOnly && !hasTagLabel(loan, "全国対応")) return false;
+      return true;
+    });
+  }, [loans, accountFreeOnly, nationwideOnly]);
+
+  const groups = useMemo(() => {
+    if (!grouped) return null;
+    return groupByPref(filteredLoans).map((group) => ({
+      ...group,
+      items: sortLoans(group.items, sortMode),
+    }));
+  }, [grouped, filteredLoans, sortMode]);
+
+  const flatLoans = useMemo(() => {
+    if (grouped) return null;
+    return sortLoans(filteredLoans, sortMode);
+  }, [grouped, filteredLoans, sortMode]);
+
+  const noResults = filteredLoans.length === 0;
 
   return (
     <>
@@ -92,30 +158,74 @@ export default function AreaComparePage({
             <h2 className="head">カードローンをくらべる</h2>
             <p className="lead">{leadText}</p>
 
-            {grouped ? (
+            <div className="controls">
+              <div className="control-group">
+                <label htmlFor="sort-select" className="control-label">
+                  並び替え
+                </label>
+                <select
+                  id="sort-select"
+                  value={sortMode}
+                  onChange={(e) => setSortMode(e.target.value)}
+                >
+                  <option value="none">おすすめ順（掲載順）</option>
+                  <option value="rateAsc">金利が低い順</option>
+                  <option value="rateDesc">金利が高い順</option>
+                  <option value="limitDesc">限度額が大きい順</option>
+                </select>
+              </div>
+
+              <div className="control-group filters">
+                <span className="control-label">絞り込み</span>
+                <label className="filter-toggle">
+                  <input
+                    type="checkbox"
+                    checked={accountFreeOnly}
+                    onChange={(e) => setAccountFreeOnly(e.target.checked)}
+                  />
+                  口座不要のみ
+                </label>
+                <label className="filter-toggle">
+                  <input
+                    type="checkbox"
+                    checked={nationwideOnly}
+                    onChange={(e) => setNationwideOnly(e.target.checked)}
+                  />
+                  全国対応のみ
+                </label>
+              </div>
+            </div>
+
+            {noResults ? (
+              <p className="lead">条件に合う商品が見つかりませんでした。絞り込みを変えてお試しください。</p>
+            ) : grouped ? (
               <>
                 <div className="pref-nav">
-                  {groups.map((group) => (
-                    <a key={group.slug} href={`#${group.slug}`}>
-                      {group.pref}（{group.items.length}商品）
-                    </a>
-                  ))}
+                  {groups
+                    .filter((group) => group.items.length > 0)
+                    .map((group) => (
+                      <a key={group.slug} href={`#${group.slug}`}>
+                        {group.pref}（{group.items.length}商品）
+                      </a>
+                    ))}
                 </div>
 
-                {groups.map((group) => (
-                  <div className="pref-group" id={group.slug} key={group.slug}>
-                    <h3>{group.pref}</h3>
-                    <div className="cards">
-                      {group.items.map((loan, i) => (
-                        <LoanCard loan={loan} key={i} />
-                      ))}
+                {groups
+                  .filter((group) => group.items.length > 0)
+                  .map((group) => (
+                    <div className="pref-group" id={group.slug} key={group.slug}>
+                      <h3>{group.pref}</h3>
+                      <div className="cards">
+                        {group.items.map((loan, i) => (
+                          <LoanCard loan={loan} key={i} />
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
               </>
             ) : (
               <div className="cards">
-                {loans.map((loan, i) => (
+                {flatLoans.map((loan, i) => (
                   <LoanCard loan={loan} key={i} />
                 ))}
               </div>

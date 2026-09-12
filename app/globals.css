@@ -225,6 +225,62 @@ main section {
 }
 
 /* 比較ページ：商品カード */
+/* 並び替え・絞り込み */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+  align-items: center;
+  background: var(--pale2);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 14px 18px;
+  margin-bottom: 22px;
+}
+.control-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.control-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue-deep);
+  white-space: nowrap;
+}
+.controls select {
+  font-size: 13.5px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 7px 10px;
+  min-height: 36px;
+}
+.control-group.filters {
+  gap: 14px;
+}
+.filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  color: var(--ink);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.filter-toggle input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--blue);
+}
+@media (max-width: 640px) {
+  .controls {
+    gap: 12px 20px;
+  }
+}
+
 /* 都県フィルタ・県ごとの見出し */
 .pref-nav {
   display: flex;
