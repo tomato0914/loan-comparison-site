@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>地方銀行カードローン比較｜エリアから探す（見本）</title>
+<style>
+  :root{
+    --blue:#3E9BE0;
+    --blue-deep:#2B7CBE;
+    --pale:#EAF4FB;
+    --pale2:#F4FAFE;
+    --ink:#333333;
+    --ink-soft:#6B7684;
+    --line:#DCEBF7;
+    --pink:#E86FA6;
+    --marker:#FFEF66;
+    --foot:#6E7885;
+    --card:#FFFFFF;
+    --r:10px;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:#fff;color:var(--ink);
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
+    line-height:1.8;font-size:16px;
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  a{color:var(--blue-deep)}
+
+  .eyebrow{display:flex;align-items:center;gap:14px;color:var(--blue);
+    font-size:14px;font-weight:700;letter-spacing:.14em;margin:0 0 14px}
+  .eyebrow::after{content:"";height:2px;width:64px;background:var(--blue)}
+
+  h2.head{font-size:24px;font-weight:800;color:var(--blue);line-height:1.5;margin:0 0 8px}
+  .mark{background:linear-gradient(transparent 62%, var(--marker) 62%);padding:0 2px}
+  .lead{margin:0 0 24px;color:var(--ink-soft);font-size:14px}
+
+  header.hero{background:linear-gradient(180deg,var(--pale) 0%,#fff 100%);padding:44px 0 36px}
+  header.hero h1{font-size:28px;font-weight:800;color:var(--blue);line-height:1.55;margin:0 0 12px}
+  header.hero p{margin:0;color:var(--ink-soft);font-size:15px;max-width:32em}
+  .asof{display:inline-block;margin-top:18px;background:#fff;border:1px solid var(--line);
+    color:var(--ink-soft);font-size:13px;padding:7px 14px;border-radius:8px}
+  .asof b{color:var(--blue-deep)}
+
+  main section{padding:34px 0}
+  .band-pale{background:linear-gradient(180deg,#fff 0%,var(--pale2) 100%)}
+
+  /* エリア地図（日本を大まかなブロックで） */
+  .region-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:640px){ .region-grid{grid-template-columns:repeat(2,1fr)} }
+
+  .region{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+    padding:20px;text-decoration:none;color:inherit;display:block;position:relative;
+    box-shadow:0 3px 10px rgba(62,155,224,.06)}
+  .region.live{border-color:var(--blue);cursor:pointer}
+  .region.live:hover{background:var(--pale)}
+  .region.soon{opacity:.62;cursor:default}
+
+  .region .status{position:absolute;top:14px;right:14px;font-size:10.5px;font-weight:700;
+    padding:3px 9px;border-radius:999px}
+  .region.live .status{background:var(--pale);color:var(--blue-deep)}
+  .region.soon .status{background:#F1F3F6;color:var(--ink-soft)}
+
+  .region .pref{font-size:11.5px;color:var(--ink-soft);margin-bottom:6px}
+  .region .name{font-size:18px;font-weight:800;color:var(--ink);margin-bottom:8px}
+  .region.live .name{color:var(--blue-deep)}
+  .region .count{font-size:13px;color:var(--ink-soft)}
+  .region .go{margin-top:12px;font-size:13px;font-weight:700;color:var(--blue-deep);
+    display:flex;align-items:center;gap:4px}
+  .region .go::after{content:"›";font-size:16px;line-height:1}
+
+  .disclaimer{background:#fff;border:1px solid var(--line);border-radius:var(--r);
+    padding:18px 20px;font-size:13px;color:var(--ink-soft)}
+  .disclaimer b{color:var(--ink)}
+
+  .blueband{background:linear-gradient(100deg,var(--blue-deep) 0%,var(--blue) 100%);color:#fff}
+  .blueband .wrap{padding:36px 20px;text-align:center}
+  .blueband h2{font-size:20px;font-weight:800;margin:0 0 8px;line-height:1.6}
+  .blueband p{margin:0;color:#EAF4FB;font-size:13.5px}
+
+  footer{background:var(--foot);color:#fff;padding:24px 0 32px;font-size:12px}
+</style>
+</head>
+<body>
+
+<div style="background:var(--blue-deep);color:#fff;text-align:center;font-size:12px;padding:6px">これは「トップページの見本」です（関西・東海と同じデザインを使用）</div>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>地方銀行の<span class="mark">カードローン</span>を、<br>エリアから比べる。</h1>
+    <p>全国の地方銀行が出すカードローンを、公式サイトの情報だけで地域ごとにまとめています。お住まいのエリアを選んでください。</p>
+    <span class="asof"><b>データ確認日：2026年9月</b>／各行公式サイトより</span>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Areas</p>
+      <h2 class="head">エリアを選ぶ</h2>
+      <p class="lead">全9エリアが公開中です。お住まいのエリアを選んでください。</p>
+
+      <div class="region-grid">
+
+        <a class="region live" href="./kansai/">
+          <span class="status">公開中</span>
+          <div class="pref">滋賀・京都・大阪・兵庫・奈良・和歌山</div>
+          <div class="name">関西</div>
+          <div class="count">地方銀行8行・10商品を掲載</div>
+          <div class="go">比較を見る</div>
+        </a>
+
+        <a class="region live" href="./tokai/">
+          <span class="status">公開中</span>
+          <div class="pref">静岡・岐阜・愛知・三重</div>
+          <div class="name">東海</div>
+          <div class="count">地方銀行10行・13商品を掲載</div>
+          <div class="go">比較を見る</div>
+        </a>
+
+        <a class="region live" href="./tohoku/">
+          <span class="status">公開中</span>
+          <div class="pref">青森・岩手・宮城・秋田・山形・福島</div>
+          <div class="name">東北</div>
+          <div class="count">地方銀行12行を掲載</div>
+          <div class="go">比較を見る</div>
+        </a>
+
+        <a class="region live" href="./kanto/">
+          <span class="status">公開中</span>
+          <div class="pref">群馬・栃木・茨城・埼玉・千葉・東京・神奈川</div>
+          <div class="name">関東</div>
+          <div class="count">地方銀行16行を掲載</div>
+          <div class="go">比較を見る</div>
+        </a>
+
+        <a class="region live" href="./kyushu/">
+          <span class="status">公開中</span>
+          <div class="pref">福岡・佐賀・長崎・熊本・大分・宮崎・鹿児島・沖縄</div>
+          <div class="name">九州</div>
+          <div class="count">地方銀行19行を掲載</div>
+          <div class="go">比較を見る</div>
+        </a>
+
+        <a class="region live" href="./shikoku/">
+          <span class="status">公開中</span>
+          <div class="pref">徳島・香川・愛媛・高知</div>
+          <div class="name">四国</div>
+          <div class="count">地方銀行8行を掲載</div>
+          <div class="go">比較を見る</div>
+        </a>
+
+        <a class="region live" href="./chugoku/">
+          <span class="status">公開中</span>
+          <div class="pref">鳥取・島根・岡山・広島・山口</div>
+          <div class="name">中国</div>
+          <div class="count">地方銀行8行を掲載</div>
+          <div class="go">比較を見る</div>
+        </a>
+
+        <a class="region live" href="./hokuriku/">
+          <span class="status">公開中</span>
+          <div class="pref">富山・石川・福井</div>
+          <div class="name">北陸</div>
+          <div class="count">地方銀行4行を掲載</div>
+          <div class="go">比較を見る</div>
+        </a>
+
+        <a class="region live" href="./hokkaido/">
+          <span class="status">公開中</span>
+          <div class="pref">北海道</div>
+          <div class="name">北海道</div>
+          <div class="count">地方銀行2行を掲載</div>
+          <div class="go">比較を見る</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="band-pale">
+    <div class="wrap">
+      <p class="eyebrow">About</p>
+      <h2 class="head">このサイトについて</h2>
+      <p class="lead" style="margin-bottom:0">
+        各行の公式サイトに掲載されている情報だけをもとに、金利・限度額・申込条件をまとめています。
+        情報は確認した時点のものです。実際にお申し込みの際は、必ず各行の公式サイトで最新の内容をご確認ください。
+      </p>
+    </div>
+  </section>
+
+  <div class="blueband">
+    <div class="wrap">
+      <h2>金利や条件は、変わることがあります。</h2>
+      <p>申し込みの前に、必ず各行の公式サイトで最新の内容をご確認ください。</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="disclaimer">
+        <b>ご利用にあたって</b><br>
+        本サイトは情報提供が目的で、特定のローンの契約をおすすめするものではありません。
+        金利・限度額・条件は変わることがあります。実際に適用される金利や限度額は各行の審査で決まります。
+        返済のことを考えた、計画的なご利用をおすすめします。
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    地方銀行カードローン比較（見本）｜データ確認日：2026年9月・各行公式サイトより<br>
+    ※本ページはレイアウト確認用のサンプルです。
+  </div>
+</footer>
+
+</body>
+</html>

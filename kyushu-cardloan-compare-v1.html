@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>九州のカードローン比較｜地方銀行19行（見本）</title>
+<style>
+  :root{
+    --blue:#3E9BE0;
+    --blue-deep:#2B7CBE;
+    --pale:#EAF4FB;
+    --pale2:#F4FAFE;
+    --ink:#333333;
+    --ink-soft:#6B7684;
+    --line:#DCEBF7;
+    --marker:#FFEF66;
+    --foot:#6E7885;
+    --card:#FFFFFF;
+    --r:10px;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:#fff;color:var(--ink);
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
+    line-height:1.8;font-size:16px;
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  a{color:var(--blue-deep)}
+
+  .eyebrow{display:flex;align-items:center;gap:14px;color:var(--blue);
+    font-size:14px;font-weight:700;letter-spacing:.14em;margin:0 0 14px}
+  .eyebrow::after{content:"";height:2px;width:64px;background:var(--blue)}
+
+  h2.head{font-size:24px;font-weight:800;color:var(--blue);line-height:1.5;margin:0 0 8px}
+  .mark{background:linear-gradient(transparent 62%, var(--marker) 62%);padding:0 2px}
+  .lead{margin:0 0 20px;color:var(--ink-soft);font-size:14px}
+
+  header.hero{background:linear-gradient(180deg,var(--pale) 0%,#fff 100%);padding:40px 0 34px}
+  .badge{display:inline-block;background:var(--blue);color:#fff;font-weight:700;font-size:13px;
+    padding:7px 18px;border-radius:999px;margin-bottom:16px}
+  header.hero h1{font-size:27px;font-weight:800;color:var(--blue);line-height:1.5;margin:0 0 10px}
+  header.hero p{margin:0;color:var(--ink-soft);font-size:14.5px}
+  .asof{display:inline-block;margin-top:16px;background:#fff;border:1px solid var(--line);
+    color:var(--ink-soft);font-size:13px;padding:7px 14px;border-radius:8px}
+  .asof b{color:var(--blue-deep)}
+
+  main section{padding:30px 0}
+  .band-pale{background:linear-gradient(180deg,#fff 0%,var(--pale2) 100%)}
+
+  .pref-nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  .pref-nav a{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--blue-deep);
+    font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;text-decoration:none}
+  .pref-nav a:hover{background:var(--pale)}
+
+  .pref-group{margin-bottom:36px;scroll-margin-top:20px}
+  .pref-group h3{font-size:16px;color:var(--ink-soft);font-weight:700;margin:0 0 12px;
+    display:flex;align-items:center;gap:10px}
+  .pref-group h3::after{content:"";flex:1;height:1px;background:var(--line)}
+
+  .cards{display:grid;gap:16px}
+  .loan{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+    padding:20px;position:relative;box-shadow:0 3px 10px rgba(62,155,224,.06)}
+  .loan .bank{font-size:12px;color:var(--ink-soft)}
+  .loan .name{font-size:17px;font-weight:800;color:var(--ink);margin:2px 0 12px}
+  .loan .tags{position:absolute;top:18px;right:18px;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:52%}
+  .tag{font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;white-space:nowrap;border:1px solid transparent}
+  .tag.save{background:#E9F4FC;color:var(--blue-deep);border-color:#CBE6F8}
+  .tag.free{background:#EAF7EE;color:#3A8A50;border-color:#CDEBD6}
+  .tag.area{background:#F3EEFB;color:#6A4FB3;border-color:#E3D8F5}
+  .tag.warn{background:#FDF3DD;color:#9A6A12;border-color:#F3E2B6}
+
+  .rateline{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+    background:var(--pale);border-radius:var(--r);padding:12px 16px;margin-bottom:14px}
+  .rateline .lbl{font-size:12.5px;color:var(--blue-deep);font-weight:700}
+  .rateline .big{font-size:22px;font-weight:800;color:var(--blue);line-height:1}
+  .rateline .sub{font-size:11.5px;color:var(--ink-soft)}
+
+  .specs{display:grid;grid-template-columns:1fr 1fr;gap:2px 20px;margin-bottom:16px}
+  .specs .row{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #EEF4F9;padding:7px 0;font-size:13.5px}
+  .specs .row .k{color:var(--ink-soft)}
+  .specs .row .v{font-weight:700;text-align:right}
+  @media(max-width:560px){ .specs{grid-template-columns:1fr} }
+
+  .btn{display:inline-flex;align-items:center;justify-content:space-between;gap:14px;
+    background:var(--blue);color:#fff;text-decoration:none;font-weight:700;font-size:14px;
+    padding:11px 20px;border-radius:6px;min-width:200px}
+  .btn::after{content:"›";font-size:18px;line-height:1}
+  .btn:hover{background:var(--blue-deep)}
+
+  .note-inline{font-size:12.5px;color:var(--ink-soft);margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
+
+  .blueband{background:linear-gradient(100deg,var(--blue-deep) 0%,var(--blue) 100%);color:#fff}
+  .blueband .wrap{padding:36px 20px;text-align:center}
+  .blueband h2{font-size:20px;font-weight:800;margin:0 0 8px;line-height:1.6}
+  .blueband p{margin:0;color:#EAF4FB;font-size:13.5px}
+
+  .disclaimer{background:#fff;border:1px solid var(--line);border-radius:var(--r);
+    padding:18px 20px;font-size:13px;color:var(--ink-soft)}
+  .disclaimer b{color:var(--ink)}
+
+  footer{background:var(--foot);color:#fff;padding:24px 0 32px;font-size:12px}
+</style>
+</head>
+<body>
+
+<div style="background:var(--blue-deep);color:#fff;text-align:center;font-size:12px;padding:6px">これは「九州の比較ページの見本」です（他エリアと同じデザインを使用）</div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">九州の地方銀行カードローン</span>
+    <h1>九州のカードローンを、<br><span class="mark">公式データだけ</span>で比べる。</h1>
+    <p>福岡・佐賀・長崎・熊本・大分・宮崎・鹿児島・沖縄の地方銀行19行を、公式サイトの情報だけでまとめました。</p>
+    <span class="asof"><b>データ確認日：2026年9月</b>／各行公式サイトより</span>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Compare</p>
+      <h2 class="head">カードローンをくらべる</h2>
+      <p class="lead">実際に借りられる金利や限度額は、各行の審査で決まります。福岡・十八親和・熊本の3行は同じFFGグループで、条件が完全に一致しています。</p>
+
+      <div class="pref-nav">
+        <a href="#fukuoka">福岡県（5行）</a>
+        <a href="#saga">佐賀県（2行）</a>
+        <a href="#nagasaki">長崎県（1行）</a>
+        <a href="#kumamoto">熊本県（2行）</a>
+        <a href="#oita">大分県（2行）</a>
+        <a href="#miyazaki">宮崎県（2行）</a>
+        <a href="#kagoshima">鹿児島県（2行）</a>
+        <a href="#okinawa">沖縄県（3行）</a>
+      </div>
+
+      <div class="pref-group" id="fukuoka">
+        <h3>福岡県</h3>
+        <div class="cards">
+          <div class="loan">
+            <div class="tags"><span class="tag area">FFGグループ</span></div>
+            <div class="bank">福岡銀行</div>
+            <div class="name">福岡銀行カードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">3.0%〜14.5%</span><span class="sub">固定・限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">最大1,000万円</span></div>
+              <div class="row"><span class="k">申込エリア</span><span class="v">九州・山口 or 口座保有者</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">不要</span></div>
+              <div class="row"><span class="k">ATM</span><span class="v">福岡・熊本・十八親和で共通利用可</span></div>
+            </div>
+            <a class="btn" href="https://www.fukuokabank.co.jp/personal/service/mokuteki/cardloan/" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag free">自動融資機能</span></div>
+            <div class="bank">西日本シティ銀行</div>
+            <div class="name">カードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">0.95%〜14.5%</span><span class="sub">固定</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">申込エリア</span><span class="v">取扱店の近くに居住/勤務</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">あればWeb完結可</span></div>
+              <div class="row"><span class="k">融資スピード</span><span class="v">最短7日</span></div>
+            </div>
+            <a class="btn" href="https://www.ncbank.co.jp/loan/card/ncbankcardloan/" target="_blank" rel="noopener">公式ページを見る</a>
+            <div class="note-inline">他に3種類の商品があります（合計4種類）。</div>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag area">東京・福岡・佐賀・大分</span></div>
+            <div class="bank">筑邦銀行</div>
+            <div class="name">筑邦銀行カードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">3.90%〜13.95%</span><span class="sub">限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">10万〜500万円</span></div>
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜70歳未満</span></div>
+              <div class="row"><span class="k">保証会社</span><span class="v">エム・ユー信用保証</span></div>
+            </div>
+            <a class="btn" href="https://www.chikugin.co.jp/page/minicard/" target="_blank" rel="noopener">公式ページを見る</a>
+            <div class="note-inline">他に5種類の商品があります。</div>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag warn">専業主婦・年金のみ不可</span></div>
+            <div class="bank">北九州銀行</div>
+            <div class="name">マイカードきたきゅう君</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">4.500%〜14.500%</span><span class="sub">固定・公式確認済</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜68歳</span></div>
+              <div class="row"><span class="k">申込エリア</span><span class="v">営業エリア内(スマート支店は全国)</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">必要</span></div>
+            </div>
+            <a class="btn" href="https://www.kitakyushubank.co.jp/personal/borrow/lp/card/" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag area">福岡県内限定</span></div>
+            <div class="bank">福岡中央銀行</div>
+            <div class="name">The Prime</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">5.5%〜14.5%</span><span class="sub">限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">10万〜500万円</span></div>
+              <div class="row"><span class="k">住宅ローン利用者</span><span class="v">0.5%優遇</span></div>
+              <div class="row"><span class="k">特徴</span><span class="v">初回振込サービスあり</span></div>
+            </div>
+            <a class="btn" href="https://manekai.ameba.jp/cardloan/fukuokachuo-bank/" target="_blank" rel="noopener">詳細を見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pref-group" id="saga">
+        <h3>佐賀県</h3>
+        <div class="cards">
+          <div class="loan">
+            <div class="tags"><span class="tag save">九州9行ATM無料網</span></div>
+            <div class="bank">佐賀銀行</div>
+            <div class="name">カードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">2.0%〜14.6%</span><span class="sub">限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">最大800万円</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">ATM返済方式なら不要</span></div>
+              <div class="row"><span class="k">Web完結</span><span class="v">できる</span></div>
+            </div>
+            <a class="btn" href="https://www.sagabank.co.jp/kojin/loan/sagin-card-loan.html" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag save">限度額1,000万円</span></div>
+            <div class="bank">佐賀共栄銀行</div>
+            <div class="name">カードローンパワフル</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">3.8%〜14.5%</span><span class="sub">限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">最高1,000万円</span></div>
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜70歳以下</span></div>
+              <div class="row"><span class="k">住宅ローン利用者</span><span class="v">1.5%〜13.5%に優遇</span></div>
+            </div>
+            <a class="btn" href="https://www.kyogin.co.jp/loan/card_loan_powerful.php" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pref-group" id="nagasaki">
+        <h3>長崎県</h3>
+        <div class="cards">
+          <div class="loan">
+            <div class="tags"><span class="tag free">満75歳未満</span></div>
+            <div class="bank">十八親和銀行</div>
+            <div class="name">FFGカードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">3.0%〜14.5%</span><span class="sub">FFGグループ共通</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">最大1,000万円</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">不要</span></div>
+              <div class="row"><span class="k">保証会社</span><span class="v">SMBCコンシューマーファイナンス</span></div>
+            </div>
+            <a class="btn" href="https://www.18shinwabank.co.jp/personal/service/mokuteki/ffg_cardloan/" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag free">未取引でも申込可</span></div>
+            <div class="bank">長崎銀行</div>
+            <div class="name">プレミアA（エース）</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">2.8%〜14.9%</span><span class="sub">限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">最大800万円</span></div>
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜75歳未満</span></div>
+              <div class="row"><span class="k">申込エリア</span><span class="v">九州内(沖縄除く)</span></div>
+            </div>
+            <a class="btn" href="https://www.nagasakibank.co.jp/lp/premium/pc/" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pref-group" id="kumamoto">
+        <h3>熊本県</h3>
+        <div class="cards">
+          <div class="loan">
+            <div class="tags"><span class="tag area">FFGグループ</span></div>
+            <div class="bank">熊本銀行</div>
+            <div class="name">FFGカードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">3.0%〜14.5%</span><span class="sub">FFGグループ共通</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">最大1,000万円</span></div>
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜69歳</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">不要</span></div>
+            </div>
+            <a class="btn" href="https://www.kumamotobank.co.jp/personal/service/mokuteki/cardloan/" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag warn">満64歳以下</span></div>
+            <div class="bank">肥後銀行</div>
+            <div class="name">WEBカードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">100万円以下14.0%</span><span class="sub">限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜64歳</span></div>
+              <div class="row"><span class="k">申込エリア</span><span class="v">九州(佐賀・沖縄除く)・東京・大阪</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">必要</span></div>
+            </div>
+            <a class="btn" href="https://www.higobank.co.jp/individual/loan/card/webcard_new/" target="_blank" rel="noopener">公式ページを見る</a>
+            <div class="note-inline">他に「Back Up」「BEST ASSIST」もあります。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pref-group" id="oita">
+        <h3>大分県</h3>
+        <div class="cards">
+          <div class="loan">
+            <div class="tags"><span class="tag area">福岡・熊本・大分・宮崎</span></div>
+            <div class="bank">大分銀行</div>
+            <div class="name">ハッピーカードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">5.0%〜14.5%</span><span class="sub">固定・限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">10万〜500万円</span></div>
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜70歳未満(学生不可)</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">返済口座不要タイプあり</span></div>
+            </div>
+            <a class="btn" href="https://www.oitabank.co.jp/interestrate-fee/kinri/loan.html" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag area">大分・福岡・熊本</span></div>
+            <div class="bank">豊和銀行</div>
+            <div class="name">ほうわSmartカードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">4.5%〜14.0%</span><span class="sub">固定</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">10万〜500万円</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">必要</span></div>
+            </div>
+            <a class="btn" href="https://manekai.ameba.jp/cardloan/howabank/" target="_blank" rel="noopener">詳細を見る</a>
+            <div class="note-inline">高額低金利の「High Class」（510万〜1,000万円）もありますが年収要件が高めです。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pref-group" id="miyazaki">
+        <h3>宮崎県</h3>
+        <div class="cards">
+          <div class="loan">
+            <div class="tags"><span class="tag free">満75歳未満</span></div>
+            <div class="bank">宮崎銀行</div>
+            <div class="name">おまかせくん</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">0.9%〜14.5%</span><span class="sub">固定・公式確認済</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">10万〜1,000万円</span></div>
+              <div class="row"><span class="k">申込エリア</span><span class="v">宮崎銀行営業エリア(東京・大阪除く)</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">口座レスも選択可</span></div>
+            </div>
+            <a class="btn" href="https://www.miyagin.co.jp/lp/loan/omakase/" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag warn">限度額100万円まで</span></div>
+            <div class="bank">宮崎太陽銀行</div>
+            <div class="name">おたすけA（エース）</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">5.8%〜14.5%</span><span class="sub">Web申込▲0.5%</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">10万〜100万円</span></div>
+              <div class="row"><span class="k">申込エリア</span><span class="v">福岡・大分・宮崎・鹿児島</span></div>
+              <div class="row"><span class="k">Web完結</span><span class="v">50万円まで可</span></div>
+            </div>
+            <a class="btn" href="https://www.taiyobank.co.jp/individual/loan/card/basic/" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pref-group" id="kagoshima">
+        <h3>鹿児島県</h3>
+        <div class="cards">
+          <div class="loan">
+            <div class="tags"><span class="tag save">下限0.9%</span></div>
+            <div class="bank">鹿児島銀行</div>
+            <div class="name">カードローンS</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">0.9%〜14.8%</span><span class="sub">限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">10万〜1,000万円</span></div>
+              <div class="row"><span class="k">保証会社</span><span class="v">SMBCコンシューマーファイナンス</span></div>
+            </div>
+            <a class="btn" href="https://www.kagin.co.jp/kojin/loan/cardloan_s.html" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag free">雇用形態問わず</span></div>
+            <div class="bank">南日本銀行</div>
+            <div class="name">WAZZCA（ワッゼカ）</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">2.8%〜14.5%</span><span class="sub">固定・限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">10万〜1,000万円</span></div>
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜70歳未満</span></div>
+              <div class="row"><span class="k">Web完結</span><span class="v">できる</span></div>
+            </div>
+            <a class="btn" href="https://manekai.ameba.jp/cardloan/nangin/" target="_blank" rel="noopener">詳細を見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pref-group" id="okinawa">
+        <h3>沖縄県</h3>
+        <div class="cards">
+          <div class="loan">
+            <div class="tags"><span class="tag area">満20〜65歳</span></div>
+            <div class="bank">琉球銀行</div>
+            <div class="name">しあわせのカードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">4.50%〜13.50%</span><span class="sub">変動・公式確認済</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">最大500万円</span></div>
+              <div class="row"><span class="k">Web完結</span><span class="v">口座・カードあれば可</span></div>
+            </div>
+            <a class="btn" href="https://www.ryugin.co.jp/kariru/card_loan/shiawase_cardloan/" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag save">ポイント優遇▲2.0%</span></div>
+            <div class="bank">沖縄銀行</div>
+            <div class="name">カトレアカードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">9.95%一律</span><span class="sub">固定・セレクト版は4.05%</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">最高300万円</span></div>
+              <div class="row"><span class="k">申込エリア</span><span class="v">沖縄県内在住</span></div>
+            </div>
+            <a class="btn" href="https://www.okinawa-bank.co.jp/kojin/kariru/cattleya.html" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag free">口座不要</span></div>
+            <div class="bank">沖縄海邦銀行</div>
+            <div class="name">ハッピーカードローンSmart</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">3.80%〜14.60%</span><span class="sub">固定・公式確認済</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">最大500万円(Web完結300万)</span></div>
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜70歳以下</span></div>
+            </div>
+            <a class="btn" href="https://financial-field.com/cardloan-compare/bank/kaihobank-cardloan" target="_blank" rel="noopener">詳細を見る</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="blueband">
+    <div class="wrap">
+      <h2>金利や条件は、変わることがあります。</h2>
+      <p>申し込みの前に、必ず各行の公式サイトで最新の内容をご確認ください。</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="disclaimer">
+        <b>ご利用にあたって</b><br>
+        金利・限度額・条件は変わることがあります。最新・正確な情報は、必ず各行の公式サイトや窓口でご確認ください。
+        本サイトは情報提供が目的で、特定のローンの契約をおすすめするものではありません。実際に適用される金利や限度額は各行の審査で決まります。返済のことを考えた、計画的なご利用をおすすめします。
+        （審査結果によって金利が決まる商品や、確認中の項目は掲載値が目安です。）
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    九州のカードローン比較（見本）｜データ確認日：2026年9月・各行公式サイトより<br>
+    ※本ページはレイアウト確認用のサンプルです。
+  </div>
+</footer>
+
+</body>
+</html>

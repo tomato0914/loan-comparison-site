@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>関西のカードローン比較｜地方銀行（見本 v3）</title>
+<style>
+  :root{
+    --blue:#3E9BE0;
+    --blue-deep:#2B7CBE;
+    --blue-ink:#2E8BD0;
+    --pale:#EAF4FB;
+    --pale2:#F4FAFE;
+    --ink:#333333;
+    --ink-soft:#6B7684;
+    --line:#DCEBF7;
+    --pink:#E86FA6;
+    --marker:#FFEF66;
+    --foot:#6E7885;
+    --card:#FFFFFF;
+    --r:10px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:#fff;color:var(--ink);
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
+    line-height:1.8;font-size:16px;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  a{color:var(--blue-deep)}
+
+  /* 英語アイブロウ＋横線 */
+  .eyebrow{display:flex;align-items:center;gap:14px;color:var(--blue);
+    font-size:14px;font-weight:700;letter-spacing:.14em;margin:0 0 14px}
+  .eyebrow::after{content:"";height:2px;width:64px;background:var(--blue)}
+
+  /* 見出し（青・太字・左寄せ） */
+  h2.head{font-size:26px;font-weight:800;color:var(--blue);line-height:1.5;margin:0 0 10px}
+  .mark{background:linear-gradient(transparent 62%, var(--marker) 62%);padding:0 2px}
+  .lead{margin:0 0 22px;color:var(--ink-soft);font-size:14.5px}
+
+  /* ヒーロー */
+  header.hero{background:linear-gradient(180deg,var(--pale) 0%,#fff 100%);padding:44px 0 40px}
+  .badge{display:inline-block;background:var(--blue);color:#fff;font-weight:700;font-size:14px;
+    padding:8px 20px;border-radius:999px;margin-bottom:18px}
+  header.hero h1{font-size:30px;font-weight:800;color:var(--blue);line-height:1.5;margin:0 0 12px}
+  header.hero p{margin:0;color:var(--ink-soft);font-size:15px}
+  .asof{display:inline-block;margin-top:18px;background:#fff;border:1px solid var(--line);
+    color:var(--ink-soft);font-size:13px;padding:8px 15px;border-radius:8px}
+  .asof b{color:var(--blue-deep)}
+
+  main section{padding:34px 0}
+  .band-pale{background:linear-gradient(180deg,#fff 0%,var(--pale2) 100%)}
+
+  /* 商品カード */
+  .cards{display:grid;gap:18px}
+  .loan{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+    padding:22px;position:relative;box-shadow:0 3px 10px rgba(62,155,224,.06)}
+  .loan .bank{font-size:12.5px;color:var(--ink-soft)}
+  .loan .name{font-size:19px;font-weight:800;color:var(--ink);margin:2px 0 14px}
+  .loan .tags{position:absolute;top:20px;right:20px;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:50%}
+  .tag{font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:999px;white-space:nowrap;border:1px solid transparent}
+  .tag.save{background:#E9F4FC;color:var(--blue-deep);border-color:#CBE6F8}
+  .tag.free{background:#EAF7EE;color:#3A8A50;border-color:#CDEBD6}
+  .tag.area{background:#F3EEFB;color:#6A4FB3;border-color:#E3D8F5}
+  .tag.warn{background:#FDF3DD;color:#9A6A12;border-color:#F3E2B6}
+
+  .rateline{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+    background:var(--pale);border-radius:var(--r);padding:14px 18px;margin-bottom:16px}
+  .rateline .lbl{font-size:13px;color:var(--blue-deep);font-weight:700}
+  .rateline .big{font-size:26px;font-weight:800;color:var(--blue);line-height:1}
+  .rateline .sub{font-size:12px;color:var(--ink-soft)}
+
+  .specs{display:grid;grid-template-columns:1fr 1fr;gap:2px 22px;margin-bottom:18px}
+  .specs .row{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #EEF4F9;padding:8px 0;font-size:14px}
+  .specs .row .k{color:var(--ink-soft)}
+  .specs .row .v{font-weight:700;text-align:right}
+  @media(max-width:560px){ .specs{grid-template-columns:1fr} }
+
+  /* ボタン：青四角＋矢印（参考サイト準拠） */
+  .btn{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;
+    background:var(--blue);color:#fff;text-decoration:none;font-weight:700;font-size:15px;
+    padding:13px 22px;border-radius:6px;min-width:230px}
+  .btn::after{content:"›";font-size:20px;line-height:1}
+  .btn:hover{background:var(--blue-deep)}
+  .btn.grad{background:linear-gradient(90deg,var(--blue) 0%,var(--pink) 100%);border-radius:999px;justify-content:center}
+  .btn.grad::after{content:""}
+
+  /* 選び方（左に青タブ＋白チェック） */
+  .checklist{display:grid;gap:14px}
+  .citem{display:flex;border:1px solid var(--blue);border-radius:4px;overflow:hidden;background:#fff}
+  .citem .chk{flex:0 0 66px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px}
+  .citem .body{padding:12px 16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .citem .body .t{color:var(--blue);font-weight:800;font-size:15px;min-width:150px}
+  .citem .body .d{color:var(--ink);font-size:14px;flex:1}
+
+  /* 青の帯 */
+  .blueband{background:linear-gradient(100deg,var(--blue-deep) 0%,var(--blue) 100%);color:#fff}
+  .blueband .wrap{padding:40px 20px;text-align:center}
+  .blueband h2{font-size:22px;font-weight:800;margin:0 0 10px;line-height:1.6}
+  .blueband p{margin:0;color:#EAF4FB;font-size:14px}
+
+  /* 免責 */
+  .disclaimer{background:#fff;border:1px solid var(--line);border-radius:var(--r);
+    padding:18px 20px;font-size:13px;color:var(--ink-soft)}
+  .disclaimer b{color:var(--ink)}
+
+  footer{background:var(--foot);color:#fff;padding:26px 0 34px;font-size:12.5px}
+  footer .wrap{opacity:.92}
+</style>
+</head>
+<body>
+
+<div style="background:var(--blue-deep);color:#fff;text-align:center;font-size:12px;padding:6px">これは「比較ページの見本 v3（参考サイトの青い雰囲気に寄せた版）」です</div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">関西の地方銀行カードローン</span>
+    <h1>関西のカードローンを、<br><span class="mark">公式データだけ</span>で比べる。</h1>
+    <p>はじめての方にもわかりやすく。金利・限度額・エリアをまとめました。</p>
+    <span class="asof"><b>データ確認日：2026年9月</b>／各行の公式サイトより</span>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Compare</p>
+      <h2 class="head">カードローンをくらべる</h2>
+      <p class="lead">実際に借りられる金利や限度額は、各行の審査で決まります。</p>
+
+      <div class="cards">
+
+        <!-- 南都スマート -->
+        <div class="loan">
+          <div class="tags"><span class="tag save">低金利スタート</span><span class="tag free">エリア指定なし</span></div>
+          <div class="bank">南都銀行（奈良）</div>
+          <div class="name">カードローン スマートタイプ</div>
+          <div class="rateline"><span class="lbl">実質年率</span><span class="big">0.9%〜14.95%</span><span class="sub">限度額で決まる</span></div>
+          <div class="specs">
+            <div class="row"><span class="k">限度額</span><span class="v">10万〜1,000万円</span></div>
+            <div class="row"><span class="k">申込年齢</span><span class="v">満20〜69歳</span></div>
+            <div class="row"><span class="k">申込エリア</span><span class="v">指定なし</span></div>
+            <div class="row"><span class="k">口座</span><span class="v">必要</span></div>
+          </div>
+          <a class="btn" href="https://www.nantobank.co.jp/kojin/kariru/nantobankcardloan/" target="_blank" rel="noopener">公式ページを見る</a>
+        </div>
+
+        <!-- 南都クイック -->
+        <div class="loan">
+          <div class="tags"><span class="tag free">口座不要</span><span class="tag save">即日融資も可</span></div>
+          <div class="bank">南都銀行（奈良）</div>
+          <div class="name">カードローン クイックタイプ</div>
+          <div class="rateline"><span class="lbl">実質年率</span><span class="big">2.5%〜14.95%</span><span class="sub">限度額で決まる</span></div>
+          <div class="specs">
+            <div class="row"><span class="k">限度額</span><span class="v">10万〜500万円</span></div>
+            <div class="row"><span class="k">申込年齢</span><span class="v">満20〜69歳</span></div>
+            <div class="row"><span class="k">申込エリア</span><span class="v">指定なし</span></div>
+            <div class="row"><span class="k">口座</span><span class="v">不要</span></div>
+          </div>
+          <a class="btn" href="https://www.nantobank.co.jp/kojin/kariru/nantobankcardloan/" target="_blank" rel="noopener">公式ページを見る</a>
+        </div>
+
+        <!-- 京都ダイレクト -->
+        <div class="loan">
+          <div class="tags"><span class="tag area">6府県限定</span></div>
+          <div class="bank">京都銀行（京都）</div>
+          <div class="name">カードローン ＜ダイレクト＞</div>
+          <div class="rateline"><span class="lbl">実質年率</span><span class="big">1.9%〜14.5%</span><span class="sub">固定・限度額で決まる</span></div>
+          <div class="specs">
+            <div class="row"><span class="k">限度額</span><span class="v">10万〜1,000万円</span></div>
+            <div class="row"><span class="k">申込年齢</span><span class="v">満20〜69歳</span></div>
+            <div class="row"><span class="k">申込エリア</span><span class="v">京都・大阪・滋賀・兵庫・奈良・愛知</span></div>
+            <div class="row"><span class="k">口座</span><span class="v">必要</span></div>
+          </div>
+          <a class="btn" href="https://www.kyotobank.co.jp/kojin/loan/card/" target="_blank" rel="noopener">公式ページを見る</a>
+        </div>
+
+        <!-- 池田泉州 一体型 -->
+        <div class="loan">
+          <div class="tags"><span class="tag area">2府4県限定</span></div>
+          <div class="bank">池田泉州銀行（大阪）</div>
+          <div class="name">キャッシュカード一体型</div>
+          <div class="rateline"><span class="lbl">実質年率</span><span class="big">14.5%</span><span class="sub">固定・一律</span></div>
+          <div class="specs">
+            <div class="row"><span class="k">限度額</span><span class="v">10万〜300万円</span></div>
+            <div class="row"><span class="k">申込年齢</span><span class="v">満20〜69歳</span></div>
+            <div class="row"><span class="k">申込エリア</span><span class="v">大阪・京都・兵庫・和歌山・奈良・滋賀</span></div>
+            <div class="row"><span class="k">口座</span><span class="v">必要</span></div>
+          </div>
+          <a class="btn" href="https://www.sihd-bk.jp/personal/loan/card/" target="_blank" rel="noopener">公式ページを見る</a>
+        </div>
+
+        <!-- 池田泉州 MaxV -->
+        <div class="loan">
+          <div class="tags"><span class="tag save">低金利</span><span class="tag warn">条件あり</span></div>
+          <div class="bank">池田泉州銀行（大阪）</div>
+          <div class="name">MaxV（マックスファイブ）</div>
+          <div class="rateline"><span class="lbl">実質年率</span><span class="big">約5.95%</span><span class="sub">変動・要最新確認</span></div>
+          <div class="specs">
+            <div class="row"><span class="k">限度額</span><span class="v">〜500万円</span></div>
+            <div class="row"><span class="k">申込年齢</span><span class="v">満20〜59歳</span></div>
+            <div class="row"><span class="k">申込エリア</span><span class="v">大阪・京都・兵庫・和歌山・奈良・滋賀</span></div>
+            <div class="row"><span class="k">条件</span><span class="v">勤続2年以上・年収400万円以上</span></div>
+          </div>
+          <a class="btn" href="https://www.sihd-bk.jp/personal/loan/card/max5/" target="_blank" rel="noopener">公式ページを見る</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="band-pale">
+    <div class="wrap">
+      <p class="eyebrow">How to choose</p>
+      <h2 class="head">かんたんな<span class="mark">選び方</span></h2>
+      <p class="lead">「どれが合う？」の目安です。最終判断はご自身で。</p>
+
+      <div class="checklist">
+        <div class="citem"><div class="chk">✓</div><div class="body"><span class="t">とにかく急ぎたい</span><span class="d">口座がなくても申し込めて、契約日に借りられる可能性がある「南都クイックタイプ」。</span></div></div>
+        <div class="citem"><div class="chk">✓</div><div class="body"><span class="t">大きく借りて金利を抑えたい</span><span class="d">限度額が大きいほど金利が下がる「南都スマート」「京都ダイレクト」。</span></div></div>
+        <div class="citem"><div class="chk">✓</div><div class="body"><span class="t">安定収入で低金利がいい</span><span class="d">年収400万円以上・勤続2年以上なら、低金利の「MaxV」が候補。</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="blueband">
+    <div class="wrap">
+      <h2>金利や条件は、変わることがあります。</h2>
+      <p>申し込みの前に、必ず各行の公式サイトで最新の内容をご確認ください。</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="disclaimer">
+        <b>ご利用にあたって</b><br>
+        金利・限度額・条件は変わることがあります。最新・正確な情報は、必ず各行の公式サイトや窓口でご確認ください。
+        本サイトは情報提供が目的で、特定のローンの契約をおすすめするものではありません。実際に適用される金利や限度額は各行の審査で決まります。返済のことを考えた、計画的なご利用をおすすめします。
+        （MaxVの金利は変動金利のため、掲載値は目安です。）
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    関西のカードローン比較（見本 v3）｜データ確認日：2026年9月・各行公式サイトより<br>
+    ※本ページはレイアウト確認用のサンプルです。
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>百五銀行「DREAM」を詳しく｜東海のカードローン比較（見本）</title>
+<style>
+  :root{
+    --blue:#3E9BE0;
+    --blue-deep:#2B7CBE;
+    --pale:#EAF4FB;
+    --pale2:#F4FAFE;
+    --ink:#333333;
+    --ink-soft:#6B7684;
+    --line:#DCEBF7;
+    --marker:#FFEF66;
+    --foot:#6E7885;
+    --card:#FFFFFF;
+    --r:10px;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:#fff;color:var(--ink);
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
+    line-height:1.8;font-size:16px;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  a{color:var(--blue-deep)}
+
+  .crumb{font-size:12.5px;color:var(--ink-soft);padding:16px 0}
+  .crumb a{color:var(--ink-soft);text-decoration:none}
+  .crumb a:hover{color:var(--blue-deep)}
+  .crumb span{margin:0 6px}
+
+  .eyebrow{display:flex;align-items:center;gap:14px;color:var(--blue);
+    font-size:13.5px;font-weight:700;letter-spacing:.14em;margin:0 0 12px}
+  .eyebrow::after{content:"";height:2px;width:56px;background:var(--blue)}
+
+  h2.head{font-size:22px;font-weight:800;color:var(--blue);line-height:1.5;margin:0 0 8px}
+  .mark{background:linear-gradient(transparent 62%, var(--marker) 62%);padding:0 2px}
+
+  header.hero{background:linear-gradient(180deg,var(--pale) 0%,#fff 100%);padding:8px 0 34px}
+  header.hero .bank{font-size:13px;color:var(--ink-soft);margin-bottom:6px}
+  header.hero h1{font-size:26px;font-weight:800;color:var(--blue);line-height:1.5;margin:0 0 10px}
+  header.hero p.copy{margin:0 0 18px;color:var(--ink-soft);font-size:14.5px}
+
+  .hero-rate{display:flex;flex-wrap:wrap;gap:10px}
+  .pill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:13px}
+  .pill b{color:var(--blue-deep);font-size:15px}
+  .asof{display:inline-block;margin-top:16px;background:#fff;border:1px solid var(--line);
+    color:var(--ink-soft);font-size:12.5px;padding:6px 13px;border-radius:8px}
+  .asof b{color:var(--blue-deep)}
+
+  main section{padding:28px 0}
+  .band-pale{background:linear-gradient(180deg,#fff 0%,var(--pale2) 100%)}
+
+  .highlight-box{background:var(--pale);border-radius:var(--r);padding:16px 18px;margin-bottom:20px;
+    font-size:14px;color:var(--ink)}
+  .highlight-box b{color:var(--blue-deep)}
+
+  table.rate-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);
+    border-radius:var(--r);overflow:hidden;font-size:13.5px}
+  table.rate-table th{background:var(--blue);color:#fff;font-weight:700;padding:10px 12px;text-align:left}
+  table.rate-table td{padding:9px 12px;border-top:1px solid var(--line)}
+  table.rate-table tr:nth-child(even) td{background:#F7FBFE}
+  table.rate-table .num{text-align:right;font-weight:700;color:var(--blue-deep)}
+  table.rate-table .discount{color:#3A8A50}
+
+  .specs{display:grid;gap:2px;margin:20px 0}
+  .specs .row{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);
+    padding:12px 0;font-size:14px}
+  .specs .row .k{color:var(--ink-soft);flex:0 0 38%}
+  .specs .row .v{font-weight:700;text-align:right}
+
+  .tag-row{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+  .tag{font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:999px;border:1px solid transparent}
+  .tag.save{background:#E9F4FC;color:var(--blue-deep);border-color:#CBE6F8}
+  .tag.free{background:#EAF7EE;color:#3A8A50;border-color:#CDEBD6}
+  .tag.area{background:#F3EEFB;color:#6A4FB3;border-color:#E3D8F5}
+
+  .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}
+  .btn{display:inline-flex;align-items:center;gap:8px;
+    background:var(--blue);color:#fff;text-decoration:none;font-weight:700;font-size:14.5px;
+    padding:13px 22px;border-radius:6px}
+  .btn::after{content:"›";font-size:18px;line-height:1}
+  .btn:hover{background:var(--blue-deep)}
+  .btn.ghost{background:#fff;color:var(--blue-deep);border:1px solid var(--line)}
+  .btn.ghost:hover{background:var(--pale)}
+
+  .related{display:grid;gap:10px}
+  .related a{display:flex;justify-content:space-between;align-items:center;text-decoration:none;color:inherit;
+    background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;font-size:14px}
+  .related a:hover{background:var(--pale)}
+  .related .name{font-weight:700;color:var(--ink)}
+  .related .rate{color:var(--blue-deep);font-weight:700;font-size:13px}
+
+  .disclaimer{background:#fff;border:1px solid var(--line);border-radius:var(--r);
+    padding:18px 20px;font-size:12.5px;color:var(--ink-soft)}
+  .disclaimer b{color:var(--ink)}
+
+  footer{background:var(--foot);color:#fff;padding:24px 0 32px;font-size:12px}
+  footer .wrap{max-width:980px}
+</style>
+</head>
+<body>
+
+<div style="background:var(--blue-deep);color:#fff;text-align:center;font-size:12px;padding:6px">これは「個別ページの見本」です（百五銀行「DREAM」を例に作成）</div>
+
+<div class="wrap">
+  <p class="crumb"><a href="../../">トップ</a><span>›</span><a href="../">東海</a><span>›</span>百五銀行「DREAM」</p>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="bank">百五銀行（三重県）</p>
+    <h1>カードローン「<span class="mark">DREAM</span>」を詳しく</h1>
+    <p class="copy">新規契約なら最初の2ヶ月間、金利が半額になるカードローンです。来店不要でスマホから申し込めます。</p>
+    <div class="hero-rate">
+      <span class="pill">実質年率　<b>1.8%〜14.7%</b></span>
+      <span class="pill">限度額　<b>10万〜800万円</b></span>
+      <span class="pill">口座　<b>不要</b></span>
+    </div>
+    <span class="asof"><b>データ確認日：2026年8月1日</b>／百五銀行公式サイトより</span>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section>
+      <p class="eyebrow">Highlight</p>
+      <h2 class="head">この商品のポイント</h2>
+      <div class="highlight-box">
+        新規契約から<b>最初の2ヶ月間は金利が半額</b>になります。たとえば通常金利14.7%の方でも、
+        最初の2ヶ月は7.35%が適用されます。東海地方の中でも珍しい特典です。
+      </div>
+      <div class="tag-row">
+        <span class="tag save">初回2ヶ月半額</span>
+        <span class="tag free">口座不要で申込可</span>
+        <span class="tag area">三重・愛知全域、岐阜・和歌山の一部</span>
+      </div>
+    </section>
+
+    <section class="band-pale">
+      <p class="eyebrow">Rate</p>
+      <h2 class="head">限度額ごとの金利</h2>
+      <table class="rate-table">
+        <thead>
+          <tr><th>お借入限度額</th><th>通常金利</th><th>初回2ヶ月（半額）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>800万円</td><td class="num">1.8%</td><td class="num discount">0.9%</td></tr>
+          <tr><td>750万〜790万円</td><td class="num">2.5%</td><td class="num discount">1.25%</td></tr>
+          <tr><td>650万〜690万円</td><td class="num">3.4%</td><td class="num discount">1.7%</td></tr>
+          <tr><td>550万〜590万円</td><td class="num">3.8%</td><td class="num discount">1.9%</td></tr>
+          <tr><td>450万〜490万円</td><td class="num">4.8%</td><td class="num discount">2.4%</td></tr>
+          <tr><td>400万〜440万円</td><td class="num">5.8%</td><td class="num discount">2.9%</td></tr>
+          <tr><td>350万〜390万円</td><td class="num">6.8%</td><td class="num discount">3.4%</td></tr>
+          <tr><td>300万〜340万円</td><td class="num">7.8%</td><td class="num discount">3.9%</td></tr>
+          <tr><td>250万〜290万円</td><td class="num">9.0%</td><td class="num discount">4.5%</td></tr>
+          <tr><td>200万〜240万円</td><td class="num">10.0%</td><td class="num discount">5.0%</td></tr>
+          <tr><td>150万〜190万円</td><td class="num">11.0%</td><td class="num discount">5.5%</td></tr>
+          <tr><td>100万〜140万円</td><td class="num">12.0%</td><td class="num discount">6.0%</td></tr>
+          <tr><td>90万円以下</td><td class="num">14.7%</td><td class="num discount">7.35%</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <p class="eyebrow">Details</p>
+      <h2 class="head">申込条件・商品概要</h2>
+      <div class="specs">
+        <div class="row"><span class="k">申込年齢</span><span class="v">満20歳以上・満65歳以下</span></div>
+        <div class="row"><span class="k">収入条件</span><span class="v">安定継続した収入がある方（年金収入のみは対象外）</span></div>
+        <div class="row"><span class="k">申込エリア</span><span class="v">三重県・愛知県全域、岐阜県・和歌山県の一部</span></div>
+        <div class="row"><span class="k">銀行口座</span><span class="v">不要（口座なしでも申込可）</span></div>
+        <div class="row"><span class="k">契約期間</span><span class="v">1年更新、満71歳の誕生日翌月5日が上限</span></div>
+        <div class="row"><span class="k">担保・保証人</span><span class="v">不要（保証会社の保証による）</span></div>
+        <div class="row"><span class="k">Web完結</span><span class="v">できる（来店不要）</span></div>
+        <div class="row"><span class="k">お使いみち</span><span class="v">自由（事業性資金を除く。借換えにも利用可）</span></div>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn" href="https://www.hyakugo.co.jp/kariru/dream/" target="_blank" rel="noopener">公式サイトで詳しく見る</a>
+        <a class="btn ghost" href="../#mie">東海の比較表に戻る</a>
+      </div>
+    </section>
+
+    <section class="band-pale">
+      <p class="eyebrow">Related</p>
+      <h2 class="head">三重県の他のカードローンと比べる</h2>
+      <div class="related">
+        <a href="#">
+          <span class="name">三十三銀行 カードローン</span>
+          <span class="rate">0.9%〜14.5%</span>
+        </a>
+        <a href="#">
+          <span class="name">百五銀行 DREAM（このページ）</span>
+          <span class="rate">1.8%〜14.7%</span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="disclaimer">
+        <b>ご利用にあたって</b><br>
+        金利・限度額・条件は変わることがあります。最新・正確な情報は、必ず百五銀行の公式サイトや窓口でご確認ください。
+        本ページは情報提供が目的で、契約をおすすめするものではありません。実際に適用される金利や限度額は審査で決まります。
+        返済のことを考えた、計画的なご利用をおすすめします。
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    百五銀行「DREAM」個別ページ（見本）｜データ確認日：2026年8月1日・百五銀行公式サイトより<br>
+    ※本ページはレイアウト確認用のサンプルです。
+  </div>
+</footer>
+
+</body>
+</html>

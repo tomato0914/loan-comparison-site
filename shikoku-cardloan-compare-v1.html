@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>四国のカードローン比較｜地方銀行8行（見本）</title>
+<style>
+  :root{
+    --blue:#3E9BE0;
+    --blue-deep:#2B7CBE;
+    --pale:#EAF4FB;
+    --pale2:#F4FAFE;
+    --ink:#333333;
+    --ink-soft:#6B7684;
+    --line:#DCEBF7;
+    --marker:#FFEF66;
+    --foot:#6E7885;
+    --card:#FFFFFF;
+    --r:10px;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:#fff;color:var(--ink);
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
+    line-height:1.8;font-size:16px;
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  a{color:var(--blue-deep)}
+
+  .eyebrow{display:flex;align-items:center;gap:14px;color:var(--blue);
+    font-size:14px;font-weight:700;letter-spacing:.14em;margin:0 0 14px}
+  .eyebrow::after{content:"";height:2px;width:64px;background:var(--blue)}
+
+  h2.head{font-size:24px;font-weight:800;color:var(--blue);line-height:1.5;margin:0 0 8px}
+  .mark{background:linear-gradient(transparent 62%, var(--marker) 62%);padding:0 2px}
+  .lead{margin:0 0 20px;color:var(--ink-soft);font-size:14px}
+
+  header.hero{background:linear-gradient(180deg,var(--pale) 0%,#fff 100%);padding:40px 0 34px}
+  .badge{display:inline-block;background:var(--blue);color:#fff;font-weight:700;font-size:13px;
+    padding:7px 18px;border-radius:999px;margin-bottom:16px}
+  header.hero h1{font-size:27px;font-weight:800;color:var(--blue);line-height:1.5;margin:0 0 10px}
+  header.hero p{margin:0;color:var(--ink-soft);font-size:14.5px}
+  .asof{display:inline-block;margin-top:16px;background:#fff;border:1px solid var(--line);
+    color:var(--ink-soft);font-size:13px;padding:7px 14px;border-radius:8px}
+  .asof b{color:var(--blue-deep)}
+
+  main section{padding:30px 0}
+  .band-pale{background:linear-gradient(180deg,#fff 0%,var(--pale2) 100%)}
+
+  .pref-nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  .pref-nav a{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--blue-deep);
+    font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;text-decoration:none}
+  .pref-nav a:hover{background:var(--pale)}
+
+  .pref-group{margin-bottom:36px;scroll-margin-top:20px}
+  .pref-group h3{font-size:16px;color:var(--ink-soft);font-weight:700;margin:0 0 12px;
+    display:flex;align-items:center;gap:10px}
+  .pref-group h3::after{content:"";flex:1;height:1px;background:var(--line)}
+
+  .cards{display:grid;gap:16px}
+  .loan{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+    padding:20px;position:relative;box-shadow:0 3px 10px rgba(62,155,224,.06)}
+  .loan .bank{font-size:12px;color:var(--ink-soft)}
+  .loan .name{font-size:17px;font-weight:800;color:var(--ink);margin:2px 0 12px}
+  .loan .tags{position:absolute;top:18px;right:18px;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:52%}
+  .tag{font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;white-space:nowrap;border:1px solid transparent}
+  .tag.save{background:#E9F4FC;color:var(--blue-deep);border-color:#CBE6F8}
+  .tag.free{background:#EAF7EE;color:#3A8A50;border-color:#CDEBD6}
+  .tag.area{background:#F3EEFB;color:#6A4FB3;border-color:#E3D8F5}
+  .tag.warn{background:#FDF3DD;color:#9A6A12;border-color:#F3E2B6}
+
+  .rateline{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+    background:var(--pale);border-radius:var(--r);padding:12px 16px;margin-bottom:14px}
+  .rateline .lbl{font-size:12.5px;color:var(--blue-deep);font-weight:700}
+  .rateline .big{font-size:22px;font-weight:800;color:var(--blue);line-height:1}
+  .rateline .sub{font-size:11.5px;color:var(--ink-soft)}
+
+  .specs{display:grid;grid-template-columns:1fr 1fr;gap:2px 20px;margin-bottom:16px}
+  .specs .row{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #EEF4F9;padding:7px 0;font-size:13.5px}
+  .specs .row .k{color:var(--ink-soft)}
+  .specs .row .v{font-weight:700;text-align:right}
+  @media(max-width:560px){ .specs{grid-template-columns:1fr} }
+
+  .btn{display:inline-flex;align-items:center;justify-content:space-between;gap:14px;
+    background:var(--blue);color:#fff;text-decoration:none;font-weight:700;font-size:14px;
+    padding:11px 20px;border-radius:6px;min-width:200px}
+  .btn::after{content:"›";font-size:18px;line-height:1}
+  .btn:hover{background:var(--blue-deep)}
+
+  .note-inline{font-size:12.5px;color:var(--ink-soft);margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
+
+  .blueband{background:linear-gradient(100deg,var(--blue-deep) 0%,var(--blue) 100%);color:#fff}
+  .blueband .wrap{padding:36px 20px;text-align:center}
+  .blueband h2{font-size:20px;font-weight:800;margin:0 0 8px;line-height:1.6}
+  .blueband p{margin:0;color:#EAF4FB;font-size:13.5px}
+
+  .disclaimer{background:#fff;border:1px solid var(--line);border-radius:var(--r);
+    padding:18px 20px;font-size:13px;color:var(--ink-soft)}
+  .disclaimer b{color:var(--ink)}
+
+  footer{background:var(--foot);color:#fff;padding:24px 0 32px;font-size:12px}
+</style>
+</head>
+<body>
+
+<div style="background:var(--blue-deep);color:#fff;text-align:center;font-size:12px;padding:6px">これは「四国の比較ページの見本」です（他エリアと同じデザインを使用）</div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">四国の地方銀行カードローン</span>
+    <h1>四国のカードローンを、<br><span class="mark">公式データだけ</span>で比べる。</h1>
+    <p>徳島・香川・愛媛・高知の地方銀行8行を、公式サイトの情報だけでまとめました。</p>
+    <span class="asof"><b>データ確認日：2026年9月</b>／各行公式サイトより</span>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Compare</p>
+      <h2 class="head">カードローンをくらべる</h2>
+      <p class="lead">実際に借りられる金利や限度額は、各行の審査で決まります。徳島大正銀行・香川銀行・高知銀行は同じ保証会社（四国総合信用）を使っています。</p>
+
+      <div class="pref-nav">
+        <a href="#tokushima">徳島県（2行）</a>
+        <a href="#kagawa">香川県（2行）</a>
+        <a href="#ehime">愛媛県（2行）</a>
+        <a href="#kochi">高知県（2行）</a>
+      </div>
+
+      <div class="pref-group" id="tokushima">
+        <h3>徳島県</h3>
+        <div class="cards">
+          <div class="loan">
+            <div class="tags"><span class="tag free">口座不要</span></div>
+            <div class="bank">阿波銀行</div>
+            <div class="name">あわぎんスマートネクスト</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">1.70%〜14.80%</span><span class="sub">限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">10万〜800万円</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">なしでも申込可</span></div>
+              <div class="row"><span class="k">融資スピード</span><span class="v">審査最短即日</span></div>
+            </div>
+            <a class="btn" href="https://www.awabank.co.jp/smartnext/" target="_blank" rel="noopener">公式ページを見る</a>
+            <div class="note-inline">他に「パワーアップカードローン」「あわぎんカードローンエース」もあります。</div>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag area">四国総合信用保証</span></div>
+            <div class="bank">徳島大正銀行</div>
+            <div class="name">SaSaっとカードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">7.5%〜11.5%</span><span class="sub">給与受取/住宅ローン利用者は5.5%〜8.5%</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">10万〜500万円</span></div>
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜65歳</span></div>
+              <div class="row"><span class="k">Web完結</span><span class="v">できる</span></div>
+            </div>
+            <a class="btn" href="https://www.tokugin.co.jp/manual/pdf/0410.pdf" target="_blank" rel="noopener">公式ページを見る</a>
+            <div class="note-inline">口座に貸越をセットする「カードローンパートナー」もあります。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pref-group" id="kagawa">
+        <h3>香川県</h3>
+        <div class="cards">
+          <div class="loan">
+            <div class="tags"><span class="tag free">口座不要</span></div>
+            <div class="bank">百十四銀行</div>
+            <div class="name">114ニューカードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">5.0%〜12.0%</span><span class="sub">固定</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜65歳未満</span></div>
+              <div class="row"><span class="k">契約期間</span><span class="v">3年更新（満70歳以降新規不可）</span></div>
+              <div class="row"><span class="k">保証会社</span><span class="v">エム・ユー信用保証</span></div>
+            </div>
+            <a class="btn" href="https://www.114bank.co.jp/personal/products/loan/newcard.html" target="_blank" rel="noopener">公式ページを見る</a>
+            <div class="note-inline">口座保有者向けWeb完結の「114スマートネクスト」もあります。</div>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag area">四国総合信用保証</span></div>
+            <div class="bank">香川銀行</div>
+            <div class="name">PaPaっとCard</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">7.0%〜14.6%</span><span class="sub">限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">10万〜300万円</span></div>
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜65歳未満</span></div>
+              <div class="row"><span class="k">Web完結</span><span class="v">できる</span></div>
+            </div>
+            <a class="btn" href="https://www.kagawabank.co.jp/kojin/loan/papacard/papacard_papa.html" target="_blank" rel="noopener">公式ページを見る</a>
+            <div class="note-inline">住宅ローン利用者向けの「PaPaっとCard〔プレミアム〕」「家っとカード」もあります。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pref-group" id="ehime">
+        <h3>愛媛県</h3>
+        <div class="cards">
+          <div class="loan">
+            <div class="tags"><span class="tag save">30日間無利息</span></div>
+            <div class="bank">愛媛銀行</div>
+            <div class="name">ひめぎんクイックカードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">4.4%〜14.6%</span><span class="sub">限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">1万〜800万円</span></div>
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜65歳以下</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">不要</span></div>
+            </div>
+            <a class="btn" href="https://www.himegin.co.jp/personal/loan/card/support/" target="_blank" rel="noopener">公式ページを見る</a>
+            <div class="note-inline">低金利の「カードローン・サポート」（上限12.5%）と「アプリローン」もあります。</div>
+          </div>
+          <div class="loan">
+            <div class="tags"><span class="tag area">13都道府県対応</span></div>
+            <div class="bank">伊予銀行</div>
+            <div class="name">SAFETY</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">1.9%〜14.5%</span><span class="sub">限度額で決まる</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">最大1,000万円</span></div>
+              <div class="row"><span class="k">申込年齢</span><span class="v">満74歳まで申込可</span></div>
+              <div class="row"><span class="k">口座</span><span class="v">不要</span></div>
+            </div>
+            <a class="btn" href="https://www.iyobank.co.jp/kariru/safety.html" target="_blank" rel="noopener">公式ページを見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pref-group" id="kochi">
+        <h3>高知県</h3>
+        <div class="cards">
+          <div class="loan">
+            <div class="tags"><span class="tag area">四国+東京・大阪・岡山</span></div>
+            <div class="bank">高知銀行</div>
+            <div class="name">こうぎんカードローン</div>
+            <div class="rateline"><span class="lbl">実質年率</span><span class="big">随時9.0-12.5%／定額7.5-11.0%</span><span class="sub">引下げ込み・公式確認済</span></div>
+            <div class="specs">
+              <div class="row"><span class="k">限度額</span><span class="v">10万〜200万円(5コース)</span></div>
+              <div class="row"><span class="k">申込年齢</span><span class="v">満20〜72歳以下</span></div>
+              <div class="row"><span class="k">申込エリア</span><span class="v">高知・愛媛・香川・徳島・東京・大阪・岡山</span></div>
+            </div>
+            <a class="btn" href="https://www.kochi-bank.co.jp/loan/webloan/card.html" target="_blank" rel="noopener">公式ページを見る</a>
+            <div class="note-inline">「こうぎんセレクトローンZEYO」（満69歳以下）もあります。</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="blueband">
+    <div class="wrap">
+      <h2>金利や条件は、変わることがあります。</h2>
+      <p>申し込みの前に、必ず各行の公式サイトで最新の内容をご確認ください。</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="disclaimer">
+        <b>ご利用にあたって</b><br>
+        金利・限度額・条件は変わることがあります。最新・正確な情報は、必ず各行の公式サイトや窓口でご確認ください。
+        本サイトは情報提供が目的で、特定のローンの契約をおすすめするものではありません。実際に適用される金利や限度額は各行の審査で決まります。返済のことを考えた、計画的なご利用をおすすめします。
+        （審査結果によって金利が決まる商品や、確認中の項目は掲載値が目安です。）
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    四国のカードローン比較（見本）｜データ確認日：2026年9月・各行公式サイトより<br>
+    ※本ページはレイアウト確認用のサンプルです。
+  </div>
+</footer>
+
+</body>
+</html>
