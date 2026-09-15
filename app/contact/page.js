@@ -2,7 +2,7 @@ import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
 import { DATA_AS_OF } from "@/lib/site";
 
-const CONTACT_EMAIL = "info@example.com";
+const CONTACT_EMAIL = "karireco@proton.com";
 
 export const metadata = {
   title: "お問い合わせ",
