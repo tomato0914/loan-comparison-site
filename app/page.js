@@ -122,9 +122,12 @@ export default function TopPage() {
           <div className="wrap">
             <p className="eyebrow">About</p>
             <h2 className="head">このサイトについて</h2>
-            <p className="lead" style={{ marginBottom: 0 }}>
+            <p className="lead">
               各行の公式サイトに掲載されている情報だけをもとに、金利・限度額・申込条件をまとめています。
               情報は確認した時点のものです。実際にお申し込みの際は、必ず各行の公式サイトで最新の内容をご確認ください。
+            </p>
+            <p className="lead" style={{ marginBottom: 0 }}>
+              <Link href="/about/">このサイトについて、詳しくはこちら →</Link>
             </p>
           </div>
         </section>

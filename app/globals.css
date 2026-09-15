@@ -629,3 +629,37 @@ footer {
 footer .wrap {
   opacity: .92;
 }
+footer .foot-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 16px;
+  opacity: 1;
+}
+footer .foot-links a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* このサイトについて（About）ページの本文 */
+.article {
+  max-width: 760px;
+}
+.article h2 {
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--blue);
+  line-height: 1.5;
+  margin: 44px 0 16px;
+}
+.article h2:first-child {
+  margin-top: 0;
+}
+.article p {
+  margin: 0 0 16px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.9;
+}
+.article .checklist {
+  margin: 18px 0 8px;
+}
