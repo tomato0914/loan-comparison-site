@@ -11,6 +11,8 @@ export default function SiteFooter({ pageTitle }) {
         <div className="foot-links">
           <Link href="/">トップ</Link>
           <Link href="/about/">このサイトについて</Link>
+          <Link href="/privacy/">プライバシーポリシー</Link>
+          <Link href="/contact/">お問い合わせ</Link>
         </div>
       </div>
     </footer>
