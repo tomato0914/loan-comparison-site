@@ -4,7 +4,7 @@ import AreaComparePage from "@/components/AreaComparePage";
 export const metadata = {
   title: "東海のカードローン比較",
   description:
-    "東海（静岡・岐阜・愛知・三重）の地方銀行10行・13商品のカードローンを、金利・限度額・エリアで比較します。",
+    "東海（静岡・岐阜・愛知・三重）の地方銀行10行・14商品のカードローンを、金利・限度額・エリアで比較します。",
 };
 
 export default function TokaiPage() {
