@@ -2,10 +2,13 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import SiteFooter from "@/components/SiteFooter";
 import Disclaimer from "@/components/Disclaimer";
-import { DATA_AS_OF } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { DATA_AS_OF, SITE_URL } from "@/lib/site";
 import { prefSlug } from "@/lib/prefectures";
+import { parseInterestRate } from "@/lib/rate";
 
 function hasTagLabel(loan, label) {
   return loan.tags?.some((tag) => tag.label === label) ?? false;
@@ -84,6 +87,53 @@ function LoanCard({ loan }) {
   );
 }
 
+function buildBreadcrumbJsonLd(regionName, pathname) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "トップ", item: SITE_URL },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: regionName,
+        item: `${SITE_URL}${pathname}`,
+      },
+    ],
+  };
+}
+
+function buildProductsJsonLd(loans) {
+  const items = loans
+    .map((loan) => {
+      const rate = parseInterestRate(loan.rate);
+      if (!rate) return null;
+
+      const interestRate =
+        rate.kind === "single"
+          ? rate.value
+          : {
+              "@type": "QuantitativeValue",
+              minValue: rate.min,
+              maxValue: rate.max,
+              unitText: "percent",
+            };
+
+      return {
+        "@type": "FinancialProduct",
+        name: loan.product,
+        provider: { "@type": "BankOrCreditUnion", name: loan.bank },
+        interestRate,
+        url: loan.officialUrl,
+      };
+    })
+    .filter(Boolean);
+
+  if (items.length === 0) return null;
+
+  return { "@context": "https://schema.org", "@graph": items };
+}
+
 function groupByPref(loans) {
   const groups = [];
   for (const loan of loans) {
@@ -109,6 +159,13 @@ export default function AreaComparePage({
   const [accountFreeOnly, setAccountFreeOnly] = useState(false);
   const [nationwideOnly, setNationwideOnly] = useState(false);
   const [controlsOpen, setControlsOpen] = useState(true);
+  const pathname = usePathname();
+
+  const breadcrumbJsonLd = useMemo(
+    () => buildBreadcrumbJsonLd(regionName, pathname),
+    [regionName, pathname]
+  );
+  const productsJsonLd = useMemo(() => buildProductsJsonLd(loans), [loans]);
 
   const grouped = loans.some((loan) => loan.pref);
 
@@ -137,6 +194,9 @@ export default function AreaComparePage({
 
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd} />
+      {productsJsonLd && <JsonLd data={productsJsonLd} />}
+
       <div className="wrap">
         <p className="crumb">
           <Link href="/">トップ</Link>

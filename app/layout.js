@@ -1,6 +1,24 @@
 import "./globals.css";
 import Script from "next/script";
+import JsonLd from "@/components/JsonLd";
 import { SITE_NAME, SITE_URL, GA_ID } from "@/lib/site";
+
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      name: SITE_NAME,
+      url: SITE_URL,
+      inLanguage: "ja",
+    },
+    {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+  ],
+};
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -20,6 +38,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ja">
       <body>
+        <JsonLd data={siteJsonLd} />
         {children}
         {GA_ID && (
           <>

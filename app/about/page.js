@@ -1,11 +1,25 @@
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
-import { DATA_AS_OF } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { DATA_AS_OF, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata = {
   title: "このサイトについて",
   description:
     "このサイトの成り立ちや情報の集め方、ご利用にあたっての注意点をご案内します。",
+};
+
+const aboutJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "このサイトについて",
+  url: `${SITE_URL}/about/`,
+  isPartOf: { "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
+  about: {
+    "@type": "Organization",
+    name: SITE_NAME,
+    description: "個人運営のカードローン比較サイトです。",
+  },
 };
 
 const METHOD_ITEMS = [
@@ -34,6 +48,8 @@ const METHOD_ITEMS = [
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={aboutJsonLd} />
+
       <div className="wrap">
         <p className="crumb">
           <Link href="/">トップ</Link>
