@@ -4,13 +4,17 @@
     "bank": "群馬銀行",
     "product": "ナイスサポートカード＋",
     "rate": "1.5%〜14.5%",
-    "rateNote": "限度額で決まる",
-    "specs": [
-      { "k": "限度額", "v": "10万〜1,000万円" },
-      { "k": "申込年齢", "v": "満20〜75歳" },
-      { "k": "口座", "v": "不要" },
-      { "k": "Web完結", "v": "できる" }
-    ],
+    "rateNote": "記載なし・限度額で決定",
+    "specs": {
+      "limit": "10万〜1,000万円",
+      "age": "満20〜75歳",
+      "area": "記載なし",
+      "account": "不要",
+      "guarantee": "記載なし",
+      "webComplete": "できる",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
     "note": "低金利の「すまいるパートナー」（満60歳未満限定）もあります。",
     "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.gunmabank.co.jp/kojin/kariru/nicesup/lp/"
@@ -20,13 +24,17 @@
     "bank": "東和銀行",
     "product": "とんとん",
     "rate": "参考13.0%〜14.6%",
-    "rateNote": "限度額10万円単位",
-    "specs": [
-      { "k": "申込年齢", "v": "満20〜65歳" },
-      { "k": "申込エリア", "v": "群馬・埼玉・東京・栃木・千葉・神奈川" },
-      { "k": "口座", "v": "不要（50万円まで）" },
-      { "k": "保証会社", "v": "SMBCコンシューマーファイナンス" }
-    ],
+    "rateNote": "記載なし・限度額10万円単位",
+    "specs": {
+      "limit": "記載なし",
+      "age": "満20〜65歳",
+      "area": "群馬・埼玉・東京・栃木・千葉・神奈川",
+      "account": "不要（50万円まで）",
+      "guarantee": "SMBCコンシューマーファイナンス",
+      "webComplete": "記載なし",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
     "tags": [
       { "type": "area", "label": "6県対応" },
       { "type": "free", "label": "口座不要" }
@@ -38,13 +46,17 @@
     "bank": "足利銀行",
     "product": "モシカ",
     "rate": "1.5%〜14.8%",
-    "rateNote": "限度額で決まる",
-    "specs": [
-      { "k": "限度額", "v": "10万〜800万円" },
-      { "k": "申込エリア", "v": "栃木・埼玉・群馬・茨城・福島の5県全域" },
-      { "k": "口座", "v": "不要" },
-      { "k": "保証会社", "v": "アコム" }
-    ],
+    "rateNote": "記載なし・限度額で決定",
+    "specs": {
+      "limit": "10万〜800万円",
+      "age": "記載なし",
+      "area": "栃木・埼玉・群馬・茨城・福島の5県全域",
+      "account": "不要",
+      "guarantee": "アコム",
+      "webComplete": "記載なし",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
     "tags": [
       { "type": "area", "label": "5県対応" },
       { "type": "free", "label": "口座不要" }
@@ -56,13 +68,17 @@
     "bank": "栃木銀行",
     "product": "とちぎんスマイルカードローン",
     "rate": "1.9%〜14.5%",
-    "rateNote": "限度額で決まる",
-    "specs": [
-      { "k": "限度額", "v": "10万〜800万円" },
-      { "k": "申込エリア", "v": "営業区域内（ネット支店は5都県）" },
-      { "k": "口座", "v": "口座なしでも申込可" },
-      { "k": "Web完結", "v": "できる" }
-    ],
+    "rateNote": "記載なし・限度額で決定",
+    "specs": {
+      "limit": "10万〜800万円",
+      "age": "記載なし",
+      "area": "営業区域内（ネット支店は5都県）",
+      "account": "口座なしでも申込可",
+      "guarantee": "記載なし",
+      "webComplete": "できる",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
     "tags": [
       { "type": "area", "label": "営業区域内" },
       { "type": "free", "label": "口座不要" }
@@ -74,13 +90,18 @@
     "bank": "常陽銀行",
     "product": "キャッシュピット",
     "rate": "1.5%〜15.0%",
-    "rateNote": "限度額で決まる",
-    "specs": [
-      { "k": "限度額", "v": "〜500万円" },
-      { "k": "申込年齢", "v": "20〜75歳目安" },
-      { "k": "口座", "v": "不要" },
-      { "k": "制限", "v": "学生10万円・主婦30万円" }
-    ],
+    "rateNote": "記載なし・限度額で決定",
+    "specs": {
+      "limit": "〜500万円",
+      "age": "20〜75歳目安",
+      "area": "記載なし",
+      "account": "不要",
+      "guarantee": "記載なし",
+      "webComplete": "記載なし",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
+    "note": "学生は10万円、主婦は30万円までの制限があります。",
     "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.joyobank.co.jp/personal/loan/cashpit/"
   },
@@ -89,12 +110,17 @@
     "bank": "筑波銀行",
     "product": "つくばカード アスジョイ",
     "rate": "4.800%〜14.600%",
-    "rateNote": "固定・公式確認済",
-    "specs": [
-      { "k": "限度額", "v": "500万円以内" },
-      { "k": "口座", "v": "不要" },
-      { "k": "Web完結", "v": "できる" }
-    ],
+    "rateNote": "固定金利・公式確認済",
+    "specs": {
+      "limit": "500万円以内",
+      "age": "記載なし",
+      "area": "記載なし",
+      "account": "不要",
+      "guarantee": "記載なし",
+      "webComplete": "できる",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
     "note": "口座あり型の「つくばカードローン」もあります。",
     "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.tsukubabank.co.jp/individual/loan/usjoy/"
@@ -104,14 +130,18 @@
     "bank": "武蔵野銀行",
     "product": "むさしのスマートネクスト",
     "rate": "1.4%〜14.8%",
-    "rateNote": "限度額で決まる",
-    "specs": [
-      { "k": "限度額", "v": "最大800万円" },
-      { "k": "申込年齢", "v": "満20〜65歳" },
-      { "k": "申込エリア", "v": "営業エリア内・東京都内" },
-      { "k": "条件", "v": "年金収入のみは不可" }
-    ],
-    "note": "契約には来店が必要です。",
+    "rateNote": "記載なし・限度額で決定",
+    "specs": {
+      "limit": "最大800万円",
+      "age": "満20〜65歳",
+      "area": "営業エリア内・東京都内",
+      "account": "記載なし",
+      "guarantee": "記載なし",
+      "webComplete": "できない（来店が必要）",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
+    "note": "年金収入のみの方は利用できません。契約には来店が必要です。",
     "tags": [{ "type": "area", "label": "営業エリア内・東京都内" }],
     "officialUrl": "https://www2.musashinobank.co.jp/lp/card/index.html"
   },
@@ -120,13 +150,18 @@
     "bank": "埼玉りそな銀行",
     "product": "カードローン",
     "rate": "0.95%〜13.90%",
-    "rateNote": "変動・13コース",
-    "specs": [
-      { "k": "限度額", "v": "10万〜800万円" },
-      { "k": "申込年齢", "v": "満20〜66歳未満" },
-      { "k": "条件", "v": "専業主婦・学生は不可" },
-      { "k": "住宅ローン利用者", "v": "▲0.5%特典" }
-    ],
+    "rateNote": "記載なし・13コースで決定",
+    "specs": {
+      "limit": "10万〜800万円",
+      "age": "満20〜66歳未満",
+      "area": "営業エリア内",
+      "account": "記載なし",
+      "guarantee": "りそなグループ共通保証",
+      "webComplete": "できる",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
+    "note": "専業主婦・学生は利用できません。限度額200万円超は満60歳未満が対象です。住宅ローン利用者は▲0.5%の特典があります。",
     "tags": [{ "type": "save", "label": "下限0.95%" }],
     "officialUrl": "https://www.saitamaresona.co.jp/kojin/cardloan/landing_b.html"
   },
@@ -135,18 +170,19 @@
     "bank": "千葉銀行",
     "product": "クイックパワー＜アドバンス＞",
     "rate": "2.0%〜14.0%",
-    "rateNote": "限度額で決まる",
-    "specs": [
-      { "k": "限度額", "v": "10万〜800万円" },
-      { "k": "口座", "v": "不要" },
-      { "k": "住宅ローン利用者", "v": "1.5%〜13.5%に優遇" },
-      { "k": "Web完結", "v": "できる" }
-    ],
-    "note": "審査で金利が決まる「プレミアクラス」もあります。",
-    "tags": [
-      { "type": "free", "label": "口座不要" },
-      { "type": "save", "label": "上限14.0%" }
-    ],
+    "rateNote": "記載なし・限度額で決定",
+    "specs": {
+      "limit": "10万〜800万円",
+      "age": "記載なし",
+      "area": "記載なし",
+      "account": "不要",
+      "guarantee": "記載なし",
+      "webComplete": "できる",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
+    "note": "住宅ローン利用者は1.5%〜13.5%に優遇されます。審査で金利が決まる「プレミアクラス」もあります。",
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.chibabank.co.jp/kojin/services/loan/cardloan/cardloan_detail/qp_detail"
   },
   {
@@ -154,13 +190,18 @@
     "bank": "千葉興業銀行",
     "product": "カードローン",
     "rate": "1.6%〜14.8%",
-    "rateNote": "変動・公式確認済",
-    "specs": [
-      { "k": "限度額", "v": "最大1,000万円" },
-      { "k": "申込年齢", "v": "満20〜69歳" },
-      { "k": "その他商品", "v": "あんしんアップ・すまいる・リリーフ" }
-    ],
-    "note": "複数商品があり、返済方法や条件が異なります。",
+    "rateNote": "変動金利・公式確認済",
+    "specs": {
+      "limit": "最大1,000万円",
+      "age": "満20〜69歳",
+      "area": "記載なし",
+      "account": "記載なし",
+      "guarantee": "記載なし",
+      "webComplete": "記載なし",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
+    "note": "「あんしんアップ」「すまいる」「リリーフ」など複数商品があり、返済方法や条件が異なります。",
     "tags": [{ "type": "area", "label": "千葉・東京23区等" }],
     "officialUrl": "https://www.chibakogyo-bank.co.jp/kojin/cardloan/anshinup.html"
   },
@@ -169,12 +210,17 @@
     "bank": "京葉銀行",
     "product": "そっけつくん",
     "rate": "5.0%〜14.0%",
-    "rateNote": "固定・公式確認済",
-    "specs": [
-      { "k": "限度額", "v": "最大300万円（Web完結は100万円以内）" },
-      { "k": "保証会社", "v": "オリエントコーポレーション" },
-      { "k": "口座", "v": "必要" }
-    ],
+    "rateNote": "固定金利・公式確認済",
+    "specs": {
+      "limit": "最大300万円",
+      "age": "記載なし",
+      "area": "記載なし",
+      "account": "必要",
+      "guarantee": "オリエントコーポレーション",
+      "webComplete": "できる（100万円以内）",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
     "note": "店頭のみの「京葉銀行カードローン」は上限金利が1.0%低くなります。",
     "tags": [],
     "officialUrl": "https://www.keiyobank.co.jp/individual/loan/card/sokketsu/"
@@ -184,13 +230,17 @@
     "bank": "きらぼし銀行",
     "product": "カードローン",
     "rate": "1.60%〜14.80%",
-    "rateNote": "限度額で決まる",
-    "specs": [
-      { "k": "限度額", "v": "10万〜1,000万円" },
-      { "k": "申込エリア", "v": "東京・神奈川・千葉・埼玉" },
-      { "k": "口座", "v": "不要" },
-      { "k": "保証会社", "v": "アイフル" }
-    ],
+    "rateNote": "記載なし・限度額で決定",
+    "specs": {
+      "limit": "10万〜1,000万円",
+      "age": "記載なし",
+      "area": "東京・神奈川・千葉・埼玉",
+      "account": "不要",
+      "guarantee": "アイフル",
+      "webComplete": "記載なし",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
     "tags": [
       { "type": "area", "label": "1都3県" },
       { "type": "free", "label": "口座不要" }
@@ -203,12 +253,17 @@
     "bank": "東日本銀行",
     "product": "お江戸日本橋カードローン",
     "rate": "2.9/7.0/9.8/14.5%",
-    "rateNote": "4段階固定",
-    "specs": [
-      { "k": "限度額", "v": "10万〜500万円" },
-      { "k": "申込エリア", "v": "東京・神奈川・埼玉・千葉・茨城・栃木" },
-      { "k": "Web完結", "v": "できる" }
-    ],
+    "rateNote": "記載なし・4段階で決定",
+    "specs": {
+      "limit": "10万〜500万円",
+      "age": "記載なし",
+      "area": "東京・神奈川・埼玉・千葉・茨城・栃木",
+      "account": "記載なし",
+      "guarantee": "記載なし",
+      "webComplete": "できる",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
     "note": "「ゆあポケットⅡ」「BIZポケット」「ホームカードⅡ」もあります。",
     "tags": [{ "type": "area", "label": "1都5県" }],
     "officialUrl": "https://www.higashi-nipponbank.co.jp/oedonihonbashi/services/cardloan01.html"
@@ -218,12 +273,17 @@
     "bank": "東京スター銀行",
     "product": "スターカードローンα",
     "rate": "1.5%〜14%台",
-    "rateNote": "限度額で決まる",
-    "specs": [
-      { "k": "限度額", "v": "最大1,000万円" },
-      { "k": "口座", "v": "必要" },
-      { "k": "Web完結", "v": "できる" }
-    ],
+    "rateNote": "記載なし・限度額で決定",
+    "specs": {
+      "limit": "最大1,000万円",
+      "age": "記載なし",
+      "area": "記載なし",
+      "account": "必要",
+      "guarantee": "記載なし",
+      "webComplete": "できる",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
     "tags": [{ "type": "save", "label": "限度額1,000万円" }],
     "officialUrl": "https://www.tokyostarbank.co.jp/lp/cardloan/"
   },
@@ -232,13 +292,17 @@
     "bank": "横浜銀行",
     "product": "カードローン",
     "rate": "1.5%〜14.6%",
-    "rateNote": "変動・限度額で決まる",
-    "specs": [
-      { "k": "限度額", "v": "10万〜1,000万円" },
-      { "k": "申込年齢", "v": "満20〜69歳" },
-      { "k": "申込エリア", "v": "神奈川・東京全域、群馬の一部" },
-      { "k": "口座", "v": "不要" }
-    ],
+    "rateNote": "記載なし・限度額で決定",
+    "specs": {
+      "limit": "10万〜1,000万円",
+      "age": "満20〜69歳",
+      "area": "神奈川・東京全域、群馬の一部",
+      "account": "不要",
+      "guarantee": "SMBCコンシューマーファイナンス",
+      "webComplete": "記載なし",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
     "note": "住宅ローン利用者専用の優遇版もあります。",
     "tags": [
       { "type": "area", "label": "神奈川・東京全域" },
@@ -251,12 +315,17 @@
     "bank": "神奈川銀行",
     "product": "マイサポート",
     "rate": "7.30%〜11.30%",
-    "rateNote": "取引状況で最大▲4.0%",
-    "specs": [
-      { "k": "限度額", "v": "100万円まで" },
-      { "k": "申込年齢", "v": "満18〜75歳(完済時)" },
-      { "k": "口座", "v": "口座なしでも新規開設で利用可" }
-    ],
+    "rateNote": "記載なし・取引状況で最大▲4.0%",
+    "specs": {
+      "limit": "100万円まで",
+      "age": "満18〜75歳(完済時)",
+      "area": "営業区域内",
+      "account": "口座なしでも新規開設で利用可",
+      "guarantee": "かんそうしん",
+      "webComplete": "記載なし",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
     "tags": [
       { "type": "free", "label": "口座不要" },
       { "type": "save", "label": "上限11.30%" }

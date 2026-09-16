@@ -4,13 +4,17 @@
     "bank": "北陸銀行",
     "product": "ほくぎんカードローン",
     "rate": "0.9%〜14.95%",
-    "rateNote": "変動・限度額で決まる",
-    "specs": [
-      { "k": "限度額", "v": "最高1,000万円" },
-      { "k": "契約期間", "v": "1年更新（満76歳で停止）" },
-      { "k": "口座", "v": "不要" },
-      { "k": "保証会社", "v": "アコム" }
-    ],
+    "rateNote": "記載なし・限度額で決定",
+    "specs": {
+      "limit": "最高1,000万円",
+      "age": "記載なし",
+      "area": "記載なし",
+      "account": "不要",
+      "guarantee": "アコム",
+      "webComplete": "記載なし",
+      "speed": "記載なし",
+      "contract": "1年更新（満76歳で停止）"
+    },
     "note": "口座あり型の「スーパーNOW」（給与振込で優遇）もあります。",
     "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.hokugin.co.jp/loan/hokugincardloan/"
@@ -20,14 +24,18 @@
     "bank": "富山銀行",
     "product": "スピード王MAX",
     "rate": "4.5%〜14.6%",
-    "rateNote": "変動",
-    "specs": [
-      { "k": "申込エリア", "v": "富山県・石川県" },
-      { "k": "住宅ローン利用者", "v": "上限8.0%に優遇" },
-      { "k": "保証会社", "v": "新生フィナンシャル" },
-      { "k": "融資スピード", "v": "申込から1週間ほど" }
-    ],
-    "note": "旧「富山カードローン」は募集終了しています。",
+    "rateNote": "記載なし・記載なし",
+    "specs": {
+      "limit": "記載なし",
+      "age": "記載なし",
+      "area": "富山県・石川県",
+      "account": "記載なし",
+      "guarantee": "新生フィナンシャル",
+      "webComplete": "記載なし",
+      "speed": "申込から1週間ほど",
+      "contract": "記載なし"
+    },
+    "note": "住宅ローン利用者は上限8.0%に優遇されます。旧「富山カードローン」は募集終了しています。",
     "tags": [{ "type": "area", "label": "富山・石川限定" }],
     "officialUrl": "https://www.toyamabank.co.jp/pages/kojin/kariru/free/speed.htm"
   },
@@ -36,13 +44,18 @@
     "bank": "北國銀行",
     "product": "北國カードローン DAY SMART",
     "rate": "5.0%〜9.5%",
-    "rateNote": "固定・公式確認済",
-    "specs": [
-      { "k": "限度額", "v": "最大300万円" },
-      { "k": "口座", "v": "口座があればWeb完結可" },
-      { "k": "保証", "v": "北國銀行自身が保証" }
-    ],
-    "note": "限度額は北陸4行の中で最も小さめです。外部の保証会社を使わず、北國銀行自身が保証しています。",
+    "rateNote": "固定金利・公式確認済",
+    "specs": {
+      "limit": "最大300万円",
+      "age": "記載なし",
+      "area": "記載なし",
+      "account": "記載なし",
+      "guarantee": "自社保証（外部保証会社なし）",
+      "webComplete": "口座があればできる",
+      "speed": "記載なし",
+      "contract": "記載なし"
+    },
+    "note": "限度額は北陸4行の中で最も小さめです。",
     "tags": [],
     "officialUrl": "https://www.hokkokubank.co.jp/customer/loan/daysmart/index.html"
   },
@@ -51,13 +64,17 @@
     "bank": "福井銀行",
     "product": "カードローン",
     "rate": "2.8%〜14.6%",
-    "rateNote": "変動",
-    "specs": [
-      { "k": "限度額", "v": "10万〜1,000万円" },
-      { "k": "口座", "v": "不要（他行口座にも即日振込可）" },
-      { "k": "保証会社", "v": "SMBCコンシューマーファイナンス" },
-      { "k": "Web完結", "v": "できる" }
-    ],
+    "rateNote": "記載なし・記載なし",
+    "specs": {
+      "limit": "10万〜1,000万円",
+      "age": "記載なし",
+      "area": "記載なし",
+      "account": "不要",
+      "guarantee": "SMBCコンシューマーファイナンス",
+      "webComplete": "できる",
+      "speed": "即日振込可（他行口座も対応）",
+      "contract": "記載なし"
+    },
     "note": "2026年5月に福邦銀行と合併し、現在は「福井銀行」に統一されています。",
     "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.fukuibank.co.jp/lp/cardloan3/"

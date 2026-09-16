@@ -21,10 +21,21 @@ function parseRateMin(rateStr) {
   return matches.length > 0 ? Math.min(...matches) : null;
 }
 
+const SPEC_FIELDS = [
+  ["limit", "限度額"],
+  ["age", "申込年齢"],
+  ["area", "申込エリア"],
+  ["account", "口座"],
+  ["guarantee", "保証会社"],
+  ["webComplete", "Web完結"],
+  ["speed", "融資スピード"],
+  ["contract", "契約期間"],
+];
+
 function parseLimitMax(loan) {
-  const spec = loan.specs?.find((s) => s.k.includes("限度額"));
-  if (!spec) return null;
-  const matches = [...spec.v.matchAll(/([\d,]+(?:\.\d+)?)万/g)].map((m) =>
+  const limit = loan.specs?.limit;
+  if (!limit) return null;
+  const matches = [...String(limit).matchAll(/([\d,]+(?:\.\d+)?)万/g)].map((m) =>
     parseFloat(m[1].replace(/,/g, ""))
   );
   return matches.length > 0 ? Math.max(...matches) : null;
@@ -67,10 +78,10 @@ function LoanCard({ loan }) {
         <span className="sub">{loan.rateNote}</span>
       </div>
       <div className="specs">
-        {loan.specs.map((spec, i) => (
-          <div className="row" key={i}>
-            <span className="k">{spec.k}</span>
-            <span className="v">{spec.v}</span>
+        {SPEC_FIELDS.map(([key, label]) => (
+          <div className="row" key={key}>
+            <span className="k">{label}</span>
+            <span className="v">{loan.specs[key] || "記載なし"}</span>
           </div>
         ))}
       </div>
