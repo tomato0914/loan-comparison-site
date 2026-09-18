@@ -214,7 +214,7 @@ export default function AreaComparePage({
           </h1>
           <p>{introText}</p>
           <span className="asof">
-            <b>データ確認日：{DATA_AS_OF}</b>／各行公式サイトより
+            <b>データ確認日：{DATA_AS_OF}</b>／各銀行公式サイトより
           </span>
         </div>
       </header>
@@ -350,7 +350,7 @@ export default function AreaComparePage({
         <div className="blueband">
           <div className="wrap">
             <h2>金利や条件は、変わることがあります。</h2>
-            <p>申し込みの前に、必ず各行の公式サイトで最新の内容をご確認ください。</p>
+            <p>申し込みの前に、必ず各銀行の公式サイトで最新の内容をご確認ください。</p>
           </div>
         </div>
 

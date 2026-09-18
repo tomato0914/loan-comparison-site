@@ -63,7 +63,7 @@ export default function AboutPage() {
           <span className="badge">About</span>
           <h1>このサイトについて</h1>
           <span className="asof">
-            <b>データ確認日：{DATA_AS_OF}</b>／各行公式サイトより
+            <b>データ確認日：{DATA_AS_OF}</b>／各銀行公式サイトより
           </span>
         </div>
       </header>

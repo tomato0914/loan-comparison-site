@@ -12,7 +12,7 @@ export default function ChugokuPage() {
     <AreaComparePage
       regionName="中国地方"
       introText="鳥取・島根・岡山・広島・山口の地方銀行8行を、公式サイトの情報だけでまとめました。"
-      leadText="実際に借りられる金利や限度額は、各行の審査で決まります。もみじ銀行・山口銀行は同じYMFGグループで条件がよく似ています。"
+      leadText="実際に借りられる金利や限度額は、各銀行の審査で決まります。もみじ銀行・山口銀行は同じYMFGグループで条件がよく似ています。"
       loans={loans}
       disclaimerNote="審査結果によって金利が決まる商品や、確認中の項目は掲載値が目安です"
     />

@@ -12,7 +12,7 @@ export default function TokaiPage() {
     <AreaComparePage
       regionName="東海"
       introText="静岡・岐阜・愛知・三重の地方銀行10行を、公式サイトの情報だけでまとめました。"
-      leadText="実際に借りられる金利や限度額は、各行の審査で決まります。"
+      leadText="実際に借りられる金利や限度額は、各銀行の審査で決まります。"
       loans={loans}
       disclaimerNote="変動金利の商品や、審査結果によって金利が決まる商品は、掲載値が目安です"
     />

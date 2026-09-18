@@ -12,7 +12,7 @@ export default function KansaiPage() {
     <AreaComparePage
       regionName="関西"
       introText="はじめての方にもわかりやすく。金利・限度額・エリアをまとめました。"
-      leadText="実際に借りられる金利や限度額は、各行の審査で決まります。"
+      leadText="実際に借りられる金利や限度額は、各銀行の審査で決まります。"
       loans={loans}
       disclaimerNote="MaxV・紀陽・関西みらい・但馬銀行の金利は変動金利のため、掲載値は目安です"
       checklist={[

@@ -12,7 +12,7 @@ export default function HokkaidoPage() {
     <AreaComparePage
       regionName="北海道"
       introText="北海道の地方銀行2行を、公式サイトの情報だけでまとめました。"
-      leadText="実際に借りられる金利や限度額は、各行の審査で決まります。"
+      leadText="実際に借りられる金利や限度額は、各銀行の審査で決まります。"
       loans={loans}
     />
   );

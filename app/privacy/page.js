@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           <span className="badge">Privacy</span>
           <h1>プライバシーポリシー</h1>
           <span className="asof">
-            <b>データ確認日：{DATA_AS_OF}</b>／各行公式サイトより
+            <b>データ確認日：{DATA_AS_OF}</b>／各銀行公式サイトより
           </span>
         </div>
       </header>

@@ -25,7 +25,7 @@ export default function ContactPage() {
           <span className="badge">Contact</span>
           <h1>お問い合わせ</h1>
           <span className="asof">
-            <b>データ確認日：{DATA_AS_OF}</b>／各行公式サイトより
+            <b>データ確認日：{DATA_AS_OF}</b>／各銀行公式サイトより
           </span>
         </div>
       </header>
