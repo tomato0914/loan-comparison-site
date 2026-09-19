@@ -24,10 +24,14 @@ export default function TopPage() {
           <span className="asof">
             <b>データ確認日：{DATA_AS_OF}</b>／各銀行公式サイトより
           </span>
-          <p className="quicklinks">
-            <Link href="#areas">エリアを見る</Link>
-            <Link href="#areas">金利で比較する</Link>
-          </p>
+          <div className="hero-actions">
+            <Link className="btn" href="#areas">
+              エリアを見る
+            </Link>
+            <Link className="btn" href="/cardloan/all/">
+              金利で比較する
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -80,7 +84,7 @@ export default function TopPage() {
             <h2 className="head">このサイトについて</h2>
             <p className="lead">
               各銀行の公式サイトに掲載されている情報を元に情報をまとめています。
-              情報は確認した時点のものです。実際にお申し込みの際は、必ず各銀行の公式サイトで最新の内容をご確認ください。
+              情報は確認した時点のものです。
             </p>
             <p className="lead" style={{ marginBottom: 0 }}>
               <Link href="/about/">このサイトについて、詳しくはこちら →</Link>
@@ -91,7 +95,6 @@ export default function TopPage() {
         <div className="blueband">
           <div className="wrap">
             <h2>金利や条件は、変わることがあります。</h2>
-            <p>申し込みの前に、必ず各銀行の公式サイトで最新の内容をご確認ください。</p>
           </div>
         </div>
 

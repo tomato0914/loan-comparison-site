@@ -165,8 +165,9 @@ export default function AreaComparePage({
   loans,
   disclaimerNote,
   checklist,
+  defaultSort = "none",
 }) {
-  const [sortMode, setSortMode] = useState("none");
+  const [sortMode, setSortMode] = useState(defaultSort);
   const [accountFreeOnly, setAccountFreeOnly] = useState(false);
   const [nationwideOnly, setNationwideOnly] = useState(false);
   const [controlsOpen, setControlsOpen] = useState(true);
@@ -361,7 +362,6 @@ export default function AreaComparePage({
         <div className="blueband">
           <div className="wrap">
             <h2>金利や条件は、変わることがあります。</h2>
-            <p>申し込みの前に、必ず各銀行の公式サイトで最新の内容をご確認ください。</p>
           </div>
         </div>
 

@@ -136,18 +136,11 @@ header.hero p {
   color: var(--blue-deep);
 }
 
-.quicklinks {
-  margin: 14px 0 0;
+.hero-actions {
+  margin: 20px 0 0;
   display: flex;
-  gap: 18px;
-  font-size: 13px;
-}
-.quicklinks a {
-  color: var(--ink-soft);
-  text-decoration: underline;
-}
-.quicklinks a:hover {
-  color: var(--blue-deep);
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 main section {
