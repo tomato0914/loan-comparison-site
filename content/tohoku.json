@@ -53,7 +53,7 @@
       "speed": "記載なし",
       "contract": "記載なし"
     },
-    "note": "Web申込みは店頭より▲0.5%優遇されます。",
+    "note": "Web申込みは店頭より0.5%の引き下げがあります。",
     "tags": [{ "type": "save", "label": "優遇あり" }],
     "officialUrl": "https://www.tohoku-bank.co.jp/personal/loan/card/"
   },
@@ -249,7 +249,7 @@
       "speed": "記載なし",
       "contract": "記載なし"
     },
-    "note": "来店型の「カードローンMAX500」もあります。住宅ローン利用者は▲0.5%優遇されます。",
+    "note": "来店型の「カードローンMAX500」もあります。住宅ローン利用者は0.5%の引き下げがあります。",
     "tags": [{ "type": "save", "label": "優遇あり" }],
     "officialUrl": "https://www.kirayaka.co.jp/lp/plus/index.html"
   },

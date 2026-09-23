@@ -36,6 +36,7 @@
       "contract": "記載なし"
     },
     "tags": [{ "type": "free", "label": "口座不要" }],
+    "note": "限度額は10万円単位で設定されます。",
     "officialUrl": "https://www.towabank.co.jp/easy/easyloan.html"
   },
   {
@@ -151,7 +152,7 @@
       "speed": "記載なし",
       "contract": "記載なし"
     },
-    "note": "専業主婦・学生は利用できません。限度額200万円超は満60歳未満が対象です。住宅ローン利用者は▲0.5%の特典があります。",
+    "note": "専業主婦・学生は利用できません。限度額200万円超は満60歳未満が対象です。住宅ローン利用者は0.5%の引き下げがあります。",
     "tags": [{ "type": "save", "label": "優遇あり" }],
     "officialUrl": "https://www.saitamaresona.co.jp/kojin/cardloan/landing_b.html"
   },
@@ -313,6 +314,7 @@
       { "type": "free", "label": "口座不要" },
       { "type": "save", "label": "優遇あり" }
     ],
+    "note": "取引状況により最大4.0%の金利引き下げがあります。",
     "officialUrl": "https://www.kanagawabank.co.jp/kojin/loan/card/"
   }
 ]
