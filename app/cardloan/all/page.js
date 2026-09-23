@@ -24,7 +24,7 @@ const loans = [
 export const metadata = {
   title: "全国の金利比較",
   description:
-    "全国9エリア・96商品の地方銀行カードローンを、金利が低い順に一覧比較できます。",
+    "全国9エリア・96商品の地方銀行カードローンを、最低金利が低い順に一覧比較できます。",
 };
 
 export default function AllAreasPage() {
@@ -32,7 +32,7 @@ export default function AllAreasPage() {
     <AreaComparePage
       regionName="全国"
       introText="全国9エリア・96商品を、エリアで区切らずまとめて比較できます。"
-      leadText="実際に借りられる金利や限度額は、各銀行の審査で決まります。デフォルトでは金利が低い順に並んでいます。"
+      leadText="実際に借りられる金利や限度額は、各銀行の審査で決まります。はじめは最低金利が低い順に並んでいます。"
       loans={loans}
       defaultSort="rateAsc"
       disclaimerNote="変動金利の商品や、審査結果によって金利が決まる商品は、掲載値が目安です"

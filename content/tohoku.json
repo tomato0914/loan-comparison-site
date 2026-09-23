@@ -4,8 +4,8 @@
     "bank": "青森みちのく銀行",
     "product": "青森みちのくカードローン",
     "rate": "2.4%〜14.5%",
-    "rateNote": "固定金利・限度額で決定",
     "specs": {
+      "rateType": "固定金利",
       "limit": "10万〜1,000万円",
       "age": "記載なし",
       "area": "記載なし",
@@ -16,7 +16,6 @@
       "contract": "3年自動更新"
     },
     "note": "2025年1月に青森銀行とみちのく銀行が合併し、旧2行の商品が統合されました。",
-    "tags": [],
     "officialUrl": "https://www.am-bk.co.jp/kojin/loan/cardloan/"
   },
   {
@@ -24,8 +23,8 @@
     "bank": "岩手銀行",
     "product": "エルパス",
     "rate": "1.8%〜14.6%",
-    "rateNote": "固定金利・審査で決定",
     "specs": {
+      "rateType": "固定金利",
       "limit": "10万〜1,000万円",
       "age": "満20〜69歳",
       "area": "記載なし",
@@ -36,7 +35,6 @@
       "contract": "記載なし"
     },
     "note": "勤続年数の指定はありません。",
-    "tags": [],
     "officialUrl": "https://www.iwatebank.co.jp/personal/loan/lpass/"
   },
   {
@@ -44,8 +42,8 @@
     "bank": "東北銀行",
     "product": "カードローン すいっち",
     "rate": "3.9%〜13.5%",
-    "rateNote": "固定金利・審査で決定",
     "specs": {
+      "rateType": "固定金利",
       "limit": "10万〜1,000万円",
       "age": "満20〜66歳",
       "area": "当行営業区域内",
@@ -56,19 +54,16 @@
       "contract": "記載なし"
     },
     "note": "Web申込みは店頭より▲0.5%優遇されます。",
-    "tags": [
-      { "type": "area", "label": "営業区域内" },
-      { "type": "save", "label": "Web優遇▲0.5%" }
-    ],
+    "tags": [{ "type": "save", "label": "優遇あり" }],
     "officialUrl": "https://www.tohoku-bank.co.jp/personal/loan/card/"
   },
   {
     "pref": "宮城県",
     "bank": "七十七銀行",
     "product": "77カードローン",
-    "rate": "7.900%",
-    "rateNote": "固定金利・Web契約",
+    "rate": "7.9%",
     "specs": {
+      "rateType": "固定金利",
       "limit": "10万〜300万円",
       "age": "記載なし",
       "area": "記載なし",
@@ -79,7 +74,7 @@
       "contract": "記載なし"
     },
     "note": "店頭契約は基準金利11.0%からの優遇となります。主力は小口向けで、住宅ローン利用者は特別金利4.8%です。77スマートネクストとは同時契約できません。",
-    "tags": [],
+    "tags": [{ "type": "save", "label": "優遇あり" }],
     "officialUrl": "https://www.77bank.co.jp/personal/loan/card/77card/"
   },
   {
@@ -87,8 +82,8 @@
     "bank": "七十七銀行",
     "product": "77スマートネクスト",
     "rate": "4.9%〜14.8%",
-    "rateNote": "記載なし・限度額20段階で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜500万円（20種）",
       "age": "満20〜69歳",
       "area": "当行営業地域内",
@@ -99,16 +94,16 @@
       "contract": "記載なし"
     },
     "note": "77カードローンとは同時契約できません。",
-    "tags": [{ "type": "area", "label": "営業地域内" }],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.77bank.co.jp/77smart_next1/"
   },
   {
     "pref": "宮城県",
     "bank": "仙台銀行",
     "product": "カードローンNEO",
-    "rate": "3.50%〜14.50%",
-    "rateNote": "固定金利・公式確認済",
+    "rate": "3.5%〜14.5%",
     "specs": {
+      "rateType": "固定金利",
       "limit": "記載なし",
       "age": "記載なし",
       "area": "ネット契約は宮城県在住限定",
@@ -119,10 +114,7 @@
       "contract": "記載なし"
     },
     "note": "審査に通らない場合は、フリーローンで再審査される仕組みがあります。",
-    "tags": [
-      { "type": "area", "label": "宮城県限定" },
-      { "type": "free", "label": "口座不要" }
-    ],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.sendaibank.co.jp/individual/loan/personal/card/"
   },
   {
@@ -130,8 +122,8 @@
     "bank": "秋田銀行",
     "product": "スマートネクスト",
     "rate": "1.8%〜14.8%",
-    "rateNote": "固定金利・限度額で決定",
     "specs": {
+      "rateType": "固定金利",
       "limit": "10万〜800万円",
       "age": "記載なし",
       "area": "記載なし",
@@ -142,7 +134,6 @@
       "contract": "記載なし"
     },
     "note": "契約方法はWEB完結・郵送・店頭から選べます。",
-    "tags": [],
     "officialUrl": "https://www.akita-bank.co.jp/personal/borrow/smartnext/card/"
   },
   {
@@ -150,8 +141,8 @@
     "bank": "秋田銀行",
     "product": "プライムカード",
     "rate": "5.0%〜9.8%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "年収の半分まで",
       "age": "記載なし",
       "area": "記載なし",
@@ -162,7 +153,7 @@
       "contract": "記載なし"
     },
     "note": "低金利・大口向けの商品です。契約は来店が必要です。",
-    "tags": [],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.akita-bank.co.jp/personal/borrow/card_prime/"
   },
   {
@@ -170,8 +161,8 @@
     "bank": "北都銀行",
     "product": "スーパーアシスト",
     "rate": "6.75%〜14.6%",
-    "rateNote": "記載なし・来店型",
     "specs": {
+      "rateType": "記載なし",
       "limit": "記載なし",
       "age": "記載なし",
       "area": "秋田・宮城・東京",
@@ -182,7 +173,6 @@
       "contract": "記載なし"
     },
     "note": "Web完結型を選ぶと金利は14.6%一律になります。",
-    "tags": [{ "type": "area", "label": "秋田・宮城・東京" }],
     "officialUrl": "https://www.hokutobank.co.jp/individual/loan/card/"
   },
   {
@@ -190,8 +180,8 @@
     "bank": "北都銀行",
     "product": "カードローン1000",
     "rate": "3.5%〜13.5%",
-    "rateNote": "記載なし・審査で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "最大1,000万円",
       "age": "満20〜69歳",
       "area": "記載なし",
@@ -202,7 +192,6 @@
       "contract": "記載なし"
     },
     "note": "大口向けの商品です。",
-    "tags": [],
     "officialUrl": "https://www.hokutobank.co.jp/individual/loan/cardloan1000/"
   },
   {
@@ -210,8 +199,8 @@
     "bank": "山形銀行",
     "product": "カードローン（口座あり型／口座レス型NEO）",
     "rate": "1.8%〜14.6%",
-    "rateNote": "記載なし・両型共通",
     "specs": {
+      "rateType": "記載なし",
       "limit": "最高1,000万円",
       "age": "満20歳〜最終返済75歳未満",
       "area": "口座レス型は山形・宮城限定",
@@ -229,8 +218,8 @@
     "bank": "荘内銀行",
     "product": "カードローン1000",
     "rate": "3.5%〜13.5%",
-    "rateNote": "固定金利・14段階で決定",
     "specs": {
+      "rateType": "固定金利",
       "limit": "10万〜1,000万円",
       "age": "満20歳〜完済70歳未満",
       "area": "営業区域内",
@@ -241,10 +230,7 @@
       "contract": "記載なし"
     },
     "note": "WEB完結型の「ドリームコンシェル」もあります。",
-    "tags": [
-      { "type": "area", "label": "営業区域内" },
-      { "type": "free", "label": "口座不要" }
-    ],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.shonai.co.jp/cardloan1000/"
   },
   {
@@ -252,8 +238,8 @@
     "bank": "きらやか銀行",
     "product": "きらやかぷらす",
     "rate": "4.5%〜14.6%",
-    "rateNote": "固定金利・限度額で決定",
     "specs": {
+      "rateType": "固定金利",
       "limit": "10万〜500万円",
       "age": "満20〜64歳",
       "area": "取扱店営業区域内",
@@ -264,7 +250,7 @@
       "contract": "記載なし"
     },
     "note": "来店型の「カードローンMAX500」もあります。住宅ローン利用者は▲0.5%優遇されます。",
-    "tags": [],
+    "tags": [{ "type": "save", "label": "優遇あり" }],
     "officialUrl": "https://www.kirayaka.co.jp/lp/plus/index.html"
   },
   {
@@ -272,8 +258,8 @@
     "bank": "東邦銀行",
     "product": "TOHOスマートネクスト",
     "rate": "1.4%〜14.6%",
-    "rateNote": "固定金利・最新版（要最終確認）",
     "specs": {
+      "rateType": "固定金利",
       "limit": "最高800万円",
       "age": "満20〜69歳",
       "area": "全国対応",
@@ -291,8 +277,8 @@
     "bank": "大東銀行",
     "product": "だいとうカードローン",
     "rate": "4.5%〜14.0%",
-    "rateNote": "固定金利・記載なし",
     "specs": {
+      "rateType": "固定金利",
       "limit": "最大500万円",
       "age": "記載なし",
       "area": "記載なし",

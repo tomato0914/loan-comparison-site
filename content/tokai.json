@@ -4,8 +4,8 @@
     "bank": "静岡銀行",
     "product": "セレカ",
     "rate": "1.5%〜14.5%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜1,000万円",
       "age": "満20〜69歳",
       "area": "指定なし（全国可）",
@@ -27,8 +27,8 @@
     "bank": "静岡銀行",
     "product": "ミープラス",
     "rate": "14.5%",
-    "rateNote": "記載なし・一律",
     "specs": {
+      "rateType": "記載なし",
       "limit": "〜50万円（最大90万円）",
       "age": "満20〜69歳",
       "area": "記載なし",
@@ -39,7 +39,6 @@
       "contract": "記載なし"
     },
     "note": "当行キャッシュカード保有者向けです。既存口座者向けで、勤続年数は問いません。",
-    "tags": [],
     "officialUrl": "https://www.shizuokabank.co.jp/personal/loan/card_loan/meplus/index.html"
   },
   {
@@ -47,8 +46,8 @@
     "bank": "スルガ銀行",
     "product": "リザーブドプラン",
     "rate": "3.9%〜14.9%",
-    "rateNote": "記載なし・審査で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "5万〜800万円",
       "age": "満20〜70歳",
       "area": "指定なし（全国可）",
@@ -70,8 +69,8 @@
     "bank": "静岡中央銀行",
     "product": "CSカードローン",
     "rate": "3.5%〜14.6%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜1,000万円",
       "age": "満20〜70歳未満",
       "area": "静岡・神奈川・東京",
@@ -82,7 +81,6 @@
       "contract": "記載なし"
     },
     "note": "「しずちゅうプレオカード」（口座不要・上限300万円）もあります。",
-    "tags": [{ "type": "area", "label": "静岡・神奈川・東京" }],
     "officialUrl": "https://www.shizuokachuo-bank.co.jp/kojin/kariru/lp/card/"
   },
   {
@@ -90,8 +88,8 @@
     "bank": "清水銀行",
     "product": "しみずピアカードローン",
     "rate": "2.8%〜9.8%",
-    "rateNote": "固定金利・限度額で決定",
     "specs": {
+      "rateType": "固定金利",
       "limit": "50万〜1,000万円",
       "age": "記載なし",
       "area": "記載なし",
@@ -102,7 +100,7 @@
       "contract": "記載なし"
     },
     "note": "住宅コース（上限300万円・年4.5%）、給振コース（上限200万円・年7.0%）があります。他に5つのカードローンがありますが、多くは店頭契約が必要なため、Web完結しやすいピアカードローンを代表として掲載しています。",
-    "tags": [{ "type": "save", "label": "住宅・給振コースあり" }],
+    "tags": [{ "type": "save", "label": "優遇あり" }],
     "officialUrl": "https://www.shimizubank.co.jp/individual/loan/cardloan/pier/"
   },
   {
@@ -110,8 +108,8 @@
     "bank": "十六銀行",
     "product": "Q-LOAN",
     "rate": "2.0%〜14.95%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "1万〜800万円",
       "age": "満20〜69歳",
       "area": "指定なし（近隣考慮あり）",
@@ -133,8 +131,8 @@
     "bank": "大垣共立銀行",
     "product": "ザ・マキシマム",
     "rate": "2.45%〜14.5%",
-    "rateNote": "変動金利・限度額で決定",
     "specs": {
+      "rateType": "変動金利",
       "limit": "10万〜1,000万円",
       "age": "満20〜69歳",
       "area": "記載なし",
@@ -153,8 +151,8 @@
     "bank": "あいち銀行",
     "product": "カードローン「愛」",
     "rate": "1.6%〜13.9%",
-    "rateNote": "固定金利・7段階で決定",
     "specs": {
+      "rateType": "固定金利",
       "limit": "10万〜1,000万円",
       "age": "満20〜69歳",
       "area": "当行営業区域内",
@@ -165,19 +163,16 @@
       "contract": "記載なし"
     },
     "note": "主力商品で、限度額と金利は連動しません。住宅ローン利用者専用の「NEO」は対象外です。",
-    "tags": [
-      { "type": "area", "label": "営業区域内" },
-      { "type": "free", "label": "口座不要" }
-    ],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.aichibank.co.jp/loan/card/"
   },
   {
     "pref": "愛知県",
     "bank": "あいち銀行",
     "product": "ポケットローン「ユー」",
-    "rate": "基準金利−最大3.0%",
-    "rateNote": "固定金利・基準金利非公開",
+    "rate": "10.5%",
     "specs": {
+      "rateType": "固定金利",
       "limit": "30万〜200万円（4コース）",
       "age": "満20〜65歳",
       "area": "当行営業区域内",
@@ -188,16 +183,15 @@
       "contract": "記載なし"
     },
     "note": "現住所1年以上・勤続1年以上が必須です。",
-    "tags": [{ "type": "area", "label": "営業区域内" }],
     "officialUrl": "https://www.aichibank.co.jp/loan/card/"
   },
   {
     "pref": "愛知県",
     "bank": "あいち銀行",
     "product": "カードローン「リブレ」",
-    "rate": "5.80%〜14.40%",
-    "rateNote": "変動金利・7コースで決定",
+    "rate": "5.8%〜14.4%",
     "specs": {
+      "rateType": "変動金利",
       "limit": "30万〜500万円（7コース）",
       "age": "満20〜64歳",
       "area": "当行営業区域内",
@@ -208,7 +202,6 @@
       "contract": "記載なし"
     },
     "note": "「愛」より小口向けのコースです。",
-    "tags": [{ "type": "area", "label": "営業区域内" }],
     "officialUrl": "https://www.aichibank.co.jp/loan/card/"
   },
   {
@@ -216,8 +209,8 @@
     "bank": "あいち銀行（旧中京銀行）",
     "product": "C-style",
     "rate": "4.9%〜14.5%",
-    "rateNote": "記載なし・限度額連動",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜500万円",
       "age": "満20歳以上・満75歳未満",
       "area": "当行営業区域内",
@@ -228,10 +221,7 @@
       "contract": "記載なし"
     },
     "note": "2025年1月に愛知銀行と中京銀行が合併し「あいち銀行」になりました。旧中京銀行のサイトで現在も案内されています。「ハイステージ」は注記のみです。",
-    "tags": [
-      { "type": "area", "label": "営業区域内" },
-      { "type": "free", "label": "口座不要" }
-    ],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.chukyo-bank.co.jp/kojin/c-style_sp_lp/"
   },
   {
@@ -239,8 +229,8 @@
     "bank": "名古屋銀行",
     "product": "地元のカードローン",
     "rate": "1.8%〜13.8%",
-    "rateNote": "記載なし・6段階から審査で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜1,000万円",
       "age": "記載なし",
       "area": "愛知・岐阜の営業区域内",
@@ -251,10 +241,7 @@
       "contract": "記載なし"
     },
     "note": "「新ミニマム」（上限200万円）もあります。「御用達くん」は募集終了と判断しています。",
-    "tags": [
-      { "type": "area", "label": "愛知・岐阜" },
-      { "type": "free", "label": "口座不要" }
-    ],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.meigin.com/kojin/loan/index.html"
   },
   {
@@ -262,8 +249,8 @@
     "bank": "三十三銀行",
     "product": "カードローン",
     "rate": "0.9%〜14.5%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜1,000万円",
       "age": "満20〜70歳",
       "area": "営業区域内／口座レス型は6府県限定",
@@ -273,10 +260,7 @@
       "speed": "記載なし",
       "contract": "3年、満75歳で契約満了"
     },
-    "tags": [
-      { "type": "area", "label": "営業区域内" },
-      { "type": "free", "label": "口座不要" }
-    ],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.33bank.co.jp/kojin/loan/free/card.html"
   },
   {
@@ -284,8 +268,8 @@
     "bank": "百五銀行",
     "product": "DREAM",
     "rate": "1.8%〜14.7%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜800万円",
       "age": "満20〜65歳",
       "area": "三重・愛知全域、岐阜・和歌山の一部",
@@ -297,8 +281,8 @@
     },
     "note": "年金収入のみの方は利用できません。新規契約は最初の2ヶ月間、金利が半額になります。",
     "tags": [
-      { "type": "area", "label": "三重・愛知中心" },
-      { "type": "free", "label": "口座不要" }
+      { "type": "free", "label": "口座不要" },
+      { "type": "save", "label": "2ヶ月間金利半額" }
     ],
     "officialUrl": "https://www.hyakugo.co.jp/kariru/dream/"
   }

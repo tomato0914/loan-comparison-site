@@ -1,5 +1,5 @@
-import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
+import Breadcrumb from "@/components/Breadcrumb";
 import { DATA_AS_OF } from "@/lib/site";
 
 const CONTACT_EMAIL = "karireco@proton.com";
@@ -12,13 +12,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <div className="wrap">
-        <p className="crumb">
-          <Link href="/">トップ</Link>
-          <span>›</span>
-          お問い合わせ
-        </p>
-      </div>
+      <Breadcrumb current="お問い合わせ" />
 
       <header className="hero">
         <div className="wrap">

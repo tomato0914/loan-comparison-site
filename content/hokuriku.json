@@ -4,8 +4,8 @@
     "bank": "北陸銀行",
     "product": "ほくぎんカードローン",
     "rate": "0.9%〜14.95%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "最高1,000万円",
       "age": "記載なし",
       "area": "記載なし",
@@ -24,8 +24,8 @@
     "bank": "富山銀行",
     "product": "スピード王MAX",
     "rate": "4.5%〜14.6%",
-    "rateNote": "記載なし・記載なし",
     "specs": {
+      "rateType": "記載なし",
       "limit": "記載なし",
       "age": "記載なし",
       "area": "富山県・石川県",
@@ -36,7 +36,7 @@
       "contract": "記載なし"
     },
     "note": "住宅ローン利用者は上限8.0%に優遇されます。旧「富山カードローン」は募集終了しています。",
-    "tags": [{ "type": "area", "label": "富山・石川限定" }],
+    "tags": [{ "type": "save", "label": "優遇あり" }],
     "officialUrl": "https://www.toyamabank.co.jp/pages/kojin/kariru/free/speed.htm"
   },
   {
@@ -44,8 +44,8 @@
     "bank": "北國銀行",
     "product": "北國カードローン DAY SMART",
     "rate": "5.0%〜9.5%",
-    "rateNote": "固定金利・公式確認済",
     "specs": {
+      "rateType": "固定金利",
       "limit": "最大300万円",
       "age": "記載なし",
       "area": "記載なし",
@@ -56,7 +56,6 @@
       "contract": "記載なし"
     },
     "note": "限度額は北陸4行の中で最も小さめです。",
-    "tags": [],
     "officialUrl": "https://www.hokkokubank.co.jp/customer/loan/daysmart/index.html"
   },
   {
@@ -64,8 +63,8 @@
     "bank": "福井銀行",
     "product": "カードローン",
     "rate": "2.8%〜14.6%",
-    "rateNote": "記載なし・記載なし",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜1,000万円",
       "age": "記載なし",
       "area": "記載なし",

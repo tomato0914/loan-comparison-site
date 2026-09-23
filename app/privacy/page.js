@@ -1,5 +1,5 @@
-import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
+import Breadcrumb from "@/components/Breadcrumb";
 import { DATA_AS_OF } from "@/lib/site";
 
 export const metadata = {
@@ -11,13 +11,7 @@ export const metadata = {
 export default function PrivacyPage() {
   return (
     <>
-      <div className="wrap">
-        <p className="crumb">
-          <Link href="/">トップ</Link>
-          <span>›</span>
-          プライバシーポリシー
-        </p>
-      </div>
+      <Breadcrumb current="プライバシーポリシー" />
 
       <header className="hero">
         <div className="wrap">

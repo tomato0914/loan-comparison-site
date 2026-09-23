@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import SiteFooter from "@/components/SiteFooter";
+import Breadcrumb from "@/components/Breadcrumb";
 import Disclaimer from "@/components/Disclaimer";
 import JsonLd from "@/components/JsonLd";
 import { DATA_AS_OF, SITE_URL } from "@/lib/site";
@@ -16,6 +17,7 @@ function hasTagLabel(loan, label) {
 }
 
 const SPEC_FIELDS = [
+  ["rateType", "金利タイプ"],
   ["limit", "限度額"],
   ["age", "申込年齢"],
   ["area", "申込エリア"],
@@ -29,21 +31,24 @@ const SPEC_FIELDS = [
 function LoanCard({ loan }) {
   return (
     <div className="loan">
-      {loan.tags?.length > 0 && (
-        <div className="tags">
-          {loan.tags.map((tag, j) => (
-            <span className={`tag ${tag.type}`} key={j}>
-              {tag.label}
-            </span>
-          ))}
+      <div className="loan-head">
+        <div className="loan-title">
+          <div className="bank">{loan.bank}</div>
+          <div className="name">{loan.product}</div>
         </div>
-      )}
-      <div className="bank">{loan.bank}</div>
-      <div className="name">{loan.product}</div>
+        {loan.tags?.length > 0 && (
+          <div className="tags">
+            {loan.tags.map((tag, j) => (
+              <span className={`tag ${tag.type}`} key={j}>
+                {tag.label}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
       <div className="rateline">
         <span className="lbl">実質年率</span>
         <span className="big">{loan.rate}</span>
-        <span className="sub">{loan.rateNote}</span>
       </div>
       <div className="specs">
         {SPEC_FIELDS.map(([key, label]) => (
@@ -177,13 +182,7 @@ export default function AreaComparePage({
       <JsonLd data={breadcrumbJsonLd} />
       {productsJsonLd && <JsonLd data={productsJsonLd} />}
 
-      <div className="wrap">
-        <p className="crumb">
-          <Link href="/">トップ</Link>
-          <span>›</span>
-          {regionName}
-        </p>
-      </div>
+      <Breadcrumb current={regionName} />
 
       <header className="hero">
         <div className="wrap">

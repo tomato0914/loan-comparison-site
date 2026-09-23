@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
+import Breadcrumb from "@/components/Breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { DATA_AS_OF, SITE_NAME, SITE_URL } from "@/lib/site";
 
@@ -50,13 +51,7 @@ export default function AboutPage() {
     <>
       <JsonLd data={aboutJsonLd} />
 
-      <div className="wrap">
-        <p className="crumb">
-          <Link href="/">トップ</Link>
-          <span>›</span>
-          このサイトについて
-        </p>
-      </div>
+      <Breadcrumb current="このサイトについて" />
 
       <header className="hero">
         <div className="wrap">

@@ -4,8 +4,8 @@
     "bank": "福岡銀行",
     "product": "福岡銀行カードローン",
     "rate": "3.0%〜14.5%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "最大1,000万円",
       "age": "記載なし",
       "area": "九州・山口 or 口座保有者",
@@ -24,8 +24,8 @@
     "bank": "西日本シティ銀行",
     "product": "カードローン",
     "rate": "0.95%〜14.5%",
-    "rateNote": "記載なし・記載なし",
     "specs": {
+      "rateType": "記載なし",
       "limit": "記載なし",
       "age": "記載なし",
       "area": "取扱店の近くに居住/勤務",
@@ -36,16 +36,15 @@
       "contract": "記載なし"
     },
     "note": "自動融資機能があります。他に3種類の商品があります（合計4種類）。",
-    "tags": [],
     "officialUrl": "https://www.ncbank.co.jp/loan/card/ncbankcardloan/"
   },
   {
     "pref": "福岡県",
     "bank": "筑邦銀行",
     "product": "筑邦銀行カードローン",
-    "rate": "3.90%〜13.95%",
-    "rateNote": "記載なし・限度額で決定",
+    "rate": "3.9%〜13.95%",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜500万円",
       "age": "満20〜70歳未満",
       "area": "記載なし",
@@ -56,16 +55,15 @@
       "contract": "記載なし"
     },
     "note": "他に5種類の商品があります。",
-    "tags": [{ "type": "area", "label": "東京・福岡・佐賀・大分" }],
     "officialUrl": "https://www.chikugin.co.jp/page/minicard/"
   },
   {
     "pref": "福岡県",
     "bank": "北九州銀行",
     "product": "マイカードきたきゅう君",
-    "rate": "4.500%〜14.500%",
-    "rateNote": "固定金利・公式確認済",
+    "rate": "4.5%〜14.5%",
     "specs": {
+      "rateType": "固定金利",
       "limit": "記載なし",
       "age": "満20〜68歳",
       "area": "営業エリア内(スマート支店は全国)",
@@ -84,8 +82,8 @@
     "bank": "福岡中央銀行",
     "product": "The Prime",
     "rate": "5.5%〜14.5%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜500万円",
       "age": "記載なし",
       "area": "記載なし",
@@ -96,7 +94,7 @@
       "contract": "記載なし"
     },
     "note": "住宅ローン利用者は0.5%優遇されます。初回振込サービスがあります。",
-    "tags": [{ "type": "area", "label": "福岡県内限定" }],
+    "tags": [{ "type": "save", "label": "優遇あり" }],
     "linkLabel": "詳細を見る",
     "officialUrl": "https://manekai.ameba.jp/cardloan/fukuokachuo-bank/"
   },
@@ -105,8 +103,8 @@
     "bank": "佐賀銀行",
     "product": "カードローン",
     "rate": "2.0%〜14.6%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "最大800万円",
       "age": "記載なし",
       "area": "記載なし",
@@ -116,10 +114,7 @@
       "speed": "記載なし",
       "contract": "記載なし"
     },
-    "tags": [
-      { "type": "free", "label": "口座不要" },
-      { "type": "save", "label": "九州9行ATM無料網" }
-    ],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.sagabank.co.jp/kojin/loan/sagin-card-loan.html"
   },
   {
@@ -127,8 +122,8 @@
     "bank": "佐賀共栄銀行",
     "product": "カードローンパワフル",
     "rate": "3.8%〜14.5%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "最高1,000万円",
       "age": "満20〜70歳以下",
       "area": "記載なし",
@@ -139,7 +134,7 @@
       "contract": "記載なし"
     },
     "note": "住宅ローン利用者は1.5%〜13.5%に優遇されます。",
-    "tags": [{ "type": "save", "label": "限度額1,000万円" }],
+    "tags": [{ "type": "save", "label": "優遇あり" }],
     "officialUrl": "https://www.kyogin.co.jp/loan/card_loan_powerful.php"
   },
   {
@@ -147,8 +142,8 @@
     "bank": "十八親和銀行",
     "product": "FFGカードローン",
     "rate": "3.0%〜14.5%",
-    "rateNote": "記載なし・FFGグループ共通",
     "specs": {
+      "rateType": "記載なし",
       "limit": "最大1,000万円",
       "age": "記載なし",
       "area": "記載なし",
@@ -167,8 +162,8 @@
     "bank": "長崎銀行",
     "product": "プレミアA（エース）",
     "rate": "2.8%〜14.9%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "最大800万円",
       "age": "満20〜75歳未満",
       "area": "九州内(沖縄除く)",
@@ -179,7 +174,6 @@
       "contract": "記載なし"
     },
     "note": "未取引でも申込可能です。",
-    "tags": [{ "type": "area", "label": "九州内(沖縄除く)" }],
     "officialUrl": "https://www.nagasakibank.co.jp/lp/premium/pc/"
   },
   {
@@ -187,8 +181,8 @@
     "bank": "熊本銀行",
     "product": "FFGカードローン",
     "rate": "3.0%〜14.5%",
-    "rateNote": "記載なし・FFGグループ共通",
     "specs": {
+      "rateType": "記載なし",
       "limit": "最大1,000万円",
       "age": "満20〜69歳",
       "area": "記載なし",
@@ -207,8 +201,8 @@
     "bank": "肥後銀行",
     "product": "WEBカードローン",
     "rate": "100万円以下14.0%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "記載なし",
       "age": "満20〜64歳",
       "area": "九州(佐賀・沖縄除く)・東京・大阪",
@@ -219,7 +213,6 @@
       "contract": "記載なし"
     },
     "note": "他に「Back Up」「BEST ASSIST」もあります。",
-    "tags": [{ "type": "area", "label": "九州+東京・大阪" }],
     "officialUrl": "https://www.higobank.co.jp/individual/loan/card/webcard_new/"
   },
   {
@@ -227,8 +220,8 @@
     "bank": "大分銀行",
     "product": "ハッピーカードローン",
     "rate": "5.0%〜14.5%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜500万円",
       "age": "満20〜70歳未満(学生不可)",
       "area": "記載なし",
@@ -238,10 +231,7 @@
       "speed": "記載なし",
       "contract": "記載なし"
     },
-    "tags": [
-      { "type": "area", "label": "福岡・熊本・大分・宮崎" },
-      { "type": "free", "label": "口座不要" }
-    ],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.oitabank.co.jp/interestrate-fee/kinri/loan.html"
   },
   {
@@ -249,8 +239,8 @@
     "bank": "豊和銀行",
     "product": "ほうわSmartカードローン",
     "rate": "4.5%〜14.0%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜500万円",
       "age": "記載なし",
       "area": "記載なし",
@@ -261,7 +251,6 @@
       "contract": "記載なし"
     },
     "note": "高額低金利の「High Class」（510万〜1,000万円）もありますが年収要件が高めです。",
-    "tags": [{ "type": "area", "label": "大分・福岡・熊本" }],
     "linkLabel": "詳細を見る",
     "officialUrl": "https://manekai.ameba.jp/cardloan/howabank/"
   },
@@ -270,8 +259,8 @@
     "bank": "宮崎銀行",
     "product": "おまかせくん",
     "rate": "0.9%〜14.5%",
-    "rateNote": "固定金利・公式確認済",
     "specs": {
+      "rateType": "固定金利",
       "limit": "10万〜1,000万円",
       "age": "記載なし",
       "area": "宮崎銀行営業エリア(東京・大阪除く)",
@@ -281,10 +270,7 @@
       "speed": "記載なし",
       "contract": "記載なし"
     },
-    "tags": [
-      { "type": "area", "label": "営業エリア内(東京・大阪除く)" },
-      { "type": "free", "label": "口座不要" }
-    ],
+    "tags": [{ "type": "free", "label": "口座不要" }],
     "officialUrl": "https://www.miyagin.co.jp/lp/loan/omakase/"
   },
   {
@@ -292,8 +278,8 @@
     "bank": "宮崎太陽銀行",
     "product": "おたすけA（エース）",
     "rate": "5.8%〜14.5%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜100万円",
       "age": "記載なし",
       "area": "福岡・大分・宮崎・鹿児島",
@@ -304,10 +290,7 @@
       "contract": "記載なし"
     },
     "note": "Web申込みで▲0.5%優遇されます。",
-    "tags": [
-      { "type": "area", "label": "福岡・大分・宮崎・鹿児島" },
-      { "type": "save", "label": "Web優遇▲0.5%" }
-    ],
+    "tags": [{ "type": "save", "label": "優遇あり" }],
     "officialUrl": "https://www.taiyobank.co.jp/individual/loan/card/basic/"
   },
   {
@@ -315,8 +298,8 @@
     "bank": "鹿児島銀行",
     "product": "カードローンS",
     "rate": "0.9%〜14.8%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜1,000万円",
       "age": "記載なし",
       "area": "記載なし",
@@ -326,7 +309,6 @@
       "speed": "記載なし",
       "contract": "記載なし"
     },
-    "tags": [{ "type": "save", "label": "下限0.9%" }],
     "officialUrl": "https://www.kagin.co.jp/kojin/loan/cardloan_s.html"
   },
   {
@@ -334,8 +316,8 @@
     "bank": "南日本銀行",
     "product": "WAZZCA（ワッゼカ）",
     "rate": "2.8%〜14.5%",
-    "rateNote": "記載なし・限度額で決定",
     "specs": {
+      "rateType": "記載なし",
       "limit": "10万〜1,000万円",
       "age": "満20〜70歳未満",
       "area": "記載なし",
@@ -345,7 +327,6 @@
       "speed": "記載なし",
       "contract": "記載なし"
     },
-    "tags": [{ "type": "save", "label": "雇用形態問わず" }],
     "linkLabel": "詳細を見る",
     "officialUrl": "https://manekai.ameba.jp/cardloan/nangin/"
   },
@@ -353,9 +334,9 @@
     "pref": "沖縄県",
     "bank": "琉球銀行",
     "product": "しあわせのカードローン",
-    "rate": "4.50%〜13.50%",
-    "rateNote": "変動金利・公式確認済",
+    "rate": "4.5%〜13.5%",
     "specs": {
+      "rateType": "変動金利",
       "limit": "最大500万円",
       "age": "満20〜65歳",
       "area": "記載なし",
@@ -365,16 +346,15 @@
       "speed": "記載なし",
       "contract": "記載なし"
     },
-    "tags": [],
     "officialUrl": "https://www.ryugin.co.jp/kariru/card_loan/shiawase_cardloan/"
   },
   {
     "pref": "沖縄県",
     "bank": "沖縄銀行",
     "product": "カトレアカードローン",
-    "rate": "9.95%一律",
-    "rateNote": "固定金利・公式確認済",
+    "rate": "9.95%",
     "specs": {
+      "rateType": "固定金利",
       "limit": "最高300万円",
       "age": "記載なし",
       "area": "沖縄県内在住",
@@ -385,19 +365,16 @@
       "contract": "記載なし"
     },
     "note": "「セレクト」版は4.05%一律です。",
-    "tags": [
-      { "type": "area", "label": "沖縄県内限定" },
-      { "type": "save", "label": "ポイント優遇▲2.0%" }
-    ],
+    "tags": [{ "type": "save", "label": "優遇あり" }],
     "officialUrl": "https://www.okinawa-bank.co.jp/kojin/kariru/cattleya.html"
   },
   {
     "pref": "沖縄県",
     "bank": "沖縄海邦銀行",
     "product": "ハッピーカードローンSmart",
-    "rate": "3.80%〜14.60%",
-    "rateNote": "固定金利・公式確認済",
+    "rate": "3.8%〜14.6%",
     "specs": {
+      "rateType": "固定金利",
       "limit": "最大500万円",
       "age": "満20〜70歳以下",
       "area": "記載なし",
