@@ -1,11 +1,12 @@
 import loans from "@/content/kansai.json";
 import AreaComparePage from "@/components/AreaComparePage";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = pageMetadata("/cardloan/kansai/", {
   title: "関西のカードローン比較",
   description:
     "関西（滋賀・京都・大阪・兵庫・奈良・和歌山）の地方銀行8行・10商品のカードローンを、金利・限度額・エリアで比較します。",
-};
+});
 
 export default function KansaiPage() {
   return (

@@ -1,11 +1,12 @@
 import loans from "@/content/hokuriku.json";
 import AreaComparePage from "@/components/AreaComparePage";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = pageMetadata("/cardloan/hokuriku/", {
   title: "北陸のカードローン比較",
   description:
     "北陸（富山・石川・福井）の地方銀行4行のカードローンを、金利・限度額・エリアで比較します。",
-};
+});
 
 export default function HokurikuPage() {
   return (

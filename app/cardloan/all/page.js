@@ -8,6 +8,7 @@ import kyushu from "@/content/kyushu.json";
 import shikoku from "@/content/shikoku.json";
 import chugoku from "@/content/chugoku.json";
 import AreaComparePage from "@/components/AreaComparePage";
+import { pageMetadata } from "@/lib/metadata";
 
 const loans = [
   ...kansai,
@@ -21,11 +22,11 @@ const loans = [
   ...chugoku,
 ].map(({ pref, ...loan }) => loan);
 
-export const metadata = {
+export const metadata = pageMetadata("/cardloan/all/", {
   title: "全国の金利比較",
   description:
     "全国9エリア・96商品の地方銀行カードローンを、最低金利が低い順に一覧比較できます。",
-};
+});
 
 export default function AllAreasPage() {
   return (

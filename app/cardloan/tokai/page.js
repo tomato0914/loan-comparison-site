@@ -1,11 +1,12 @@
 import loans from "@/content/tokai.json";
 import AreaComparePage from "@/components/AreaComparePage";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = pageMetadata("/cardloan/tokai/", {
   title: "東海のカードローン比較",
   description:
     "東海（静岡・岐阜・愛知・三重）の地方銀行10行・14商品のカードローンを、金利・限度額・エリアで比較します。",
-};
+});
 
 export default function TokaiPage() {
   return (

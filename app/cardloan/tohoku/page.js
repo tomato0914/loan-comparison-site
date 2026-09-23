@@ -1,11 +1,12 @@
 import loans from "@/content/tohoku.json";
 import AreaComparePage from "@/components/AreaComparePage";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = pageMetadata("/cardloan/tohoku/", {
   title: "東北のカードローン比較",
   description:
     "東北（青森・岩手・宮城・秋田・山形・福島）の地方銀行12行のカードローンを、金利・限度額・エリアで比較します。",
-};
+});
 
 export default function TohokuPage() {
   return (

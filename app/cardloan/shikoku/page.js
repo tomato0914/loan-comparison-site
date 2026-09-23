@@ -1,11 +1,12 @@
 import loans from "@/content/shikoku.json";
 import AreaComparePage from "@/components/AreaComparePage";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = pageMetadata("/cardloan/shikoku/", {
   title: "四国のカードローン比較",
   description:
     "四国（徳島・香川・愛媛・高知）の地方銀行7行のカードローンを、金利・限度額・エリアで比較します。",
-};
+});
 
 export default function ShikokuPage() {
   return (

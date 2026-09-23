@@ -1,11 +1,12 @@
 import loans from "@/content/kyushu.json";
 import AreaComparePage from "@/components/AreaComparePage";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = pageMetadata("/cardloan/kyushu/", {
   title: "九州のカードローン比較",
   description:
     "九州（福岡・佐賀・長崎・熊本・大分・宮崎・鹿児島・沖縄）の地方銀行20行のカードローンを、金利・限度額・エリアで比較します。",
-};
+});
 
 export default function KyushuPage() {
   return (

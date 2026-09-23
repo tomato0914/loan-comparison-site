@@ -1,11 +1,12 @@
 import loans from "@/content/chugoku.json";
 import AreaComparePage from "@/components/AreaComparePage";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = pageMetadata("/cardloan/chugoku/", {
   title: "中国地方のカードローン比較",
   description:
     "中国地方（鳥取・島根・岡山・広島・山口）の地方銀行8行のカードローンを、金利・限度額・エリアで比較します。",
-};
+});
 
 export default function ChugokuPage() {
   return (

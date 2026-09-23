@@ -1,11 +1,12 @@
 import loans from "@/content/kanto.json";
 import AreaComparePage from "@/components/AreaComparePage";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = pageMetadata("/cardloan/kanto/", {
   title: "関東のカードローン比較",
   description:
     "関東（群馬・栃木・茨城・埼玉・千葉・東京・神奈川）の地方銀行16行のカードローンを、金利・限度額・エリアで比較します。",
-};
+});
 
 export default function KantoPage() {
   return (

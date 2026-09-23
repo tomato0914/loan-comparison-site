@@ -9,13 +9,13 @@ const siteJsonLd = {
     {
       "@type": "WebSite",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       inLanguage: "ja",
     },
     {
       "@type": "Organization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
     },
   ],
 };
@@ -23,7 +23,7 @@ const siteJsonLd = {
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME}｜エリアから探す`,
+    default: `${SITE_NAME}｜全国9エリアから探す`,
     template: `%s｜${SITE_NAME}`,
   },
   description:

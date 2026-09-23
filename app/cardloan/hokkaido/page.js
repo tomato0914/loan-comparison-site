@@ -1,11 +1,12 @@
 import loans from "@/content/hokkaido.json";
 import AreaComparePage from "@/components/AreaComparePage";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = pageMetadata("/cardloan/hokkaido/", {
   title: "北海道のカードローン比較",
   description:
     "北海道の地方銀行2行のカードローンを、金利・限度額・エリアで比較します。",
-};
+});
 
 export default function HokkaidoPage() {
   return (

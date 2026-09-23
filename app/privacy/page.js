@@ -1,12 +1,13 @@
 import SiteFooter from "@/components/SiteFooter";
 import Breadcrumb from "@/components/Breadcrumb";
 import { DATA_AS_OF } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = pageMetadata("/privacy/", {
   title: "プライバシーポリシー",
   description:
     "当サイトの広告配信・アクセス解析における個人情報の取り扱いについてご案内します。",
-};
+});
 
 export default function PrivacyPage() {
   return (

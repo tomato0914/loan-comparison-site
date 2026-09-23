@@ -76,7 +76,7 @@ function buildBreadcrumbJsonLd(regionName, pathname) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "トップ", item: SITE_URL },
+      { "@type": "ListItem", position: 1, name: "トップ", item: `${SITE_URL}/` },
       {
         "@type": "ListItem",
         position: 2,

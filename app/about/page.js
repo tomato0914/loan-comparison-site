@@ -3,19 +3,20 @@ import SiteFooter from "@/components/SiteFooter";
 import Breadcrumb from "@/components/Breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { DATA_AS_OF, SITE_NAME, SITE_URL } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = pageMetadata("/about/", {
   title: "このサイトについて",
   description:
     "このサイトの成り立ちや情報の集め方、ご利用にあたっての注意点をご案内します。",
-};
+});
 
 const aboutJsonLd = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   name: "このサイトについて",
   url: `${SITE_URL}/about/`,
-  isPartOf: { "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
+  isPartOf: { "@type": "WebSite", name: SITE_NAME, url: `${SITE_URL}/` },
   about: {
     "@type": "Organization",
     name: SITE_NAME,

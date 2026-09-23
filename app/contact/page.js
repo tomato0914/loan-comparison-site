@@ -1,13 +1,14 @@
 import SiteFooter from "@/components/SiteFooter";
 import Breadcrumb from "@/components/Breadcrumb";
 import { DATA_AS_OF } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
 const CONTACT_EMAIL = "karireco@proton.com";
 
-export const metadata = {
+export const metadata = pageMetadata("/contact/", {
   title: "お問い合わせ",
   description: "当サイトの内容に関するご質問・掲載情報の誤りのご指摘は、こちらからご連絡ください。",
-};
+});
 
 export default function ContactPage() {
   return (

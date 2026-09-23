@@ -2,11 +2,12 @@ import Link from "next/link";
 import regions from "@/content/regions.json";
 import SiteFooter from "@/components/SiteFooter";
 import Disclaimer from "@/components/Disclaimer";
-import { DATA_AS_OF } from "@/lib/site";
+import { DATA_AS_OF, SITE_NAME } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
-  title: "エリアから探す",
-};
+export const metadata = pageMetadata("/", {
+  title: { absolute: `${SITE_NAME}｜全国9エリアから探す` },
+});
 
 export default function TopPage() {
   return (
