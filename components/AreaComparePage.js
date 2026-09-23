@@ -9,16 +9,10 @@ import JsonLd from "@/components/JsonLd";
 import { DATA_AS_OF, SITE_URL } from "@/lib/site";
 import { prefSlug } from "@/lib/prefectures";
 import { parseInterestRate } from "@/lib/rate";
+import { SORT_OPTIONS, sortLoans } from "@/lib/loanSort";
 
 function hasTagLabel(loan, label) {
   return loan.tags?.some((tag) => tag.label === label) ?? false;
-}
-
-function parseRateMin(rateStr) {
-  const matches = [...String(rateStr).matchAll(/(\d+(?:\.\d+)?)%/g)].map((m) =>
-    parseFloat(m[1])
-  );
-  return matches.length > 0 ? Math.min(...matches) : null;
 }
 
 const SPEC_FIELDS = [
@@ -31,32 +25,6 @@ const SPEC_FIELDS = [
   ["speed", "融資スピード"],
   ["contract", "契約期間"],
 ];
-
-function parseLimitMax(loan) {
-  const limit = loan.specs?.limit;
-  if (!limit) return null;
-  const matches = [...String(limit).matchAll(/([\d,]+(?:\.\d+)?)万/g)].map((m) =>
-    parseFloat(m[1].replace(/,/g, ""))
-  );
-  return matches.length > 0 ? Math.max(...matches) : null;
-}
-
-function sortLoans(loans, sortMode) {
-  if (sortMode === "none") return loans;
-
-  const keyFn =
-    sortMode === "limitDesc" ? parseLimitMax : (loan) => parseRateMin(loan.rate);
-
-  return [...loans]
-    .map((loan, index) => ({ loan, index, key: keyFn(loan) }))
-    .sort((a, b) => {
-      if (a.key === null && b.key === null) return a.index - b.index;
-      if (a.key === null) return 1;
-      if (b.key === null) return -1;
-      return sortMode === "rateAsc" ? a.key - b.key : b.key - a.key;
-    })
-    .map((entry) => entry.loan);
-}
 
 function LoanCard({ loan }) {
   return (
@@ -165,7 +133,7 @@ export default function AreaComparePage({
   loans,
   disclaimerNote,
   checklist,
-  defaultSort = "none",
+  defaultSort = "kana",
 }) {
   const [sortMode, setSortMode] = useState(defaultSort);
   const [accountFreeOnly, setAccountFreeOnly] = useState(false);
@@ -275,10 +243,11 @@ export default function AreaComparePage({
                     value={sortMode}
                     onChange={(e) => setSortMode(e.target.value)}
                   >
-                    <option value="none">おすすめ順（掲載順）</option>
-                    <option value="rateAsc">金利が低い順</option>
-                    <option value="rateDesc">金利が高い順</option>
-                    <option value="limitDesc">限度額が大きい順</option>
+                    {SORT_OPTIONS.map(([value, label]) => (
+                      <option value={value} key={value}>
+                        {label}
+                      </option>
+                    ))}
                   </select>
                 </div>
 
@@ -358,12 +327,6 @@ export default function AreaComparePage({
             </div>
           </section>
         )}
-
-        <div className="blueband">
-          <div className="wrap">
-            <h2>金利や条件は、変わることがあります。</h2>
-          </div>
-        </div>
 
         <section>
           <div className="wrap">

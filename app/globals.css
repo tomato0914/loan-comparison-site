@@ -195,10 +195,6 @@ main section {
   padding: 3px 9px;
   border-radius: 999px;
 }
-.region.live .status {
-  background: var(--pale);
-  color: var(--blue-deep);
-}
 .region.soon .status {
   background: #F1F3F6;
   color: var(--ink-soft);
@@ -597,27 +593,6 @@ main section {
   margin-left: 6px;
   font-weight: 700;
   white-space: nowrap;
-}
-
-/* 青の帯 */
-.blueband {
-  background: linear-gradient(100deg, var(--blue-deep) 0%, var(--blue) 100%);
-  color: #fff;
-}
-.blueband .wrap {
-  padding: 40px 20px;
-  text-align: center;
-}
-.blueband h2 {
-  font-size: 22px;
-  font-weight: 800;
-  margin: 0 0 10px;
-  line-height: 1.6;
-}
-.blueband p {
-  margin: 0;
-  color: #EAF4FB;
-  font-size: 14px;
 }
 
 /* 免責 */

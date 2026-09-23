@@ -46,9 +46,11 @@ export default function TopPage() {
                 const isLive = region.status === "live";
                 const content = (
                   <>
-                    <div className="region-top">
-                      <span className="status">{isLive ? "公開中" : "準備中"}</span>
-                    </div>
+                    {!isLive && (
+                      <div className="region-top">
+                        <span className="status">準備中</span>
+                      </div>
+                    )}
                     <div className="pref">{region.pref}</div>
                     <div className="name">{region.name}</div>
                     <div className="count">{region.count}</div>
@@ -91,12 +93,6 @@ export default function TopPage() {
             </p>
           </div>
         </section>
-
-        <div className="blueband">
-          <div className="wrap">
-            <h2>金利や条件は、変わることがあります。</h2>
-          </div>
-        </div>
 
         <section>
           <div className="wrap">
